@@ -76,6 +76,37 @@ def decode_message(msg: Message, data: bytes) -> Dict[str, float]:
     return result
 
 
+EXCEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          '..', 'CX835EX_VP_LDCANFD_FSCM_20251216_Fix.xlsx')
+
+
+def load_signal_desc_map(excel_path: str = EXCEL_PATH) -> Dict[str, str]:
+    """Load Signal Name → Signal Description mapping from Excel matrix.
+    Column 7 = signal name, Column 13 = signal description (备注/信号描述).
+    """
+    import openpyxl
+    mapping = {}
+    if not os.path.exists(excel_path):
+        print(f'Warning: Excel not found at {excel_path}')
+        return mapping
+    try:
+        wb = openpyxl.load_workbook(excel_path, data_only=True)
+        ws = wb['FSCM_LDCANFD']
+        for row in range(3, ws.max_row + 1):
+            sig_name = ws.cell(row=row, column=7).value
+            sig_desc = ws.cell(row=row, column=13).value
+            if sig_name and str(sig_name).strip():
+                sig_name = str(sig_name).strip()
+                desc = str(sig_desc).strip() if sig_desc else ''
+                if desc:
+                    mapping[sig_name] = desc
+        wb.close()
+        print(f'Loaded {len(mapping)} signal descriptions from Excel')
+    except Exception as e:
+        print(f'Error reading Excel for signal descriptions: {e}')
+    return mapping
+
+
 def is_analog_signal(sig: Signal) -> bool:
     """Determine if a signal should use analog slider control."""
     if len(sig.value_descriptions) > 0:
@@ -156,7 +187,7 @@ class AnalogSignalWidget(ttk.Frame):
     """Slider + entry widget for analog signals. Signal name auto-sized."""
 
     def __init__(self, parent, sig: Signal, on_change: Callable = None,
-                 *args, **kwargs):
+                 display_name: str = None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.sig = sig
         self._on_change = on_change
@@ -168,8 +199,8 @@ class AnalogSignalWidget(ttk.Frame):
         self._digits = max(0, abs(round(str(sig.factor)[::-1].find('.'))) if '.' in str(sig.factor) else 0)
         fmt = f'.{self._digits}f'
 
-        # Label (auto-sized, no fixed width)
-        label_text = sig.name
+        # Label (auto-sized, use display_name if provided)
+        label_text = display_name or sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
@@ -223,7 +254,7 @@ class EnumSignalWidget(ttk.Frame):
     """Compact combobox dropdown for enum signals. Signal name auto-sized."""
 
     def __init__(self, parent, sig: Signal, on_change: Callable = None,
-                 *args, **kwargs):
+                 display_name: str = None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.sig = sig
         self._on_change = on_change
@@ -232,8 +263,8 @@ class EnumSignalWidget(ttk.Frame):
         self.columnconfigure(0, weight=0)  # label natural width
         self.columnconfigure(1, weight=1)  # combo expands
 
-        # Label (auto-sized)
-        label_text = sig.name
+        # Label (auto-sized, use display_name if provided)
+        label_text = display_name or sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
@@ -284,7 +315,7 @@ class BinarySignalWidget(ttk.Frame):
     """Compact combobox for binary (0/1) signals. Signal name auto-sized."""
 
     def __init__(self, parent, sig: Signal, on_change: Callable = None,
-                 *args, **kwargs):
+                 display_name: str = None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.sig = sig
         self._on_change = on_change
@@ -293,7 +324,7 @@ class BinarySignalWidget(ttk.Frame):
         self.columnconfigure(0, weight=0)  # label natural width
         self.columnconfigure(2, weight=1)  # unit fills rest
 
-        label_text = sig.name
+        label_text = display_name or sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
@@ -334,13 +365,14 @@ class SendMessagePanel(ttk.LabelFrame):
     """
 
     def __init__(self, parent, msg: Message, can_mgr: CanManager = None,
-                 app_ref=None, *args, **kwargs):
+                 app_ref=None, desc_map: Dict[str, str] = None, *args, **kwargs):
         st_color = SEND_TYPE_COLORS.get(msg.send_type_name, '#888')
         title = f'0x{msg.id:03X} {msg.name}  [{msg.send_type_name}]'
         super().__init__(parent, text=title, *args, **kwargs)
         self.msg = msg
         self.can_mgr = can_mgr
         self.app_ref = app_ref
+        self._desc_map = desc_map or {}
         self._signal_values: Dict[str, float] = {}
         self._widgets: Dict[str, tk.Widget] = {}
         self._cyclic_active = False
@@ -395,12 +427,13 @@ class SendMessagePanel(ttk.LabelFrame):
             col = 0
             for sig in group_sigs:
                 wtype = get_signal_widget_type(sig)
+                display_name = self._desc_map.get(sig.name)
                 if wtype == 'analog':
-                    widget = AnalogSignalWidget(self, sig, self._on_value_change)
+                    widget = AnalogSignalWidget(self, sig, self._on_value_change, display_name=display_name)
                 elif wtype == 'enum':
-                    widget = EnumSignalWidget(self, sig, self._on_value_change)
+                    widget = EnumSignalWidget(self, sig, self._on_value_change, display_name=display_name)
                 else:
-                    widget = BinarySignalWidget(self, sig, self._on_value_change)
+                    widget = BinarySignalWidget(self, sig, self._on_value_change, display_name=display_name)
                 padx_left = 1
                 widget.grid(row=row, column=col, sticky='ew', padx=(padx_left, 0), pady=0)
                 self._widgets[sig.name] = widget
@@ -571,11 +604,13 @@ class SendPanel(ttk.Frame):
     ]
 
     def __init__(self, parent, to_fscm: Dict[int, Message],
-                 can_mgr: CanManager, app_ref=None, *args, **kwargs):
+                 can_mgr: CanManager, app_ref=None,
+                 desc_map: Dict[str, str] = None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.can_mgr = can_mgr
         self.to_fscm = to_fscm
         self.app_ref = app_ref
+        self._desc_map = desc_map or {}
         self._msg_panels: Dict[int, SendMessagePanel] = {}
 
         # Build category map
@@ -636,7 +671,8 @@ class SendPanel(ttk.Frame):
                     continue
                 panel = SendMessagePanel(self.inner, msg,
                                          can_mgr=self.can_mgr,
-                                         app_ref=self.app_ref)
+                                         app_ref=self.app_ref,
+                                         desc_map=self._desc_map)
                 panel.grid(row=row, column=0, sticky='ew', padx=1, pady=0)
                 self._msg_panels[msg_id] = panel
                 processed.add(msg_id)
@@ -658,7 +694,8 @@ class SendPanel(ttk.Frame):
                 msg = self.to_fscm.get(msg_id)
                 panel = SendMessagePanel(self.inner, msg,
                                          can_mgr=self.can_mgr,
-                                         app_ref=self.app_ref)
+                                         app_ref=self.app_ref,
+                                         desc_map=self._desc_map)
                 panel.grid(row=row, column=0, sticky='ew', padx=1, pady=0)
                 self._msg_panels[msg_id] = panel
                 row += 1
@@ -684,7 +721,7 @@ class SendPanel(ttk.Frame):
 class RecvSignalDisplay(ttk.Frame):
     """Display widget for a single received signal value. Signal name auto-sized."""
 
-    def __init__(self, parent, sig: Signal, *args, **kwargs):
+    def __init__(self, parent, sig: Signal, display_name: str = None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.sig = sig
         self._flash_job = None
@@ -692,8 +729,8 @@ class RecvSignalDisplay(ttk.Frame):
         self.columnconfigure(0, weight=0)  # label natural width
         self.columnconfigure(1, weight=1)  # value expands
 
-        # Label (auto-sized)
-        label_text = sig.name
+        # Label (auto-sized, use display_name if provided)
+        label_text = display_name or sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
@@ -734,10 +771,11 @@ class RecvSignalDisplay(ttk.Frame):
 class RecvMessagePanel(ttk.LabelFrame):
     """A display panel for a received message with all signal values."""
 
-    def __init__(self, parent, msg: Message, *args, **kwargs):
+    def __init__(self, parent, msg: Message, desc_map: Dict[str, str] = None, *args, **kwargs):
         title = f'0x{msg.id:03X} {msg.name} (Tx: {msg.transmitter})'
         super().__init__(parent, text=title, *args, **kwargs)
         self.msg = msg
+        self._desc_map = desc_map or {}
         self._displays: Dict[str, RecvSignalDisplay] = {}
         self._last_values: Dict[str, tuple] = {}
 
@@ -751,7 +789,7 @@ class RecvMessagePanel(ttk.LabelFrame):
         row = 0
         col = 0
         for sig in signals_ordered:
-            disp = RecvSignalDisplay(self, sig)
+            disp = RecvSignalDisplay(self, sig, display_name=self._desc_map.get(sig.name))
             disp.grid(row=row, column=col, sticky='ew', padx=1, pady=0)
             self._displays[sig.name] = disp
             col += 1
@@ -790,11 +828,12 @@ class RecvPanel(ttk.Frame):
 
     def __init__(self, parent, from_fscm: Dict[int, Message],
                  can_mgr: CanManager, db_messages: Dict[int, Message] = None,
-                 *args, **kwargs):
+                 desc_map: Dict[str, str] = None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.can_mgr = can_mgr
         self.from_fscm = from_fscm
         self._db_messages = db_messages or {}
+        self._desc_map = desc_map or {}
         self._msg_displays: Dict[int, RecvMessagePanel] = {}
         self._panel_row_counter = 0
 
@@ -828,7 +867,7 @@ class RecvPanel(ttk.Frame):
         """Create and add a RecvMessagePanel."""
         if msg.id in self._msg_displays:
             return
-        panel = RecvMessagePanel(self.inner, msg)
+        panel = RecvMessagePanel(self.inner, msg, desc_map=self._desc_map)
         panel.grid(row=self._panel_row_counter, column=0, sticky='ew',
                    padx=1, pady=0)
         self._msg_displays[msg.id] = panel
@@ -857,6 +896,7 @@ class CanTestTool(tk.Tk):
         self.db = db
         self.can_mgr = CanManager()
         self.to_fscm, self.from_fscm = classify_messages(db)
+        self.signal_desc_map = load_signal_desc_map()
 
         self.title('CAN Test Tool - FSCM/RSCM')
         self.geometry('1400x850')
@@ -1053,14 +1093,16 @@ class CanTestTool(tk.Tk):
         # Left: Send panel (all to_fscm messages)
         left_frame = ttk.Frame(self.paned)
         self.send_panel = SendPanel(left_frame, self.to_fscm, self.can_mgr,
-                                    app_ref=self)
+                                    app_ref=self,
+                                    desc_map=self.signal_desc_map)
         self.send_panel.pack(fill='both', expand=True)
         self.paned.add(left_frame, weight=1)
 
         # Right: Recv panel (all from_fscm messages + full db_messages for dynamic creation)
         right_frame = ttk.Frame(self.paned)
         self.recv_panel = RecvPanel(right_frame, self.from_fscm, self.can_mgr,
-                                    db_messages=self.db.messages)
+                                    db_messages=self.db.messages,
+                                    desc_map=self.signal_desc_map)
         self.recv_panel.pack(fill='both', expand=True)
         self.paned.add(right_frame, weight=1)
 
