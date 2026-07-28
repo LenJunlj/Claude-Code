@@ -392,8 +392,8 @@ class SendMessagePanel(ttk.LabelFrame):
         self._build_ui()
 
     def _build_ui(self):
-        # Configure 2 columns: labels get natural width, controls fill remaining
-        self.columnconfigure(0, weight=0)
+        # Configure 2 equal-width columns so all signal widgets are the same size
+        self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
         # Row 0: enable checkbox + message info (span 2 cols)
         self._build_header_row()
