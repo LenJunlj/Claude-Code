@@ -281,7 +281,7 @@ class EnumSignalWidget(ttk.Frame):
                 self._text_to_val[f'r{v}'] = v
 
         values_text = [self._val_to_text[i] for i in sorted(self._val_to_text.keys())]
-        combo_width = 10
+        combo_width = 8
 
         self.combo = ttk.Combobox(self, values=values_text, width=combo_width,
                                   state='readonly',
@@ -331,7 +331,7 @@ class BinarySignalWidget(ttk.Frame):
 
         self.var = tk.StringVar(value='0')
         combo_values = ['0', '1']
-        combo_width = 10
+        combo_width = 8
         self.combo = ttk.Combobox(self, textvariable=self.var,
                                   values=combo_values, width=combo_width, state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
