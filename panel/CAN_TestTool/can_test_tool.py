@@ -210,13 +210,6 @@ class AnalogSignalWidget(ttk.Frame):
                                  font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.val_lbl.grid(row=0, column=2, padx=(0, 0))
 
-        # Unit / precision hint (auto-sized, hidden if no unit)
-        unit_text = sig.unit if sig.unit else ''
-        hint = f'{unit_text} x{sig.factor}' if unit_text else f'x{sig.factor}'
-        self.hint_lbl = ttk.Label(self, text=hint, anchor='w',
-                                  font=(FONT_FAMILY, '7'), foreground='#888')
-        self.hint_lbl.grid(row=0, column=3, padx=(1, 0))
-
         # Slider
         from_val = sig.minimum
         to_val = sig.maximum
@@ -322,7 +315,7 @@ class BinarySignalWidget(ttk.Frame):
         self._updating = False
 
         self.columnconfigure(0, weight=0)  # label natural width
-        self.columnconfigure(2, weight=1)  # unit fills rest
+        self.columnconfigure(1, weight=1)  # combo fills rest
 
         label_text = display_name or sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
@@ -335,14 +328,8 @@ class BinarySignalWidget(ttk.Frame):
         self.combo = ttk.Combobox(self, textvariable=self.var,
                                   values=combo_values, width=combo_width, state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.combo.grid(row=0, column=1, padx=(0, 0), sticky='w')
+        self.combo.grid(row=0, column=1, padx=(0, 0), sticky='ew')
         self.combo.bind('<<ComboboxSelected>>', self._changed)
-
-        # Unit (auto-sized)
-        unit_text = sig.unit if sig.unit else ''
-        self.unit_lbl = ttk.Label(self, text=unit_text, anchor='w',
-                                  font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.unit_lbl.grid(row=0, column=2, padx=(0, 0), sticky='w')
 
     def _changed(self, event=None):
         if self._updating:
