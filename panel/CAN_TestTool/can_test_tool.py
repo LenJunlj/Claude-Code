@@ -1007,14 +1007,14 @@ class CanTestTool(tk.Tk):
                                          'PCAN_ISABUS1', 'PCAN_ISABUS2',
                                          'virtual'
                                      ],
-                                     state='normal', width=14,
+                                     state='normal',
+                                     width=max(_display_width(v) for v in ['PCAN_USBBUS1', 'PCAN_USBBUS2', 'PCAN_ISABUS1', 'PCAN_ISABUS2', 'virtual']) + 1,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.channel_combo.grid(row=0, column=1, padx=(0, 1))
 
         # Refresh devices button
         self.btn_refresh = ttk.Button(toolbar, text='⟳',
-                                      command=self._refresh_devices,
-                                      width=3)
+                                      command=self._refresh_devices)
         self.btn_refresh.grid(row=0, column=2, padx=(0, 2))
 
         # Mode: CAN / CAN FD
@@ -1024,7 +1024,8 @@ class CanTestTool(tk.Tk):
         self.mode_var = tk.StringVar(value='CAN')
         self.mode_combo = ttk.Combobox(toolbar, textvariable=self.mode_var,
                                      values=['CAN', 'CAN FD'],
-                                     state='readonly', width=6,
+                                     state='readonly',
+                                     width=max(_display_width(v) for v in ['CAN', 'CAN FD']) + 1,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.mode_combo.grid(row=0, column=4, padx=(0, 2))
         self.mode_combo.bind('<<ComboboxSelected>>', self._on_mode_changed)
@@ -1036,7 +1037,8 @@ class CanTestTool(tk.Tk):
         self.baud_var = tk.StringVar(value='500')
         self.baud_combo = ttk.Combobox(toolbar, textvariable=self.baud_var,
                                      values=['125', '250', '500', '1000'],
-                                     state='normal', width=7,
+                                     state='normal',
+                                     width=max(_display_width(v) for v in ['125', '250', '500', '1000']) + 1,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.baud_combo.grid(row=0, column=6, padx=(0, 2))
 
@@ -1047,7 +1049,8 @@ class CanTestTool(tk.Tk):
         self.data_var = tk.StringVar(value='2000')
         self.data_combo = ttk.Combobox(toolbar, textvariable=self.data_var,
                                      values=['500', '1000', '2000', '4000', '5000', '8000'],
-                                     state='disabled', width=7,
+                                     state='disabled',
+                                     width=max(_display_width(v) for v in ['500', '1000', '2000', '4000', '5000', '8000']) + 1,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.data_combo.grid(row=0, column=8, padx=(0, 2))
 
@@ -1055,13 +1058,12 @@ class CanTestTool(tk.Tk):
 
         # Connect/Disconnect buttons
         self.btn_connect = ttk.Button(toolbar, text='Connect',
-                                      command=self._connect,
-                                      width=10)
+                                      command=self._connect)
         self.btn_connect.grid(row=1, column=0, padx=(0, 2), pady=(1, 0))
 
         self.btn_disconnect = ttk.Button(toolbar, text='Disconnect',
                                          command=self._disconnect,
-                                         width=10, state='disabled')
+                                         state='disabled')
         self.btn_disconnect.grid(row=1, column=1, padx=(0, 5), pady=(1, 0))
 
         # Separator
@@ -1081,7 +1083,7 @@ class CanTestTool(tk.Tk):
         self.btn_send_once = ttk.Button(
             toolbar, text='Send All Once',
             command=self._send_all_once,
-            width=14, state='disabled')
+            state='disabled')
         self.btn_send_once.grid(row=1, column=4, padx=(0, 2), pady=(1, 0))
 
     def _on_mode_changed(self, event=None):
