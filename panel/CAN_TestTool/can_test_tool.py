@@ -289,7 +289,7 @@ class EnumSignalWidget(ttk.Frame):
                 self._text_to_val[f'r{v}'] = v
 
         values_text = [self._val_to_text[i] for i in sorted(self._val_to_text.keys())]
-        combo_width = max(_display_width(v) for v in values_text) + 1
+        combo_width = 10
 
         self.combo = ttk.Combobox(self, values=values_text, width=combo_width,
                                   state='readonly',
@@ -339,7 +339,7 @@ class BinarySignalWidget(ttk.Frame):
 
         self.var = tk.StringVar(value='0')
         combo_values = ['0', '1']
-        combo_width = max(_display_width(v) for v in combo_values) + 1
+        combo_width = 10
         self.combo = ttk.Combobox(self, textvariable=self.var,
                                   values=combo_values, width=combo_width, state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
@@ -1008,7 +1008,7 @@ class CanTestTool(tk.Tk):
                                          'virtual'
                                      ],
                                      state='normal',
-                                     width=max(_display_width(v) for v in ['PCAN_USBBUS1', 'PCAN_USBBUS2', 'PCAN_ISABUS1', 'PCAN_ISABUS2', 'virtual']) + 1,
+                                     width=10,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.channel_combo.grid(row=0, column=1, padx=(0, 1))
 
@@ -1025,7 +1025,7 @@ class CanTestTool(tk.Tk):
         self.mode_combo = ttk.Combobox(toolbar, textvariable=self.mode_var,
                                      values=['CAN', 'CAN FD'],
                                      state='readonly',
-                                     width=max(_display_width(v) for v in ['CAN', 'CAN FD']) + 1,
+                                     width=10,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.mode_combo.grid(row=0, column=4, padx=(0, 2))
         self.mode_combo.bind('<<ComboboxSelected>>', self._on_mode_changed)
@@ -1038,7 +1038,7 @@ class CanTestTool(tk.Tk):
         self.baud_combo = ttk.Combobox(toolbar, textvariable=self.baud_var,
                                      values=['125', '250', '500', '1000'],
                                      state='normal',
-                                     width=max(_display_width(v) for v in ['125', '250', '500', '1000']) + 1,
+                                     width=10,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.baud_combo.grid(row=0, column=6, padx=(0, 2))
 
@@ -1050,7 +1050,7 @@ class CanTestTool(tk.Tk):
         self.data_combo = ttk.Combobox(toolbar, textvariable=self.data_var,
                                      values=['500', '1000', '2000', '4000', '5000', '8000'],
                                      state='disabled',
-                                     width=max(_display_width(v) for v in ['500', '1000', '2000', '4000', '5000', '8000']) + 1,
+                                     width=10,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
         self.data_combo.grid(row=0, column=8, padx=(0, 2))
 
