@@ -225,8 +225,7 @@ class AnalogSignalWidget(ttk.Frame):
 
         self.slider = ttk.Scale(self, from_=from_val, to=to_val,
                                 orient='horizontal',
-                                command=self._slider_changed,
-                                length=70)
+                                command=self._slider_changed)
         self.slider.grid(row=0, column=1, padx=(0, 0), sticky='ew')
         self.slider.set(0)
 
