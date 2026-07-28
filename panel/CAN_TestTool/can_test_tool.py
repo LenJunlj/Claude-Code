@@ -131,6 +131,14 @@ def get_signal_widget_type(sig: Signal) -> str:
     return 'analog'
 
 
+def _display_width(s) -> int:
+    """Estimate display char-width: CJK chars count as ~2, ASCII as 1."""
+    w = 0
+    for ch in str(s):
+        w += 2 if ord(ch) > 0x2E80 else 1
+    return w
+
+
 # ── Scrollable Frame ───────────────────────────────────────────────────
 
 class ScrollableFrame(ttk.Frame):
@@ -281,7 +289,7 @@ class EnumSignalWidget(ttk.Frame):
                 self._text_to_val[f'r{v}'] = v
 
         values_text = [self._val_to_text[i] for i in sorted(self._val_to_text.keys())]
-        combo_width = max(len(str(v)) for v in values_text) + 1
+        combo_width = max(_display_width(v) for v in values_text) + 1
 
         self.combo = ttk.Combobox(self, values=values_text, width=combo_width,
                                   state='readonly',
@@ -331,7 +339,7 @@ class BinarySignalWidget(ttk.Frame):
 
         self.var = tk.StringVar(value='0')
         combo_values = ['0', '1']
-        combo_width = max(len(v) for v in combo_values) + 1
+        combo_width = max(_display_width(v) for v in combo_values) + 1
         self.combo = ttk.Combobox(self, textvariable=self.var,
                                   values=combo_values, width=combo_width, state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
@@ -384,8 +392,8 @@ class SendMessagePanel(ttk.LabelFrame):
         self._build_ui()
 
     def _build_ui(self):
-        # Configure 2 columns for horizontal signal layout
-        self.columnconfigure(0, weight=1)
+        # Configure 2 columns: labels get natural width, controls fill remaining
+        self.columnconfigure(0, weight=0)
         self.columnconfigure(1, weight=1)
         # Row 0: enable checkbox + message info (span 2 cols)
         self._build_header_row()
@@ -784,7 +792,7 @@ class RecvMessagePanel(ttk.LabelFrame):
         self._build_ui()
 
     def _build_ui(self):
-        self.columnconfigure(0, weight=1)
+        self.columnconfigure(0, weight=0)
         self.columnconfigure(1, weight=1)
         signals_ordered = sorted(self.msg.signals.values(),
                                  key=lambda s: s.start_bit)
