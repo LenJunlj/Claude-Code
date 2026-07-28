@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Personal configs
+.claude/
+.obsidian/
+.vscode/
+
+# Temp / Debug
+_dbg_tmp/
+nul
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# OS
+Thumbs.db
+.DS_Store

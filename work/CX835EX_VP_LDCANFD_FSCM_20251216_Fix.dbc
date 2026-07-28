@@ -1,0 +1,1089 @@
+VERSION ""
+
+NS_ :
+ NS_DESC_
+ CM_
+ BA_DEF_
+ BA_DEF_DEF_
+ BA_DEF_DEF_REL_
+ BA_DEF_SGTYPE_
+ BA_DEF_REL_
+ BA_DEF_DEF_
+ BU_DEF_REL_
+ BA_
+ BA_DEF_
+ VAL_
+ CAT_DEF_
+ CAT_
+ FILTER
+ BA_DEF_DEF_
+ EV_DATA_
+ ENVVAR_DATA_
+ SGTYPE_
+ SGTYPE_VAL_
+ BA_DEF_SGTYPE_
+ BA_SGTYPE_
+ SIG_VALTYPE_
+ SIGTYPE_VALTYPE_
+ BO_TX_BU_
+ BA_DEF_REL_
+ BA_DEF_DEF_REL_
+ BA_REL_
+ BA_DEF_DEF_
+ BU_BO_REL_
+ BA_DEF_
+ BU_SGP_REL_
+ BU_SGT_REL_
+ SG_MUL_VAL_
+
+BS_:
+
+BU_: CCU FSCM LH SOA SSCM ZCUL
+
+BO_ 291 CCU_VCU_Sts_0x123: 8 CCU
+ SG_ VCU_GearSelectorReq : 15|4@1+ (1,0) [0|14] "" FSCM
+
+BO_ 545 CGW_ABS_Sts_0x221: 8 CCU
+ SG_ ABS_VehSpdLgt : 35|12@1+ (0.05625,0) [0|230.287] "Kph" FSCM
+ SG_ ABS_VehSpdLgtStatus : 55|2@1+ (1,0) [0|1] "" FSCM
+
+BO_ 706 CGW_ZCUR_DoorSts_0x2C2: 32 CCU
+ SG_ SecondRPassengerSittingSts : 67|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 710 CCU_FSCMCTRL_0x2C6: 16 CCU
+ SG_ LFSeatForeAftPosCtrl : 7|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ LFSeatUpDownPosCtrl : 15|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ LFSeatBackRestPosCtrl : 23|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ LFSeatFootRestPosCtrl : 31|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ RFSeatForeAftPosCtrl : 39|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ LFSeatUpDownStsCtrl : 44|3@1+ (1,0) [0|7] "" FSCM
+ SG_ LFSeatForeAftStsCtrl : 47|3@1+ (1,0) [0|7] "" FSCM
+ SG_ RFSeatUpDownStsCtrl : 58|3@1+ (1,0) [0|7] "" FSCM
+ SG_ RFSeatForeAftStsCtrl : 61|3@1+ (1,0) [0|7] "" FSCM
+ SG_ RFSeatHeadRestPosCtrl : 62|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LFSeatHeadRestPosCtrl : 63|1@1+ (1,0) [0|1] "" FSCM
+ SG_ RFSeatUpDownPosCtrl : 71|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ RFSeatBackRestPosCtrl : 79|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ RFSeatFootRestPosCtrl : 87|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ RFSeatFootRestStsCtrl : 95|3@1+ (1,0) [0|7] "" FSCM
+ SG_ LFSeatFootRestStsCtrl : 98|3@1+ (1,0) [0|7] "" FSCM
+ SG_ LFSeatBackRestStsCtrl : 101|3@1+ (1,0) [0|7] "" FSCM
+ SG_ RFSeatBackRestStsCtrl : 111|3@1+ (1,0) [0|7] "" FSCM
+
+BO_ 711 CCU_RSCMCTRL_0x2C7: 8 CCU
+ SG_ LRSeatBackRestPosCtrl : 7|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ RRSeatBackRestPosCtrl : 15|8@1+ (0.5,0) [0|100.5] "percent" FSCM
+ SG_ RRSeatBackRestStsCtrl : 20|3@1+ (1,0) [0|7] "" FSCM
+ SG_ LRSeatBackRestStsCtrl : 23|3@1+ (1,0) [0|7] "" FSCM
+
+BO_ 712 CCU_MirrorCTRL_0x2C8: 8 CCU
+ SG_ MirrorLeftAdjustXAnglePosCtrl : 7|8@1+ (1,0) [0|101] "percent" FSCM
+ SG_ MirrorLeftAdjustYAnglePosCtrl : 15|8@1+ (1,0) [0|101] "percent" FSCM
+ SG_ MirrorRightAdjustXAnglePosCtrl : 23|8@1+ (1,0) [0|101] "percent" FSCM
+ SG_ MirrorRightAdjustYAnglePosCtrl : 31|8@1+ (1,0) [0|101] "percent" FSCM
+ SG_ MirrorRightAdjustXAngleCtrl : 33|3@1+ (1,0) [0|7] "" FSCM
+ SG_ MirrorLeftAdjustYAngleCtrl : 36|3@1+ (1,0) [0|7] "" FSCM
+ SG_ MirrorLeftAdjustXAngleCtrl : 39|3@1+ (1,0) [0|7] "" FSCM
+ SG_ MirrorRightAdjustYAngleCtrl : 46|3@1+ (1,0) [0|7] "" FSCM
+
+BO_ 784 CCU_Door_0x310: 8 CCU
+ SG_ DoorStsFrntPassenger : 5|2@1+ (1,0) [0|3] "" FSCM
+ SG_ DoorStsDriver : 7|2@1+ (1,0) [0|3] "" FSCM
+
+BO_ 801 CCU_Body_0x321: 8 CCU
+ SG_ UsageMode : 1|2@1+ (1,0) [0|3] "" FSCM
+
+BO_ 848 CGW_RCM_0x350: 8 CCU
+ SG_ SecondRSeatBeltBuckledSts : 11|2@1+ (1,0) [0|3] "" FSCM
+ SG_ SecondMSeatBeltBuckledSts : 13|2@1+ (1,0) [0|3] "" FSCM
+ SG_ SecondLSeatBeltBuckledSts : 15|2@1+ (1,0) [0|3] "" FSCM
+
+BO_ 1104 ZCU_L_NM_0x450: 8 ZCUL
+ SG_ ZCU_LNMDestAddr : 7|8@1+ (1,0) [0|255] "" FSCM
+ SG_ ZCU_LRepeatMessageRequest : 8|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LActiveWakeUpBit : 12|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LNMWakeUp : 16|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LPowerSourceWakeUp : 17|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LDiagnosticWakeUp : 18|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LLocalConditionsActiveWakeUp : 19|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LNetworkManagementStatus : 31|8@1+ (1,0) [0|255] "" FSCM
+ SG_ ZCU_LTimerDontTimeOutKeepCANbusAwake : 32|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LPowerSourceKeepCANbusAwake : 33|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LInDiagnosticSessionKeepCANbusAwake : 34|1@1+ (1,0) [0|1] "" FSCM
+ SG_ ZCU_LLocalConditionsActiveKeepCANbusAwake : 35|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1108 FSCM_NM_0x454: 8 FSCM
+ SG_ FSCMNMDestAddr : 7|8@1+ (1,0) [0|255] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMRepeatMessageRequest : 8|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMActiveWakeUpBit : 12|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMNMWakeUp : 16|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMPowerSourceWakeUp : 17|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMDiagnosticWakeUp : 18|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMLocalConditionsActiveWakeUp : 19|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMNetworkManagementStatus : 31|8@1+ (1,0) [0|255] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMTimerDontTimeOutKeepCANbusAwake : 32|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMPowerSourceKeepCANbusAwake : 33|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMInDiagnosticSessionKeepCANbusAwake : 34|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+ SG_ FSCMLocalConditionsActiveKeepCANbusAwake : 35|1@1+ (1,0) [0|1] "" CCU,LH,SSCM,ZCUL
+
+BO_ 1110 LH_NM_0x456: 8 LH
+ SG_ LHNMDestAddr : 7|8@1+ (1,0) [0|255] "" FSCM
+ SG_ LHRepeatMessageRequest : 8|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHActiveWakeUpBit : 12|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHNMWakeUp : 16|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHPowerSourceWakeUp : 17|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHDiagnosticWakeUp : 18|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHLocalConditionsActiveWakeUp : 19|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHNetworkManagementStatus : 31|8@1+ (1,0) [0|255] "" FSCM
+ SG_ LHTimerDontTimeOutKeepCANbusAwake : 32|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHPowerSourceKeepCANbusAwake : 33|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHInDiagnosticSessionKeepCANbusAwake : 34|1@1+ (1,0) [0|1] "" FSCM
+ SG_ LHLocalConditionsActiveKeepCANbusAwake : 35|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1112 SSCM_NM_0x458: 8 SSCM
+ SG_ SSCMNMDestAddr : 7|8@1+ (1,0) [0|255] "" FSCM
+ SG_ SSCMRepeatMessageRequest : 8|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMActiveWakeUpBit : 12|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMNMWakeUp : 16|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMPowerSourceWakeUp : 17|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMDiagnosticWakeUp : 18|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMLocalConditionsActiveWakeUp : 19|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMNetworkManagementStatus : 31|8@1+ (1,0) [0|255] "" FSCM
+ SG_ SSCMTimerDontTimeOutKeepCANbusAwake : 32|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMPowerSourceKeepCANbusAwake : 33|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMInDiagnosticSessionKeepCANbusAwake : 34|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SSCMLocalConditionsActiveKeepCANbusAwake : 35|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1120 CCU_NM_0x460: 8 CCU
+ SG_ CCUNMDestAddr : 7|8@1+ (1,0) [0|255] "" FSCM
+ SG_ CCURepeatMessageRequest : 8|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUActiveWakeUpBit : 12|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUNMWakeUp : 16|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUPowerSourceWakeUp : 17|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUDiagnosticWakeUp : 18|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCULocalConditionsActiveWakeUp : 19|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUNetworkManagementStatus : 31|8@1+ (1,0) [0|255] "" FSCM
+ SG_ CCUTimerDontTimeOutKeepCANbusAwake : 32|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUPowerSourceKeepCANbusAwake : 33|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCUInDiagnosticSessionKeepCANbusAwake : 34|1@1+ (1,0) [0|1] "" FSCM
+ SG_ CCULocalConditionsActiveKeepCANbusAwake : 35|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1264 CCU_BodySet_0x4F0: 16 CCU
+ SG_ LFSeatComfortSwtSts : 63|1@1+ (1,0) [0|1] "" FSCM
+ SG_ RFSeatComfortSwtSts : 71|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1265 CCU_BodyDisplay_0x4F1: 32 CCU
+ SG_ MirrorOverturnSwtSts : 47|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1295 FSCM_Right_0x50F: 32 FSCM
+ SG_ RFSeatUpDownSts : 3|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ RFSeatForeAftSts : 7|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ RFSeatForeAftPosSts : 15|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ RFSeatUpDownPosSts : 23|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ RFSeatForeAftSwtSts : 27|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ RFSeatBackRestSts : 31|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ RFSeatBackRestPosSts : 39|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ RFSeatFootRestSts : 43|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ RFSeatUpDownSwtSts : 47|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ RFSeatForeAftMotCurrent : 49|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ RFSeatFootRestMothallErrorSts : 50|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ RFSeatFootRestMotErrorSts : 52|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatBackRestSwtSts : 55|3@1+ (1,0) [0|4] "" CCU,SOA
+ SG_ RFSeatUpDownMotCurrent : 56|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ RFSeatBackRestMotCurrent : 73|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ RFSeatFootRestSwtSts : 79|3@1+ (1,0) [0|4] "" CCU,SOA
+ SG_ RFSeatFootRestPosSts : 95|8@1+ (0.5,0) [0|100.5] "" CCU,SOA
+ SG_ RFSeatForeAftMotHall : 103|11@1+ (1,0) [0|1500] "" CCU,SOA
+ SG_ RFSeatForeAftMothallErrorSts : 104|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ RFSeatBackRestAntipinchSts : 106|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatForeAftAntipinchSts : 108|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatUpDownMotHall : 119|11@1+ (1,0) [0|1500] "" CCU,SOA
+ SG_ RFSeatUpDownMothallErrorSts : 120|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ RFSeatUpDownMotErrorSts : 122|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatForeAftMotErrorSts : 124|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatFootRestMotHall : 135|11@1+ (1,0) [0|1500] "" CCU,SOA
+ SG_ RFSeatBackRestMothallErrorSts : 136|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ RFSeatFootRestMotCalSts : 138|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatBackRestMotErrorSts : 140|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatFootRestMotCurrent : 151|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ RFSeatAdj_IVI_Interface_Req : 152|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ RFSeatUpDownMotCalSts : 154|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatForeAftMotCalSts : 156|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatBackRestMotHall : 161|13@1+ (1,0) [0|5000] "" CCU,SOA
+ SG_ RFSeatOperationTargetPosSts : 163|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ FSCMMotCalSts : 165|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatBackRestMotCalSts : 167|2@1+ (1,0) [0|3] "" CCU,SOA
+
+BO_ 1296 CGW_CDC_IC_0x510: 8 CCU
+ SG_ IC_OdometerMasterValue : 7|24@1+ (0.1,0) [0|999999] "Km" FSCM
+
+BO_ 1297 FSCM_Mirror0x511: 32 FSCM
+ SG_ MirrorRightAdjustYAngleSts : 1|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorRightAdjustXAngleSts : 3|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorLeftAdjustYAngleSts : 5|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorLeftAdjustXAngleSts : 7|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorLeftAdjustXAnglePosSts : 15|8@1+ (1,0) [0|100] "percent" CCU,SOA
+ SG_ MirrorLeftAdjustYAnglePosSts : 23|8@1+ (1,0) [0|100] "percent" CCU,SOA
+ SG_ MirrorRightAdjustXAnglePosSts : 31|8@1+ (1,0) [0|100] "percent" CCU,SOA
+ SG_ MirrorRightAdjustYAnglePosSts : 39|8@1+ (1,0) [0|100] "percent" CCU,SOA
+ SG_ MirrorLeftAdjustXAngleMotResistance : 47|9@1+ (10,0) [0|3500] "ohm" CCU,SOA
+ SG_ MirrorLeftAdjustYAngleMotResistance : 54|9@1+ (10,0) [0|3500] "ohm" CCU,SOA
+ SG_ MirrorRightAdjustXAngleMotResistance : 61|9@1+ (10,0) [0|3500] "ohm" CCU,SOA
+ SG_ MirrorRightAdjustYAngleMotResistance : 68|9@1+ (10,0) [0|3500] "ohm" CCU,SOA
+ SG_ MirrorRightOperationTargetPosSts : 73|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorLeftOperationTargetPosSts : 75|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorRightAdjustUpDownMotErrorSts : 81|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorRightAdjustLeftRightMotErrorSts : 83|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorLeftAdjustUpDownMotErrorSts : 85|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ MirrorLeftAdjustLeftRightMotErrorSts : 87|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ RFSeatHeadRestActuateSts : 94|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ LFSeatHeadRestActuateSts : 95|1@1+ (1,0) [0|1] "" CCU,SOA
+
+BO_ 1303 FSCM_Left_0x517: 32 FSCM
+ SG_ LFSeatUpDownSts : 3|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ LFSeatForeAftSts : 7|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ LFSeatForeAftPosSts : 15|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ LFSeatUpDownPosSts : 23|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ LFSeatFootRestSts : 27|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ LFSeatBackRestSts : 31|4@1+ (1,0) [0|8] "" CCU,SOA
+ SG_ LFSeatBackRestPosSts : 39|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ LFSeatFootRestPosSts : 47|8@1+ (0.5,0) [0|100.5] "percent" CCU,SOA
+ SG_ LFSeatForeAftMotCurrent : 49|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ LFSeatUpDownSwtSts : 52|3@1+ (1,0) [0|4] "" CCU,SOA
+ SG_ LFSeatForeAftSwtSts : 55|3@1+ (1,0) [0|4] "" CCU,SOA
+ SG_ LFSeatUpDownMotCurrent : 56|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ LFSeatBackRestMotCurrent : 73|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ LFSeatFootRestSwtSts : 76|3@1+ (1,0) [0|4] "" CCU,SOA
+ SG_ LFSeatBackRestSwtSts : 79|3@1+ (1,0) [0|4] "" CCU,SOA
+ SG_ LFSeatFootRestMotCurrent : 80|9@1+ (0.1,0) [0|30] "A" CCU,SOA
+ SG_ LFSeatForeAftMotHall : 103|11@1+ (1,0) [0|1500] "" CCU,SOA
+ SG_ LFSeatForeAftMothallErrorSts : 104|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ LFSeatBackRestAntipinchSts : 106|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatForeAftAntipinchSts : 108|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatUpDownMotHall : 119|11@1+ (1,0) [0|1500] "" CCU,SOA
+ SG_ LFSeatUpDownMothallErrorSts : 120|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ LFSeatUpDownMotErrorSts : 122|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatForeAftMotErrorSts : 124|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatBackRestMothallErrorSts : 136|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ LFSeatFootRestMotErrorSts : 138|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatBackRestMotErrorSts : 140|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatFootRestMotHall : 151|11@1+ (1,0) [0|1500] "" CCU,SOA
+ SG_ LFSeatFootRestMothallErrorSts : 152|1@1+ (1,0) [0|1] "" CCU,SOA
+ SG_ LFSeatUpDownMotCalSts : 154|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatForeAftMotCalSts : 156|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatBackRestMotHall : 161|13@1+ (1,0) [0|5000] "" CCU,SOA
+ SG_ LFSeatOperationTargetPosSts : 163|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatFootRestMotCalSts : 165|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatBackRestMotCalSts : 167|2@1+ (1,0) [0|3] "" CCU,SOA
+ SG_ LFSeatAdj_IVI_Interface_Req : 180|1@1+ (1,0) [0|1] "" CCU,SOA
+
+BO_ 1412 CCU_0x584: 8 CCU
+ SG_ CarMode : 7|3@1+ (1,0) [0|7] "" FSCM
+
+BO_ 1443 RSCM_0x5A3: 8 FSCM
+ SG_ RRSeatBackRestSwtSts : 4|3@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatBackRestSwtSts : 7|3@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ RRSeatBackRestTrunkSwtSts : 12|3@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatBackRestTrunkSwtSts : 15|3@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatBackRestPosSts : 23|8@1+ (0.5,0) [0|100.5] "percent" CCU,ZCUL
+ SG_ RRSeatBackRestPosSts : 31|8@1+ (0.5,0) [0|100.5] "percent" CCU,ZCUL
+ SG_ RRSeatBackMotErrorSts : 33|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatBackMotErrorSts : 35|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ RRSeatBackRestAntipinchSts : 37|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatBackRestAntipinchSts : 39|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ RSCMMotCalSts : 41|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ RRSeatBackMotCalSts : 43|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatBackMotCalSts : 45|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ RRSeatBackMothallErrorSts : 46|1@1+ (1,0) [0|1] "" CCU,ZCUL
+ SG_ LRSeatBackMothallErrorSts : 47|1@1+ (1,0) [0|1] "" CCU,ZCUL
+ SG_ LRSeatBackRestSts : 51|4@1+ (1,0) [0|8] "" CCU,ZCUL
+ SG_ RRSeatOperationTargetPosSts : 53|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ LRSeatOperationTargetPosSts : 55|2@1+ (1,0) [0|3] "" CCU,ZCUL
+ SG_ RRSeatBackRestSts : 63|4@1+ (1,0) [0|8] "" CCU,ZCUL
+
+BO_ 1448 ZCUL_VehSts_0x5A8: 32 ZCUL
+ SG_ SecondMPassengerSittingSts : 70|1@1+ (1,0) [0|1] "" FSCM
+ SG_ SecondLPassengerSittingSts : 71|1@1+ (1,0) [0|1] "" FSCM
+
+BO_ 1452 RSCM_0x5AC: 8 FSCM
+ SG_ LRSeatBackRestMotCurrent : 7|9@1+ (0.1,0) [0|30] "A" ZCUL
+ SG_ RRSeatBackRestMotCurrent : 14|9@1+ (0.1,0) [0|30] "A" ZCUL
+ SG_ LRSeatBackRestMotHall : 21|13@1+ (1,0) [0|5000] "" ZCUL
+ SG_ RRSeatBackRestMotHall : 24|13@1+ (1,0) [0|5000] "" ZCUL
+
+BO_ 1955 Tester_DiagReqToFSCM: 8 CCU
+ SG_ DiagReqToFSCM : 7|64@1+ (1,0) [0|1.84467e+19] "" FSCM
+
+BO_ 1963 FSCM_DiagResp: 8 FSCM
+ SG_ DiagRespFromFSCM : 7|64@1+ (1,0) [0|1.84467e+19] "" CCU
+
+BO_ 2015 Tester_DiagFuncReq: 8 CCU
+ SG_ DiagFuncReq : 7|64@1+ (1,0) [0|1.84467e+19] "" FSCM
+
+CM_ SG_ 291 VCU_GearSelectorReq "Actual transmission Gear lever position based on the Transmission range selected by driver.";
+CM_ SG_ 545 ABS_VehSpdLgt "Current Longitudinal Vehicle Speed refer to Veh speed cal tab for detail.";
+CM_ SG_ 545 ABS_VehSpdLgtStatus "Vehicle speed value valid";
+CM_ SG_ 712 MirrorLeftAdjustXAnglePosCtrl "X";
+CM_ SG_ 712 MirrorLeftAdjustYAnglePosCtrl "Y";
+CM_ SG_ 712 MirrorRightAdjustXAnglePosCtrl "X";
+CM_ SG_ 712 MirrorRightAdjustYAnglePosCtrl "Y";
+CM_ SG_ 712 MirrorRightAdjustXAngleCtrl "X";
+CM_ SG_ 712 MirrorLeftAdjustYAngleCtrl "Y";
+CM_ SG_ 712 MirrorLeftAdjustXAngleCtrl "X";
+CM_ SG_ 712 MirrorRightAdjustYAngleCtrl "Y";
+CM_ SG_ 848 SecondRSeatBeltBuckledSts "The signal value shall be updated based on the status of second row Right saet belt switch";
+CM_ SG_ 848 SecondMSeatBeltBuckledSts "The signal value shall be updated based on the status of second row Middle seat belt switch";
+CM_ SG_ 848 SecondLSeatBeltBuckledSts "The signal value shall be updated based on the status of second row left seat belt switch";
+CM_ SG_ 1104 ZCU_LNMDestAddr "AUTOSAR NM destination address";
+CM_ SG_ 1104 ZCU_LRepeatMessageRequest "ZCU_L Repeat Message Request";
+CM_ SG_ 1104 ZCU_LActiveWakeUpBit "ZCU_L Active Wake Up Bit";
+CM_ SG_ 1104 ZCU_LNMWakeUp "ZCU_L NM Wake Up";
+CM_ SG_ 1104 ZCU_LPowerSourceWakeUp "ZCU_L Power Source Wake Up";
+CM_ SG_ 1104 ZCU_LDiagnosticWakeUp "ZCU_L Diagnostic Wake Up";
+CM_ SG_ 1104 ZCU_LLocalConditionsActiveWakeUp "ZCU_L Local Conditions Active Wake Up";
+CM_ SG_ 1104 ZCU_LNetworkManagementStatus "ZCU_L Network Management Status";
+CM_ SG_ 1104 ZCU_LTimerDontTimeOutKeepCANbusAwake "ZCU_L TimerDontTimeOutKeepCANbusAwake";
+CM_ SG_ 1104 ZCU_LPowerSourceKeepCANbusAwake "ZCU_L PowerSourceKeepCANbusAwake";
+CM_ SG_ 1104 ZCU_LInDiagnosticSessionKeepCANbusAwake "ZCU_L InDiagnosticSessionKeepCANbusAwake";
+CM_ SG_ 1104 ZCU_LLocalConditionsActiveKeepCANbusAwake "ZCU_L LocalConditionsActiveKeepCANbusAwake";
+CM_ SG_ 1108 FSCMNMDestAddr "AUTOSAR NM destination address";
+CM_ SG_ 1108 FSCMRepeatMessageRequest "BLE Repeat Message Request";
+CM_ SG_ 1108 FSCMActiveWakeUpBit "BLE Active Wake Up Bit";
+CM_ SG_ 1108 FSCMNMWakeUp "BLE NM Wake Up";
+CM_ SG_ 1108 FSCMPowerSourceWakeUp "BLE Power Source Wake Up";
+CM_ SG_ 1108 FSCMDiagnosticWakeUp "BLE Diagnostic Wake Up";
+CM_ SG_ 1108 FSCMLocalConditionsActiveWakeUp "BLE Local Conditions Active Wake Up";
+CM_ SG_ 1108 FSCMNetworkManagementStatus "BLE Network Management Status";
+CM_ SG_ 1108 FSCMTimerDontTimeOutKeepCANbusAwake "BLE TimerDontTimeOutKeepCANbusAwake";
+CM_ SG_ 1108 FSCMPowerSourceKeepCANbusAwake "BLE PowerSourceKeepCANbusAwake";
+CM_ SG_ 1108 FSCMInDiagnosticSessionKeepCANbusAwake "BLE InDiagnosticSessionKeepCANbusAwake";
+CM_ SG_ 1108 FSCMLocalConditionsActiveKeepCANbusAwake "BLE LocalConditionsActiveKeepCANbusAwake";
+CM_ SG_ 1110 LHNMDestAddr "AUTOSAR NM destination address";
+CM_ SG_ 1110 LHRepeatMessageRequest "LH Repeat Message Request";
+CM_ SG_ 1110 LHActiveWakeUpBit "LH Active Wake Up Bit";
+CM_ SG_ 1110 LHNMWakeUp "LH NM Wake Up";
+CM_ SG_ 1110 LHPowerSourceWakeUp "LH Power Source Wake Up";
+CM_ SG_ 1110 LHDiagnosticWakeUp "LH Diagnostic Wake Up";
+CM_ SG_ 1110 LHLocalConditionsActiveWakeUp "LH Local Conditions Active Wake Up";
+CM_ SG_ 1110 LHNetworkManagementStatus "LH Network Management Status";
+CM_ SG_ 1110 LHTimerDontTimeOutKeepCANbusAwake "LH TimerDontTimeOutKeepCANbusAwake";
+CM_ SG_ 1110 LHPowerSourceKeepCANbusAwake "LH PowerSourceKeepCANbusAwake";
+CM_ SG_ 1110 LHInDiagnosticSessionKeepCANbusAwake "LH InDiagnosticSessionKeepCANbusAwake";
+CM_ SG_ 1110 LHLocalConditionsActiveKeepCANbusAwake "LH LocalConditionsActiveKeepCANbusAwake";
+CM_ SG_ 1112 SSCMNMDestAddr "AUTOSAR NM destination address";
+CM_ SG_ 1112 SSCMRepeatMessageRequest "CCU Repeat Message Request";
+CM_ SG_ 1112 SSCMActiveWakeUpBit "CCU Active Wake Up Bit";
+CM_ SG_ 1112 SSCMNMWakeUp "CCU NM Wake Up";
+CM_ SG_ 1112 SSCMPowerSourceWakeUp "CCU Power Source Wake Up";
+CM_ SG_ 1112 SSCMDiagnosticWakeUp "CCU Diagnostic Wake Up";
+CM_ SG_ 1112 SSCMLocalConditionsActiveWakeUp "CCU Local Conditions Active Wake Up";
+CM_ SG_ 1112 SSCMNetworkManagementStatus "CCU Network Management Status";
+CM_ SG_ 1112 SSCMTimerDontTimeOutKeepCANbusAwake "CCU TimerDontTimeOutKeepCANbusAwake";
+CM_ SG_ 1112 SSCMPowerSourceKeepCANbusAwake "CCU PowerSourceKeepCANbusAwake";
+CM_ SG_ 1112 SSCMInDiagnosticSessionKeepCANbusAwake "CCU InDiagnosticSessionKeepCANbusAwake";
+CM_ SG_ 1112 SSCMLocalConditionsActiveKeepCANbusAwake "CCU LocalConditionsActiveKeepCANbusAwake";
+CM_ SG_ 1120 CCUNMDestAddr "AUTOSAR NM destination address";
+CM_ SG_ 1120 CCURepeatMessageRequest "CCU Repeat Message Request";
+CM_ SG_ 1120 CCUActiveWakeUpBit "CCU Active Wake Up Bit";
+CM_ SG_ 1120 CCUNMWakeUp "CCU NM Wake Up";
+CM_ SG_ 1120 CCUPowerSourceWakeUp "CCU Power Source Wake Up";
+CM_ SG_ 1120 CCUDiagnosticWakeUp "CCU Diagnostic Wake Up";
+CM_ SG_ 1120 CCULocalConditionsActiveWakeUp "CCU Local Conditions Active Wake Up";
+CM_ SG_ 1120 CCUNetworkManagementStatus "CCU Network Management Status";
+CM_ SG_ 1120 CCUTimerDontTimeOutKeepCANbusAwake "CCU TimerDontTimeOutKeepCANbusAwake";
+CM_ SG_ 1120 CCUPowerSourceKeepCANbusAwake "CCU PowerSourceKeepCANbusAwake";
+CM_ SG_ 1120 CCUInDiagnosticSessionKeepCANbusAwake "CCU InDiagnosticSessionKeepCANbusAwake";
+CM_ SG_ 1120 CCULocalConditionsActiveKeepCANbusAwake "CCU LocalConditionsActiveKeepCANbusAwake";
+CM_ SG_ 1296 IC_OdometerMasterValue "Odometer Record from the IPC (Instrument Panel Cluster).";
+CM_ SG_ 1297 MirrorRightAdjustYAngleSts "Y";
+CM_ SG_ 1297 MirrorRightAdjustXAngleSts "X";
+CM_ SG_ 1297 MirrorLeftAdjustYAngleSts "Y";
+CM_ SG_ 1297 MirrorLeftAdjustXAngleSts "X";
+CM_ SG_ 1297 MirrorLeftAdjustXAnglePosSts "X";
+CM_ SG_ 1297 MirrorLeftAdjustYAnglePosSts "Y";
+CM_ SG_ 1297 MirrorRightAdjustXAnglePosSts "X";
+CM_ SG_ 1297 MirrorRightAdjustYAnglePosSts "Y";
+CM_ SG_ 1297 MirrorLeftAdjustXAngleMotResistance "X";
+CM_ SG_ 1297 MirrorLeftAdjustYAngleMotResistance "Y";
+CM_ SG_ 1297 MirrorRightAdjustXAngleMotResistance "X";
+CM_ SG_ 1297 MirrorRightAdjustYAngleMotResistance "Y";
+CM_ SG_ 1412 CarMode "Car Mode signal";
+CM_ SG_ 1955 DiagReqToFSCM "Diagnostic Physical Request to ECU";
+CM_ SG_ 1963 DiagRespFromFSCM "Diagnostic Response from ECU";
+CM_ SG_ 2015 DiagFuncReq "Diagnostic Functional Request from Tester";
+
+CM_ BO_ 291 "CCU_VCU_Sts_0x123";
+CM_ BO_ 545 "CGW_ABS_Sts_0x221";
+CM_ BO_ 706 "CGW_ZCUR_DoorSts_0x2C2";
+CM_ BO_ 710 "CCU_FSCMCTRL_0x2C6";
+CM_ BO_ 711 "CCU_RSCMCTRL_0x2C7";
+CM_ BO_ 712 "CCU_MirrorCTRL_0x2C8";
+CM_ BO_ 784 "CCU_Door_0x310";
+CM_ BO_ 801 "CCU_Body_0x321";
+CM_ BO_ 848 "CGW_RCM_0x350";
+CM_ BO_ 1104 "ZCU_L_NM_0x450";
+CM_ BO_ 1108 "FSCM_NM_0x454";
+CM_ BO_ 1110 "LH_NM_0x456";
+CM_ BO_ 1112 "SSCM_NM_0x458";
+CM_ BO_ 1120 "CCU_NM_0x460";
+CM_ BO_ 1264 "CCU_BodySet_0x4F0";
+CM_ BO_ 1265 "CCU_BodyDisplay_0x4F1";
+CM_ BO_ 1295 "FSCM_Right_0x50F";
+CM_ BO_ 1296 "CGW_CDC_IC_0x510";
+CM_ BO_ 1297 "FSCM_Mirror0x511";
+CM_ BO_ 1303 "FSCM_Left_0x517";
+CM_ BO_ 1412 "CCU_0x584";
+CM_ BO_ 1443 "RSCM_0x5A3";
+CM_ BO_ 1448 "ZCUL_VehSts_0x5A8";
+CM_ BO_ 1452 "RSCM_0x5AC";
+CM_ BO_ 1955 "Tester_DiagReqToFSCM";
+CM_ BO_ 1963 "FSCM_DiagResp";
+CM_ BO_ 2015 "Tester_DiagFuncReq";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_ "GenMsgSendType" STRING;
+
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "Cyclic";
+
+BA_ "GenMsgCycleTime" BO_ 291 10;
+BA_ "GenMsgSendType" BO_ 291 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 545 20;
+BA_ "GenMsgSendType" BO_ 545 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 706 20;
+BA_ "GenMsgSendType" BO_ 706 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 710 20;
+BA_ "GenMsgSendType" BO_ 710 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 711 20;
+BA_ "GenMsgSendType" BO_ 711 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 712 20;
+BA_ "GenMsgSendType" BO_ 712 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 784 20;
+BA_ "GenMsgSendType" BO_ 784 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 801 20;
+BA_ "GenMsgSendType" BO_ 801 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 848 100;
+BA_ "GenMsgSendType" BO_ 848 "CyclicAndEvent";
+BA_ "GenMsgCycleTime" BO_ 1104 0;
+BA_ "GenMsgSendType" BO_ 1104 "Event";
+BA_ "GenMsgCycleTime" BO_ 1108 0;
+BA_ "GenMsgSendType" BO_ 1108 "Event";
+BA_ "GenMsgCycleTime" BO_ 1110 0;
+BA_ "GenMsgSendType" BO_ 1110 "Event";
+BA_ "GenMsgCycleTime" BO_ 1112 0;
+BA_ "GenMsgSendType" BO_ 1112 "Event";
+BA_ "GenMsgCycleTime" BO_ 1120 0;
+BA_ "GenMsgSendType" BO_ 1120 "Event";
+BA_ "GenMsgCycleTime" BO_ 1264 100;
+BA_ "GenMsgSendType" BO_ 1264 "CyclicAndEvent";
+BA_ "GenMsgCycleTime" BO_ 1265 100;
+BA_ "GenMsgSendType" BO_ 1265 "CyclicAndEvent";
+BA_ "GenMsgCycleTime" BO_ 1295 100;
+BA_ "GenMsgSendType" BO_ 1295 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1296 100;
+BA_ "GenMsgSendType" BO_ 1296 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1297 100;
+BA_ "GenMsgSendType" BO_ 1297 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1303 100;
+BA_ "GenMsgSendType" BO_ 1303 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1412 200;
+BA_ "GenMsgSendType" BO_ 1412 "CyclicAndEvent";
+BA_ "GenMsgCycleTime" BO_ 1443 100;
+BA_ "GenMsgSendType" BO_ 1443 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1448 100;
+BA_ "GenMsgSendType" BO_ 1448 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1452 100;
+BA_ "GenMsgSendType" BO_ 1452 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1955 0;
+BA_ "GenMsgSendType" BO_ 1955 "Event";
+BA_ "GenMsgCycleTime" BO_ 1963 0;
+BA_ "GenMsgSendType" BO_ 1963 "Event";
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 "Event";
+
+VAL_ 291 VCU_GearSelectorReq 0 "P" ;
+VAL_ 291 VCU_GearSelectorReq 1 "L_Reserved" ;
+VAL_ 291 VCU_GearSelectorReq 2 "2_Reserved" ;
+VAL_ 291 VCU_GearSelectorReq 3 "3_Reserved" ;
+VAL_ 291 VCU_GearSelectorReq 5 "D" ;
+VAL_ 291 VCU_GearSelectorReq 6 "N" ;
+VAL_ 291 VCU_GearSelectorReq 7 "R" ;
+VAL_ 291 VCU_GearSelectorReq 8 "M" ;
+VAL_ 291 VCU_GearSelectorReq 9 "Init" ;
+VAL_ 291 VCU_GearSelectorReq 15 "Invalid" ;
+VAL_ 545 ABS_VehSpdLgtStatus 0 "Valid" ;
+VAL_ 545 ABS_VehSpdLgtStatus 1 "Invalid" ;
+VAL_ 706 SecondRPassengerSittingSts 0 "Off" ;
+VAL_ 706 SecondRPassengerSittingSts 1 "On" ;
+VAL_ 710 LFSeatUpDownStsCtrl 0 "no Cmd" ;
+VAL_ 710 LFSeatUpDownStsCtrl 1 "stop" ;
+VAL_ 710 LFSeatUpDownStsCtrl 2 "up" ;
+VAL_ 710 LFSeatUpDownStsCtrl 3 "down" ;
+VAL_ 710 LFSeatUpDownStsCtrl 4 "move to Target position" ;
+VAL_ 710 LFSeatForeAftStsCtrl 0 "no Cmd" ;
+VAL_ 710 LFSeatForeAftStsCtrl 1 "stop" ;
+VAL_ 710 LFSeatForeAftStsCtrl 2 "forward" ;
+VAL_ 710 LFSeatForeAftStsCtrl 3 "backward" ;
+VAL_ 710 LFSeatForeAftStsCtrl 4 "move to Target position" ;
+VAL_ 710 RFSeatUpDownStsCtrl 0 "no Cmd" ;
+VAL_ 710 RFSeatUpDownStsCtrl 1 "stop" ;
+VAL_ 710 RFSeatUpDownStsCtrl 2 "up" ;
+VAL_ 710 RFSeatUpDownStsCtrl 3 "down" ;
+VAL_ 710 RFSeatUpDownStsCtrl 4 "move to Target position" ;
+VAL_ 710 RFSeatForeAftStsCtrl 0 "no Cmd" ;
+VAL_ 710 RFSeatForeAftStsCtrl 1 "stop" ;
+VAL_ 710 RFSeatForeAftStsCtrl 2 "forward" ;
+VAL_ 710 RFSeatForeAftStsCtrl 3 "backward" ;
+VAL_ 710 RFSeatForeAftStsCtrl 4 "move to Target position" ;
+VAL_ 710 RFSeatHeadRestPosCtrl 0 "no Cmd" ;
+VAL_ 710 RFSeatHeadRestPosCtrl 1 "down" ;
+VAL_ 710 LFSeatHeadRestPosCtrl 0 "no Cmd" ;
+VAL_ 710 LFSeatHeadRestPosCtrl 1 "down" ;
+VAL_ 710 RFSeatFootRestStsCtrl 0 "no Cmd" ;
+VAL_ 710 RFSeatFootRestStsCtrl 1 "stop" ;
+VAL_ 710 RFSeatFootRestStsCtrl 2 "up" ;
+VAL_ 710 RFSeatFootRestStsCtrl 3 "down" ;
+VAL_ 710 RFSeatFootRestStsCtrl 4 "move to Target position" ;
+VAL_ 710 LFSeatFootRestStsCtrl 0 "no Cmd" ;
+VAL_ 710 LFSeatFootRestStsCtrl 1 "stop" ;
+VAL_ 710 LFSeatFootRestStsCtrl 2 "up" ;
+VAL_ 710 LFSeatFootRestStsCtrl 3 "down" ;
+VAL_ 710 LFSeatFootRestStsCtrl 4 "move to Target position" ;
+VAL_ 710 LFSeatBackRestStsCtrl 0 "no Cmd" ;
+VAL_ 710 LFSeatBackRestStsCtrl 1 "stop" ;
+VAL_ 710 LFSeatBackRestStsCtrl 2 "forward" ;
+VAL_ 710 LFSeatBackRestStsCtrl 3 "backward" ;
+VAL_ 710 LFSeatBackRestStsCtrl 4 "move to Target position" ;
+VAL_ 710 RFSeatBackRestStsCtrl 0 "no Cmd" ;
+VAL_ 710 RFSeatBackRestStsCtrl 1 "stop" ;
+VAL_ 710 RFSeatBackRestStsCtrl 2 "forward" ;
+VAL_ 710 RFSeatBackRestStsCtrl 3 "backward" ;
+VAL_ 710 RFSeatBackRestStsCtrl 4 "move to Target position" ;
+VAL_ 711 RRSeatBackRestStsCtrl 0 "no Cmd" ;
+VAL_ 711 RRSeatBackRestStsCtrl 1 "stop" ;
+VAL_ 711 RRSeatBackRestStsCtrl 2 "forward" ;
+VAL_ 711 RRSeatBackRestStsCtrl 3 "backward" ;
+VAL_ 711 RRSeatBackRestStsCtrl 4 "move to Target position" ;
+VAL_ 711 LRSeatBackRestStsCtrl 0 "no Cmd" ;
+VAL_ 711 LRSeatBackRestStsCtrl 1 "stop" ;
+VAL_ 711 LRSeatBackRestStsCtrl 2 "forward" ;
+VAL_ 711 LRSeatBackRestStsCtrl 3 "backward" ;
+VAL_ 711 LRSeatBackRestStsCtrl 4 "move to Target position" ;
+VAL_ 712 MirrorRightAdjustXAngleCtrl 0 "no Cmd" ;
+VAL_ 712 MirrorRightAdjustXAngleCtrl 1 "stop" ;
+VAL_ 712 MirrorRightAdjustXAngleCtrl 2 "left" ;
+VAL_ 712 MirrorRightAdjustXAngleCtrl 3 "right" ;
+VAL_ 712 MirrorRightAdjustXAngleCtrl 4 "move to Target position" ;
+VAL_ 712 MirrorLeftAdjustYAngleCtrl 0 "no Cmd" ;
+VAL_ 712 MirrorLeftAdjustYAngleCtrl 1 "stop" ;
+VAL_ 712 MirrorLeftAdjustYAngleCtrl 2 "up" ;
+VAL_ 712 MirrorLeftAdjustYAngleCtrl 3 "down" ;
+VAL_ 712 MirrorLeftAdjustYAngleCtrl 4 "move to Target position" ;
+VAL_ 712 MirrorLeftAdjustXAngleCtrl 0 "no Cmd" ;
+VAL_ 712 MirrorLeftAdjustXAngleCtrl 1 "stop" ;
+VAL_ 712 MirrorLeftAdjustXAngleCtrl 2 "left" ;
+VAL_ 712 MirrorLeftAdjustXAngleCtrl 3 "right" ;
+VAL_ 712 MirrorLeftAdjustXAngleCtrl 4 "move to Target position" ;
+VAL_ 712 MirrorRightAdjustYAngleCtrl 0 "no Cmd" ;
+VAL_ 712 MirrorRightAdjustYAngleCtrl 1 "stop" ;
+VAL_ 712 MirrorRightAdjustYAngleCtrl 2 "up" ;
+VAL_ 712 MirrorRightAdjustYAngleCtrl 3 "down" ;
+VAL_ 712 MirrorRightAdjustYAngleCtrl 4 "move to Target position" ;
+VAL_ 784 DoorStsFrntPassenger 0 "Reserved" ;
+VAL_ 784 DoorStsFrntPassenger 1 "Closed" ;
+VAL_ 784 DoorStsFrntPassenger 2 "Open" ;
+VAL_ 784 DoorStsFrntPassenger 3 "Fault" ;
+VAL_ 784 DoorStsDriver 0 "Reserved" ;
+VAL_ 784 DoorStsDriver 1 "Closed" ;
+VAL_ 784 DoorStsDriver 2 "Open" ;
+VAL_ 784 DoorStsDriver 3 "Fault_Reserved" ;
+VAL_ 801 UsageMode 0 "Standby" ;
+VAL_ 801 UsageMode 1 "Comfort" ;
+VAL_ 801 UsageMode 2 "Drive" ;
+VAL_ 801 UsageMode 3 "Abandoned" ;
+VAL_ 848 SecondRSeatBeltBuckledSts 0 "buckled" ;
+VAL_ 848 SecondRSeatBeltBuckledSts 1 "Reserved" ;
+VAL_ 848 SecondRSeatBeltBuckledSts 2 "unbuckled" ;
+VAL_ 848 SecondRSeatBeltBuckledSts 3 "Reserved" ;
+VAL_ 848 SecondMSeatBeltBuckledSts 0 "buckled" ;
+VAL_ 848 SecondMSeatBeltBuckledSts 1 "Reserved" ;
+VAL_ 848 SecondMSeatBeltBuckledSts 2 "unbuckled" ;
+VAL_ 848 SecondMSeatBeltBuckledSts 3 "Reserved" ;
+VAL_ 848 SecondLSeatBeltBuckledSts 0 "buckled" ;
+VAL_ 848 SecondLSeatBeltBuckledSts 1 "Reserved" ;
+VAL_ 848 SecondLSeatBeltBuckledSts 2 "unbuckled" ;
+VAL_ 848 SecondLSeatBeltBuckledSts 3 "Reserved" ;
+VAL_ 1104 ZCU_LRepeatMessageRequest 0 "Repeat message state not requested" ;
+VAL_ 1104 ZCU_LRepeatMessageRequest 1 "Repeat message state requested" ;
+VAL_ 1104 ZCU_LActiveWakeUpBit 0 "Node has not woken up the network(passive wakeup)" ;
+VAL_ 1104 ZCU_LActiveWakeUpBit 1 "Node has woken up the network(active wakeup)" ;
+VAL_ 1104 ZCU_LNMWakeUp 0 "Not active" ;
+VAL_ 1104 ZCU_LNMWakeUp 1 "Active" ;
+VAL_ 1104 ZCU_LPowerSourceWakeUp 0 "Not active" ;
+VAL_ 1104 ZCU_LPowerSourceWakeUp 1 "Active" ;
+VAL_ 1104 ZCU_LDiagnosticWakeUp 0 "Not active" ;
+VAL_ 1104 ZCU_LDiagnosticWakeUp 1 "Active" ;
+VAL_ 1104 ZCU_LLocalConditionsActiveWakeUp 0 "Not active" ;
+VAL_ 1104 ZCU_LLocalConditionsActiveWakeUp 1 "Active" ;
+VAL_ 1104 ZCU_LNetworkManagementStatus 1 "NM in state Repeat Message (transition from Bus sleep mode)" ;
+VAL_ 1104 ZCU_LNetworkManagementStatus 2 "NM in state Repeat Message (transition from Prepare Bus slee" ;
+VAL_ 1104 ZCU_LNetworkManagementStatus 4 "NM in state Normal Operation (transition from Repeat Message" ;
+VAL_ 1104 ZCU_LNetworkManagementStatus 8 "NM in state Normal Operation (transition from Ready Sleep)" ;
+VAL_ 1104 ZCU_LNetworkManagementStatus 16 "NM in state RepeatMessage (transition from ReadySleep)" ;
+VAL_ 1104 ZCU_LNetworkManagementStatus 32 "NM in state RepeatMessage (transition from NormalOperation)" ;
+VAL_ 1104 ZCU_LTimerDontTimeOutKeepCANbusAwake 0 "Not active" ;
+VAL_ 1104 ZCU_LTimerDontTimeOutKeepCANbusAwake 1 "Active" ;
+VAL_ 1104 ZCU_LPowerSourceKeepCANbusAwake 0 "Not active" ;
+VAL_ 1104 ZCU_LPowerSourceKeepCANbusAwake 1 "Active" ;
+VAL_ 1104 ZCU_LInDiagnosticSessionKeepCANbusAwake 0 "Not active" ;
+VAL_ 1104 ZCU_LInDiagnosticSessionKeepCANbusAwake 1 "Active" ;
+VAL_ 1104 ZCU_LLocalConditionsActiveKeepCANbusAwake 0 "Not active" ;
+VAL_ 1104 ZCU_LLocalConditionsActiveKeepCANbusAwake 1 "Active" ;
+VAL_ 1108 FSCMRepeatMessageRequest 0 "Repeat message state not requested" ;
+VAL_ 1108 FSCMRepeatMessageRequest 1 "Repeat message state requested" ;
+VAL_ 1108 FSCMActiveWakeUpBit 0 "Node has not woken up the network(passive wakeup)" ;
+VAL_ 1108 FSCMActiveWakeUpBit 1 "Node has woken up the network(active wakeup)" ;
+VAL_ 1108 FSCMNMWakeUp 0 "Not active" ;
+VAL_ 1108 FSCMNMWakeUp 1 "Active" ;
+VAL_ 1108 FSCMPowerSourceWakeUp 0 "Not active" ;
+VAL_ 1108 FSCMPowerSourceWakeUp 1 "Active" ;
+VAL_ 1108 FSCMDiagnosticWakeUp 0 "Not active" ;
+VAL_ 1108 FSCMDiagnosticWakeUp 1 "Active" ;
+VAL_ 1108 FSCMLocalConditionsActiveWakeUp 0 "Not active" ;
+VAL_ 1108 FSCMLocalConditionsActiveWakeUp 1 "Active" ;
+VAL_ 1108 FSCMNetworkManagementStatus 1 "NM in state Repeat Message (transition from Bus sleep mode)" ;
+VAL_ 1108 FSCMNetworkManagementStatus 2 "NM in state Repeat Message (transition from Prepare Bus slee" ;
+VAL_ 1108 FSCMNetworkManagementStatus 4 "NM in state Normal Operation (transition from Repeat Message" ;
+VAL_ 1108 FSCMNetworkManagementStatus 8 "NM in state Normal Operation (transition from Ready Sleep)" ;
+VAL_ 1108 FSCMNetworkManagementStatus 16 "NM in state RepeatMessage (transition from ReadySleep)" ;
+VAL_ 1108 FSCMNetworkManagementStatus 32 "NM in state RepeatMessage (transition from NormalOperation)" ;
+VAL_ 1108 FSCMTimerDontTimeOutKeepCANbusAwake 0 "Not active" ;
+VAL_ 1108 FSCMTimerDontTimeOutKeepCANbusAwake 1 "Active" ;
+VAL_ 1108 FSCMPowerSourceKeepCANbusAwake 0 "Not active" ;
+VAL_ 1108 FSCMPowerSourceKeepCANbusAwake 1 "Active" ;
+VAL_ 1108 FSCMInDiagnosticSessionKeepCANbusAwake 0 "Not active" ;
+VAL_ 1108 FSCMInDiagnosticSessionKeepCANbusAwake 1 "Active" ;
+VAL_ 1108 FSCMLocalConditionsActiveKeepCANbusAwake 0 "Not active" ;
+VAL_ 1108 FSCMLocalConditionsActiveKeepCANbusAwake 1 "Active" ;
+VAL_ 1110 LHRepeatMessageRequest 0 "Repeat message state not requested" ;
+VAL_ 1110 LHRepeatMessageRequest 1 "Repeat message state requested" ;
+VAL_ 1110 LHActiveWakeUpBit 0 "Node has not woken up the network(passive wakeup)" ;
+VAL_ 1110 LHActiveWakeUpBit 1 "Node has woken up the network(active wakeup)" ;
+VAL_ 1110 LHNMWakeUp 0 "Not active" ;
+VAL_ 1110 LHNMWakeUp 1 "Active" ;
+VAL_ 1110 LHPowerSourceWakeUp 0 "Not active" ;
+VAL_ 1110 LHPowerSourceWakeUp 1 "Active" ;
+VAL_ 1110 LHDiagnosticWakeUp 0 "Not active" ;
+VAL_ 1110 LHDiagnosticWakeUp 1 "Active" ;
+VAL_ 1110 LHLocalConditionsActiveWakeUp 0 "Not active" ;
+VAL_ 1110 LHLocalConditionsActiveWakeUp 1 "Active" ;
+VAL_ 1110 LHNetworkManagementStatus 1 "NM in state Repeat Message (transition from Bus sleep mode)" ;
+VAL_ 1110 LHNetworkManagementStatus 2 "NM in state Repeat Message (transition from Prepare Bus slee" ;
+VAL_ 1110 LHNetworkManagementStatus 4 "NM in state Normal Operation (transition from Repeat Message" ;
+VAL_ 1110 LHNetworkManagementStatus 8 "NM in state Normal Operation (transition from Ready Sleep)" ;
+VAL_ 1110 LHNetworkManagementStatus 16 "NM in state RepeatMessage (transition from ReadySleep)" ;
+VAL_ 1110 LHNetworkManagementStatus 32 "NM in state RepeatMessage (transition from NormalOperation)" ;
+VAL_ 1110 LHTimerDontTimeOutKeepCANbusAwake 0 "Not active" ;
+VAL_ 1110 LHTimerDontTimeOutKeepCANbusAwake 1 "Active" ;
+VAL_ 1110 LHPowerSourceKeepCANbusAwake 0 "Not active" ;
+VAL_ 1110 LHPowerSourceKeepCANbusAwake 1 "Active" ;
+VAL_ 1110 LHInDiagnosticSessionKeepCANbusAwake 0 "Not active" ;
+VAL_ 1110 LHInDiagnosticSessionKeepCANbusAwake 1 "Active" ;
+VAL_ 1110 LHLocalConditionsActiveKeepCANbusAwake 0 "Not active" ;
+VAL_ 1110 LHLocalConditionsActiveKeepCANbusAwake 1 "Active" ;
+VAL_ 1112 SSCMRepeatMessageRequest 0 "Repeat message state not requested" ;
+VAL_ 1112 SSCMRepeatMessageRequest 1 "Repeat message state requested" ;
+VAL_ 1112 SSCMActiveWakeUpBit 0 "Node has not woken up the network(passive wakeup)" ;
+VAL_ 1112 SSCMActiveWakeUpBit 1 "Node has woken up the network(active wakeup)" ;
+VAL_ 1112 SSCMNMWakeUp 0 "Not active" ;
+VAL_ 1112 SSCMNMWakeUp 1 "Active" ;
+VAL_ 1112 SSCMPowerSourceWakeUp 0 "Not active" ;
+VAL_ 1112 SSCMPowerSourceWakeUp 1 "Active" ;
+VAL_ 1112 SSCMDiagnosticWakeUp 0 "Not active" ;
+VAL_ 1112 SSCMDiagnosticWakeUp 1 "Active" ;
+VAL_ 1112 SSCMLocalConditionsActiveWakeUp 0 "Not active" ;
+VAL_ 1112 SSCMLocalConditionsActiveWakeUp 1 "Active" ;
+VAL_ 1112 SSCMNetworkManagementStatus 1 "NM in state Repeat Message (transition from Bus sleep mode)" ;
+VAL_ 1112 SSCMNetworkManagementStatus 2 "NM in state Repeat Message (transition from Prepare Bus slee" ;
+VAL_ 1112 SSCMNetworkManagementStatus 4 "NM in state Normal Operation (transition from Repeat Message" ;
+VAL_ 1112 SSCMNetworkManagementStatus 8 "NM in state Normal Operation (transition from Ready Sleep)" ;
+VAL_ 1112 SSCMNetworkManagementStatus 16 "NM in state RepeatMessage (transition from ReadySleep)" ;
+VAL_ 1112 SSCMNetworkManagementStatus 32 "NM in state RepeatMessage (transition from NormalOperation)" ;
+VAL_ 1112 SSCMTimerDontTimeOutKeepCANbusAwake 0 "Not active" ;
+VAL_ 1112 SSCMTimerDontTimeOutKeepCANbusAwake 1 "Active" ;
+VAL_ 1112 SSCMPowerSourceKeepCANbusAwake 0 "Not active" ;
+VAL_ 1112 SSCMPowerSourceKeepCANbusAwake 1 "Active" ;
+VAL_ 1112 SSCMInDiagnosticSessionKeepCANbusAwake 0 "Not active" ;
+VAL_ 1112 SSCMInDiagnosticSessionKeepCANbusAwake 1 "Active" ;
+VAL_ 1112 SSCMLocalConditionsActiveKeepCANbusAwake 0 "Not active" ;
+VAL_ 1112 SSCMLocalConditionsActiveKeepCANbusAwake 1 "Active" ;
+VAL_ 1120 CCURepeatMessageRequest 0 "Repeat message state not requested" ;
+VAL_ 1120 CCURepeatMessageRequest 1 "Repeat message state requested" ;
+VAL_ 1120 CCUActiveWakeUpBit 0 "Node has not woken up the network_passive wakeup" ;
+VAL_ 1120 CCUActiveWakeUpBit 1 "Node has woken up the network_active wakeup" ;
+VAL_ 1120 CCUNMWakeUp 0 "Not active" ;
+VAL_ 1120 CCUNMWakeUp 1 "Active" ;
+VAL_ 1120 CCUPowerSourceWakeUp 0 "Not active" ;
+VAL_ 1120 CCUPowerSourceWakeUp 1 "Active" ;
+VAL_ 1120 CCUDiagnosticWakeUp 0 "Not active" ;
+VAL_ 1120 CCUDiagnosticWakeUp 1 "Active" ;
+VAL_ 1120 CCULocalConditionsActiveWakeUp 0 "Not active" ;
+VAL_ 1120 CCULocalConditionsActiveWakeUp 1 "Active" ;
+VAL_ 1120 CCUNetworkManagementStatus 1 "NM in state Repeat Message _transition from Bus sleep mode" ;
+VAL_ 1120 CCUNetworkManagementStatus 2 "NM in state Repeat Message _transition from Prepare Bus slee" ;
+VAL_ 1120 CCUNetworkManagementStatus 4 "NM in state Normal Operation _transition from Repeat Message" ;
+VAL_ 1120 CCUNetworkManagementStatus 8 "NM in state Normal Operation _transition from Ready Sleep" ;
+VAL_ 1120 CCUNetworkManagementStatus 16 "NM in state RepeatMessage _transition from ReadySleep" ;
+VAL_ 1120 CCUNetworkManagementStatus 32 "NM in state RepeatMessage _transition from NormalOperation" ;
+VAL_ 1120 CCUTimerDontTimeOutKeepCANbusAwake 0 "Not active" ;
+VAL_ 1120 CCUTimerDontTimeOutKeepCANbusAwake 1 "Active" ;
+VAL_ 1120 CCUPowerSourceKeepCANbusAwake 0 "Not active" ;
+VAL_ 1120 CCUPowerSourceKeepCANbusAwake 1 "Active" ;
+VAL_ 1120 CCUInDiagnosticSessionKeepCANbusAwake 0 "Not active" ;
+VAL_ 1120 CCUInDiagnosticSessionKeepCANbusAwake 1 "Active" ;
+VAL_ 1120 CCULocalConditionsActiveKeepCANbusAwake 0 "Not active" ;
+VAL_ 1120 CCULocalConditionsActiveKeepCANbusAwake 1 "Active" ;
+VAL_ 1264 LFSeatComfortSwtSts 0 "OFF" ;
+VAL_ 1264 LFSeatComfortSwtSts 1 "ON" ;
+VAL_ 1264 RFSeatComfortSwtSts 0 "OFF" ;
+VAL_ 1264 RFSeatComfortSwtSts 1 "ON" ;
+VAL_ 1265 MirrorOverturnSwtSts 0 "OFF" ;
+VAL_ 1265 MirrorOverturnSwtSts 1 "ON" ;
+VAL_ 1295 RFSeatUpDownSts 0 "stop" ;
+VAL_ 1295 RFSeatUpDownSts 1 "up" ;
+VAL_ 1295 RFSeatUpDownSts 2 "down" ;
+VAL_ 1295 RFSeatUpDownSts 3 "up hard stop" ;
+VAL_ 1295 RFSeatUpDownSts 4 "down hard stop" ;
+VAL_ 1295 RFSeatUpDownSts 5 "up soft stop" ;
+VAL_ 1295 RFSeatUpDownSts 6 "down soft stop" ;
+VAL_ 1295 RFSeatUpDownSts 7 "Stalled" ;
+VAL_ 1295 RFSeatUpDownSts 8 "reserved" ;
+VAL_ 1295 RFSeatForeAftSts 0 "stop" ;
+VAL_ 1295 RFSeatForeAftSts 1 "forward" ;
+VAL_ 1295 RFSeatForeAftSts 2 "backward" ;
+VAL_ 1295 RFSeatForeAftSts 3 "forward hard stop" ;
+VAL_ 1295 RFSeatForeAftSts 4 "backward hard stop" ;
+VAL_ 1295 RFSeatForeAftSts 5 "forward soft stop" ;
+VAL_ 1295 RFSeatForeAftSts 6 "backward soft stop" ;
+VAL_ 1295 RFSeatForeAftSts 7 "Stalled" ;
+VAL_ 1295 RFSeatForeAftSts 8 "reserved" ;
+VAL_ 1295 RFSeatForeAftSwtSts 0 "off" ;
+VAL_ 1295 RFSeatForeAftSwtSts 1 "forward" ;
+VAL_ 1295 RFSeatForeAftSwtSts 2 "backward" ;
+VAL_ 1295 RFSeatForeAftSwtSts 3 "stuck" ;
+VAL_ 1295 RFSeatForeAftSwtSts 4 "invalid" ;
+VAL_ 1295 RFSeatBackRestSts 0 "stop" ;
+VAL_ 1295 RFSeatBackRestSts 1 "forward" ;
+VAL_ 1295 RFSeatBackRestSts 2 "backward" ;
+VAL_ 1295 RFSeatBackRestSts 3 "forward hard stop" ;
+VAL_ 1295 RFSeatBackRestSts 4 "backward hard stop" ;
+VAL_ 1295 RFSeatBackRestSts 5 "forward soft stop" ;
+VAL_ 1295 RFSeatBackRestSts 6 "backward soft stop" ;
+VAL_ 1295 RFSeatBackRestSts 7 "Stalled" ;
+VAL_ 1295 RFSeatBackRestSts 8 "reserved" ;
+VAL_ 1295 RFSeatFootRestSts 0 "stop" ;
+VAL_ 1295 RFSeatFootRestSts 1 "up" ;
+VAL_ 1295 RFSeatFootRestSts 2 "down" ;
+VAL_ 1295 RFSeatFootRestSts 3 "up hard stop" ;
+VAL_ 1295 RFSeatFootRestSts 4 "down hard stop" ;
+VAL_ 1295 RFSeatFootRestSts 5 "up soft stop" ;
+VAL_ 1295 RFSeatFootRestSts 6 "down  soft stop" ;
+VAL_ 1295 RFSeatFootRestSts 7 "Stalled" ;
+VAL_ 1295 RFSeatFootRestSts 8 "reserved" ;
+VAL_ 1295 RFSeatUpDownSwtSts 0 "off" ;
+VAL_ 1295 RFSeatUpDownSwtSts 1 "up" ;
+VAL_ 1295 RFSeatUpDownSwtSts 2 "down" ;
+VAL_ 1295 RFSeatUpDownSwtSts 3 "stuck" ;
+VAL_ 1295 RFSeatUpDownSwtSts 4 "invalid" ;
+VAL_ 1295 RFSeatFootRestMothallErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatFootRestMothallErrorSts 1 "error" ;
+VAL_ 1295 RFSeatFootRestMotErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatFootRestMotErrorSts 1 "Open circuit " ;
+VAL_ 1295 RFSeatFootRestMotErrorSts 2 "short circuit " ;
+VAL_ 1295 RFSeatBackRestSwtSts 0 "off" ;
+VAL_ 1295 RFSeatBackRestSwtSts 1 "forward" ;
+VAL_ 1295 RFSeatBackRestSwtSts 2 "backward" ;
+VAL_ 1295 RFSeatBackRestSwtSts 3 "stuck" ;
+VAL_ 1295 RFSeatBackRestSwtSts 4 "invalid" ;
+VAL_ 1295 RFSeatFootRestSwtSts 0 "off" ;
+VAL_ 1295 RFSeatFootRestSwtSts 1 "up" ;
+VAL_ 1295 RFSeatFootRestSwtSts 2 "down" ;
+VAL_ 1295 RFSeatFootRestSwtSts 3 "stuck " ;
+VAL_ 1295 RFSeatFootRestSwtSts 4 "invalid" ;
+VAL_ 1295 RFSeatForeAftMothallErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatForeAftMothallErrorSts 1 "error" ;
+VAL_ 1295 RFSeatBackRestAntipinchSts 0 "no Anti-pinch" ;
+VAL_ 1295 RFSeatBackRestAntipinchSts 1 "forward Anti-pinch" ;
+VAL_ 1295 RFSeatBackRestAntipinchSts 2 "backward Anti-pinch" ;
+VAL_ 1295 RFSeatForeAftAntipinchSts 0 "no Anti-pinch" ;
+VAL_ 1295 RFSeatForeAftAntipinchSts 1 "forward Anti-pinch" ;
+VAL_ 1295 RFSeatForeAftAntipinchSts 2 "backward Anti-pinch" ;
+VAL_ 1295 RFSeatUpDownMothallErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatUpDownMothallErrorSts 1 "error" ;
+VAL_ 1295 RFSeatUpDownMotErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatUpDownMotErrorSts 1 "Open circuit" ;
+VAL_ 1295 RFSeatUpDownMotErrorSts 2 "short circuit" ;
+VAL_ 1295 RFSeatForeAftMotErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatForeAftMotErrorSts 1 "Open circuit" ;
+VAL_ 1295 RFSeatForeAftMotErrorSts 2 "short circuit" ;
+VAL_ 1295 RFSeatBackRestMothallErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatBackRestMothallErrorSts 1 "error" ;
+VAL_ 1295 RFSeatFootRestMotCalSts 0 "incomplete" ;
+VAL_ 1295 RFSeatFootRestMotCalSts 1 "complete" ;
+VAL_ 1295 RFSeatFootRestMotCalSts 2 "reserved" ;
+VAL_ 1295 RFSeatFootRestMotCalSts 3 "reserved" ;
+VAL_ 1295 RFSeatBackRestMotErrorSts 0 "no error" ;
+VAL_ 1295 RFSeatBackRestMotErrorSts 1 "Open circuit" ;
+VAL_ 1295 RFSeatBackRestMotErrorSts 2 "short circuit" ;
+VAL_ 1295 RFSeatAdj_IVI_Interface_Req 0 "no Request" ;
+VAL_ 1295 RFSeatAdj_IVI_Interface_Req 1 "Request" ;
+VAL_ 1295 RFSeatUpDownMotCalSts 0 "incomplete" ;
+VAL_ 1295 RFSeatUpDownMotCalSts 1 "complete" ;
+VAL_ 1295 RFSeatUpDownMotCalSts 2 "reserved" ;
+VAL_ 1295 RFSeatUpDownMotCalSts 3 "reserved" ;
+VAL_ 1295 RFSeatForeAftMotCalSts 0 "incomplete" ;
+VAL_ 1295 RFSeatForeAftMotCalSts 1 "complete" ;
+VAL_ 1295 RFSeatForeAftMotCalSts 2 "reserved" ;
+VAL_ 1295 RFSeatForeAftMotCalSts 3 "reserved" ;
+VAL_ 1295 RFSeatOperationTargetPosSts 0 "no Cmd" ;
+VAL_ 1295 RFSeatOperationTargetPosSts 1 "Operation" ;
+VAL_ 1295 RFSeatOperationTargetPosSts 2 "success" ;
+VAL_ 1295 RFSeatOperationTargetPosSts 3 "fail" ;
+VAL_ 1295 FSCMMotCalSts 0 "incomplete" ;
+VAL_ 1295 FSCMMotCalSts 1 "complete" ;
+VAL_ 1295 FSCMMotCalSts 2 "reserved" ;
+VAL_ 1295 FSCMMotCalSts 3 "reserved" ;
+VAL_ 1295 RFSeatBackRestMotCalSts 0 "incomplete" ;
+VAL_ 1295 RFSeatBackRestMotCalSts 1 "complete" ;
+VAL_ 1295 RFSeatBackRestMotCalSts 2 "reserved" ;
+VAL_ 1295 RFSeatBackRestMotCalSts 3 "reserved" ;
+VAL_ 1297 MirrorRightAdjustYAngleSts 0 "stop" ;
+VAL_ 1297 MirrorRightAdjustYAngleSts 1 "up" ;
+VAL_ 1297 MirrorRightAdjustYAngleSts 2 "down" ;
+VAL_ 1297 MirrorRightAdjustYAngleSts 3 "reserved" ;
+VAL_ 1297 MirrorRightAdjustXAngleSts 0 "stop" ;
+VAL_ 1297 MirrorRightAdjustXAngleSts 1 "left" ;
+VAL_ 1297 MirrorRightAdjustXAngleSts 2 "right" ;
+VAL_ 1297 MirrorRightAdjustXAngleSts 3 "reserved" ;
+VAL_ 1297 MirrorLeftAdjustYAngleSts 0 "stop" ;
+VAL_ 1297 MirrorLeftAdjustYAngleSts 1 "up" ;
+VAL_ 1297 MirrorLeftAdjustYAngleSts 2 "down" ;
+VAL_ 1297 MirrorLeftAdjustYAngleSts 3 "reserved" ;
+VAL_ 1297 MirrorLeftAdjustXAngleSts 0 "stop" ;
+VAL_ 1297 MirrorLeftAdjustXAngleSts 1 "left" ;
+VAL_ 1297 MirrorLeftAdjustXAngleSts 2 "right" ;
+VAL_ 1297 MirrorLeftAdjustXAngleSts 3 "reserved" ;
+VAL_ 1297 MirrorRightOperationTargetPosSts 0 "no Cmd" ;
+VAL_ 1297 MirrorRightOperationTargetPosSts 1 "Operation" ;
+VAL_ 1297 MirrorRightOperationTargetPosSts 2 "success" ;
+VAL_ 1297 MirrorRightOperationTargetPosSts 3 "fail" ;
+VAL_ 1297 MirrorLeftOperationTargetPosSts 0 "no Cmd" ;
+VAL_ 1297 MirrorLeftOperationTargetPosSts 1 "Operation" ;
+VAL_ 1297 MirrorLeftOperationTargetPosSts 2 "success" ;
+VAL_ 1297 MirrorLeftOperationTargetPosSts 3 "fail" ;
+VAL_ 1297 MirrorRightAdjustUpDownMotErrorSts 0 "no error" ;
+VAL_ 1297 MirrorRightAdjustUpDownMotErrorSts 1 "Open circuit" ;
+VAL_ 1297 MirrorRightAdjustUpDownMotErrorSts 2 "short circuit" ;
+VAL_ 1297 MirrorRightAdjustLeftRightMotErrorSts 0 "no error" ;
+VAL_ 1297 MirrorRightAdjustLeftRightMotErrorSts 1 "Open circuit" ;
+VAL_ 1297 MirrorRightAdjustLeftRightMotErrorSts 2 "short circuit" ;
+VAL_ 1297 MirrorLeftAdjustUpDownMotErrorSts 0 "no error" ;
+VAL_ 1297 MirrorLeftAdjustUpDownMotErrorSts 1 "Open circuit" ;
+VAL_ 1297 MirrorLeftAdjustUpDownMotErrorSts 2 "short circuit" ;
+VAL_ 1297 MirrorLeftAdjustLeftRightMotErrorSts 0 "no error" ;
+VAL_ 1297 MirrorLeftAdjustLeftRightMotErrorSts 1 "Open circuit" ;
+VAL_ 1297 MirrorLeftAdjustLeftRightMotErrorSts 2 "short circuit" ;
+VAL_ 1297 RFSeatHeadRestActuateSts 0 "no Cmd" ;
+VAL_ 1297 RFSeatHeadRestActuateSts 1 "down" ;
+VAL_ 1297 LFSeatHeadRestActuateSts 0 "no Cmd" ;
+VAL_ 1297 LFSeatHeadRestActuateSts 1 "down" ;
+VAL_ 1303 LFSeatUpDownSts 0 "stop" ;
+VAL_ 1303 LFSeatUpDownSts 1 "up" ;
+VAL_ 1303 LFSeatUpDownSts 2 "down" ;
+VAL_ 1303 LFSeatUpDownSts 3 "up hard stop" ;
+VAL_ 1303 LFSeatUpDownSts 4 "down hard stop" ;
+VAL_ 1303 LFSeatUpDownSts 5 "up soft stop" ;
+VAL_ 1303 LFSeatUpDownSts 6 "down soft stop" ;
+VAL_ 1303 LFSeatUpDownSts 7 "Stalled" ;
+VAL_ 1303 LFSeatUpDownSts 8 "reserved" ;
+VAL_ 1303 LFSeatForeAftSts 0 "stop" ;
+VAL_ 1303 LFSeatForeAftSts 1 "forward" ;
+VAL_ 1303 LFSeatForeAftSts 2 "backward" ;
+VAL_ 1303 LFSeatForeAftSts 3 "forward hard stop" ;
+VAL_ 1303 LFSeatForeAftSts 4 "backward hard stop" ;
+VAL_ 1303 LFSeatForeAftSts 5 "forward soft stop" ;
+VAL_ 1303 LFSeatForeAftSts 6 "backward soft stop" ;
+VAL_ 1303 LFSeatForeAftSts 7 "Stalled" ;
+VAL_ 1303 LFSeatForeAftSts 8 "reserved" ;
+VAL_ 1303 LFSeatFootRestSts 0 "stop" ;
+VAL_ 1303 LFSeatFootRestSts 1 "up" ;
+VAL_ 1303 LFSeatFootRestSts 2 "down" ;
+VAL_ 1303 LFSeatFootRestSts 3 "up hard stop" ;
+VAL_ 1303 LFSeatFootRestSts 4 "down hard stop" ;
+VAL_ 1303 LFSeatFootRestSts 5 "up soft stop" ;
+VAL_ 1303 LFSeatFootRestSts 6 "down soft stop" ;
+VAL_ 1303 LFSeatFootRestSts 7 "Stalled" ;
+VAL_ 1303 LFSeatFootRestSts 8 "reserved" ;
+VAL_ 1303 LFSeatBackRestSts 0 "stop" ;
+VAL_ 1303 LFSeatBackRestSts 1 "forward" ;
+VAL_ 1303 LFSeatBackRestSts 2 "backward" ;
+VAL_ 1303 LFSeatBackRestSts 3 "forward hard stop" ;
+VAL_ 1303 LFSeatBackRestSts 4 "backward hard stop" ;
+VAL_ 1303 LFSeatBackRestSts 5 "forward soft stop" ;
+VAL_ 1303 LFSeatBackRestSts 6 "backward soft stop" ;
+VAL_ 1303 LFSeatBackRestSts 7 "Stalled" ;
+VAL_ 1303 LFSeatBackRestSts 8 "reserved" ;
+VAL_ 1303 LFSeatUpDownSwtSts 0 "off" ;
+VAL_ 1303 LFSeatUpDownSwtSts 1 "up" ;
+VAL_ 1303 LFSeatUpDownSwtSts 2 "down" ;
+VAL_ 1303 LFSeatUpDownSwtSts 3 "stuck" ;
+VAL_ 1303 LFSeatUpDownSwtSts 4 "invalid" ;
+VAL_ 1303 LFSeatForeAftSwtSts 0 "off" ;
+VAL_ 1303 LFSeatForeAftSwtSts 1 "forward" ;
+VAL_ 1303 LFSeatForeAftSwtSts 2 "backward" ;
+VAL_ 1303 LFSeatForeAftSwtSts 3 "stuck" ;
+VAL_ 1303 LFSeatForeAftSwtSts 4 "invalid" ;
+VAL_ 1303 LFSeatFootRestSwtSts 0 "off" ;
+VAL_ 1303 LFSeatFootRestSwtSts 1 "up" ;
+VAL_ 1303 LFSeatFootRestSwtSts 2 "down" ;
+VAL_ 1303 LFSeatFootRestSwtSts 3 "stuck" ;
+VAL_ 1303 LFSeatFootRestSwtSts 4 "invalid" ;
+VAL_ 1303 LFSeatBackRestSwtSts 0 "off" ;
+VAL_ 1303 LFSeatBackRestSwtSts 1 "forward" ;
+VAL_ 1303 LFSeatBackRestSwtSts 2 "backward" ;
+VAL_ 1303 LFSeatBackRestSwtSts 3 "stuck" ;
+VAL_ 1303 LFSeatBackRestSwtSts 4 "invalid" ;
+VAL_ 1303 LFSeatForeAftMothallErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatForeAftMothallErrorSts 1 "error" ;
+VAL_ 1303 LFSeatBackRestAntipinchSts 0 "no Anti-pinch" ;
+VAL_ 1303 LFSeatBackRestAntipinchSts 1 "forward Anti-pinch" ;
+VAL_ 1303 LFSeatBackRestAntipinchSts 2 "backward Anti-pinch" ;
+VAL_ 1303 LFSeatForeAftAntipinchSts 0 "no Anti-pinch" ;
+VAL_ 1303 LFSeatForeAftAntipinchSts 1 "forward Anti-pinch" ;
+VAL_ 1303 LFSeatForeAftAntipinchSts 2 "backward Anti-pinch" ;
+VAL_ 1303 LFSeatUpDownMothallErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatUpDownMothallErrorSts 1 "error" ;
+VAL_ 1303 LFSeatUpDownMotErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatUpDownMotErrorSts 1 "Open circuit" ;
+VAL_ 1303 LFSeatUpDownMotErrorSts 2 "short circuit" ;
+VAL_ 1303 LFSeatForeAftMotErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatForeAftMotErrorSts 1 "Open circuit" ;
+VAL_ 1303 LFSeatForeAftMotErrorSts 2 "short circuit" ;
+VAL_ 1303 LFSeatBackRestMothallErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatBackRestMothallErrorSts 1 "error" ;
+VAL_ 1303 LFSeatFootRestMotErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatFootRestMotErrorSts 1 "Open circuit" ;
+VAL_ 1303 LFSeatFootRestMotErrorSts 2 "short circuit" ;
+VAL_ 1303 LFSeatBackRestMotErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatBackRestMotErrorSts 1 "Open circuit" ;
+VAL_ 1303 LFSeatBackRestMotErrorSts 2 "short circuit" ;
+VAL_ 1303 LFSeatFootRestMothallErrorSts 0 "no error" ;
+VAL_ 1303 LFSeatFootRestMothallErrorSts 1 "error" ;
+VAL_ 1303 LFSeatUpDownMotCalSts 0 "incomplete" ;
+VAL_ 1303 LFSeatUpDownMotCalSts 1 "complete" ;
+VAL_ 1303 LFSeatUpDownMotCalSts 2 "reserved" ;
+VAL_ 1303 LFSeatUpDownMotCalSts 3 "reserved" ;
+VAL_ 1303 LFSeatForeAftMotCalSts 0 "incomplete" ;
+VAL_ 1303 LFSeatForeAftMotCalSts 1 "complete" ;
+VAL_ 1303 LFSeatForeAftMotCalSts 2 "reserved" ;
+VAL_ 1303 LFSeatForeAftMotCalSts 3 "reserved" ;
+VAL_ 1303 LFSeatOperationTargetPosSts 0 "no Cmd" ;
+VAL_ 1303 LFSeatOperationTargetPosSts 1 "Operation" ;
+VAL_ 1303 LFSeatOperationTargetPosSts 2 "success" ;
+VAL_ 1303 LFSeatOperationTargetPosSts 3 "fail" ;
+VAL_ 1303 LFSeatFootRestMotCalSts 0 "incomplete" ;
+VAL_ 1303 LFSeatFootRestMotCalSts 1 "complete" ;
+VAL_ 1303 LFSeatFootRestMotCalSts 2 "reserved" ;
+VAL_ 1303 LFSeatFootRestMotCalSts 3 "reserved" ;
+VAL_ 1303 LFSeatBackRestMotCalSts 0 "incomplete" ;
+VAL_ 1303 LFSeatBackRestMotCalSts 1 "complete" ;
+VAL_ 1303 LFSeatBackRestMotCalSts 2 "reserved" ;
+VAL_ 1303 LFSeatBackRestMotCalSts 3 "reserved" ;
+VAL_ 1303 LFSeatAdj_IVI_Interface_Req 0 "no Request" ;
+VAL_ 1303 LFSeatAdj_IVI_Interface_Req 1 "Request" ;
+VAL_ 1412 CarMode 0 "Normal" ;
+VAL_ 1412 CarMode 1 "Transport" ;
+VAL_ 1412 CarMode 2 "Factory" ;
+VAL_ 1412 CarMode 3 "OTA" ;
+VAL_ 1412 CarMode 4 "Transport Paused" ;
+VAL_ 1412 CarMode 5 "Factory Paused" ;
+VAL_ 1412 CarMode 6 "Showroom" ;
+VAL_ 1412 CarMode 7 "Maintenance" ;
+VAL_ 1443 RRSeatBackRestSwtSts 0 "off" ;
+VAL_ 1443 RRSeatBackRestSwtSts 1 "forward" ;
+VAL_ 1443 RRSeatBackRestSwtSts 2 "backward" ;
+VAL_ 1443 RRSeatBackRestSwtSts 3 "stuck" ;
+VAL_ 1443 RRSeatBackRestSwtSts 4 "invalid" ;
+VAL_ 1443 LRSeatBackRestSwtSts 0 "off" ;
+VAL_ 1443 LRSeatBackRestSwtSts 1 "forward" ;
+VAL_ 1443 LRSeatBackRestSwtSts 2 "backward" ;
+VAL_ 1443 LRSeatBackRestSwtSts 3 "stuck" ;
+VAL_ 1443 LRSeatBackRestSwtSts 4 "invalid" ;
+VAL_ 1443 RRSeatBackRestTrunkSwtSts 0 "off" ;
+VAL_ 1443 RRSeatBackRestTrunkSwtSts 1 "forward" ;
+VAL_ 1443 RRSeatBackRestTrunkSwtSts 2 "backward" ;
+VAL_ 1443 RRSeatBackRestTrunkSwtSts 3 "stuck" ;
+VAL_ 1443 RRSeatBackRestTrunkSwtSts 4 "invalid" ;
+VAL_ 1443 LRSeatBackRestTrunkSwtSts 0 "off" ;
+VAL_ 1443 LRSeatBackRestTrunkSwtSts 1 "forward" ;
+VAL_ 1443 LRSeatBackRestTrunkSwtSts 2 "backward" ;
+VAL_ 1443 LRSeatBackRestTrunkSwtSts 3 "stuck" ;
+VAL_ 1443 LRSeatBackRestTrunkSwtSts 4 "invalid" ;
+VAL_ 1443 RRSeatBackMotErrorSts 0 "no error" ;
+VAL_ 1443 RRSeatBackMotErrorSts 1 "Open circuit" ;
+VAL_ 1443 RRSeatBackMotErrorSts 2 "short circuit" ;
+VAL_ 1443 LRSeatBackMotErrorSts 0 "no error" ;
+VAL_ 1443 LRSeatBackMotErrorSts 1 "Open circuit" ;
+VAL_ 1443 LRSeatBackMotErrorSts 2 "short circuit" ;
+VAL_ 1443 RRSeatBackRestAntipinchSts 0 "no Anti-pinch" ;
+VAL_ 1443 RRSeatBackRestAntipinchSts 1 "forward Anti-pinch" ;
+VAL_ 1443 RRSeatBackRestAntipinchSts 2 "backward Anti-pinch" ;
+VAL_ 1443 LRSeatBackRestAntipinchSts 0 "no Anti-pinch" ;
+VAL_ 1443 LRSeatBackRestAntipinchSts 1 "forward Anti-pinch" ;
+VAL_ 1443 LRSeatBackRestAntipinchSts 2 "backward Anti-pinch" ;
+VAL_ 1443 RSCMMotCalSts 0 "incomplete" ;
+VAL_ 1443 RSCMMotCalSts 1 "complete" ;
+VAL_ 1443 RSCMMotCalSts 2 "reserved" ;
+VAL_ 1443 RSCMMotCalSts 3 "reserved" ;
+VAL_ 1443 RRSeatBackMotCalSts 0 "incomplete" ;
+VAL_ 1443 RRSeatBackMotCalSts 1 "complete" ;
+VAL_ 1443 RRSeatBackMotCalSts 2 "reserved" ;
+VAL_ 1443 RRSeatBackMotCalSts 3 "reserved" ;
+VAL_ 1443 LRSeatBackMotCalSts 0 "incomplete" ;
+VAL_ 1443 LRSeatBackMotCalSts 1 "complete" ;
+VAL_ 1443 LRSeatBackMotCalSts 2 "reserved" ;
+VAL_ 1443 LRSeatBackMotCalSts 3 "reserved" ;
+VAL_ 1443 RRSeatBackMothallErrorSts 0 "no error" ;
+VAL_ 1443 RRSeatBackMothallErrorSts 1 "error" ;
+VAL_ 1443 LRSeatBackMothallErrorSts 0 "no error" ;
+VAL_ 1443 LRSeatBackMothallErrorSts 1 "error" ;
+VAL_ 1443 LRSeatBackRestSts 0 "stop" ;
+VAL_ 1443 LRSeatBackRestSts 1 "forward" ;
+VAL_ 1443 LRSeatBackRestSts 2 "backward" ;
+VAL_ 1443 LRSeatBackRestSts 3 "forward hard stop" ;
+VAL_ 1443 LRSeatBackRestSts 4 "backward hard stop" ;
+VAL_ 1443 LRSeatBackRestSts 5 "forward soft stop" ;
+VAL_ 1443 LRSeatBackRestSts 6 "backward soft stop" ;
+VAL_ 1443 LRSeatBackRestSts 7 "Stalled" ;
+VAL_ 1443 LRSeatBackRestSts 8 "reserved" ;
+VAL_ 1443 RRSeatOperationTargetPosSts 0 "no Cmd" ;
+VAL_ 1443 RRSeatOperationTargetPosSts 1 "Operation" ;
+VAL_ 1443 RRSeatOperationTargetPosSts 2 "success" ;
+VAL_ 1443 RRSeatOperationTargetPosSts 3 "fail" ;
+VAL_ 1443 LRSeatOperationTargetPosSts 0 "no Cmd" ;
+VAL_ 1443 LRSeatOperationTargetPosSts 1 "Operation" ;
+VAL_ 1443 LRSeatOperationTargetPosSts 2 "success" ;
+VAL_ 1443 LRSeatOperationTargetPosSts 3 "fail" ;
+VAL_ 1443 RRSeatBackRestSts 0 "stop" ;
+VAL_ 1443 RRSeatBackRestSts 1 "forward" ;
+VAL_ 1443 RRSeatBackRestSts 2 "backward" ;
+VAL_ 1443 RRSeatBackRestSts 3 "forward hard stop" ;
+VAL_ 1443 RRSeatBackRestSts 4 "backward hard stop" ;
+VAL_ 1443 RRSeatBackRestSts 5 "forward soft stop" ;
+VAL_ 1443 RRSeatBackRestSts 6 "backward soft stop" ;
+VAL_ 1443 RRSeatBackRestSts 7 "Stalled" ;
+VAL_ 1443 RRSeatBackRestSts 8 "reserved" ;
+VAL_ 1448 SecondMPassengerSittingSts 0 "Off" ;
+VAL_ 1448 SecondMPassengerSittingSts 1 "On" ;
+VAL_ 1448 SecondLPassengerSittingSts 0 "Off" ;
+VAL_ 1448 SecondLPassengerSittingSts 1 "On" ;

@@ -1,0 +1,3114 @@
+VERSION ""
+
+NS_ :
+ NS_DESC_
+ CM_
+ BA_DEF_
+ BA_DEF_DEF_
+ BA_DEF_DEF_REL_
+ BA_DEF_SGTYPE_
+ BA_DEF_REL_
+ BA_DEF_DEF_
+ BU_DEF_REL_
+ BA_
+ BA_DEF_
+ VAL_
+ CAT_DEF_
+ CAT_
+ FILTER
+ BA_DEF_DEF_
+ EV_DATA_
+ ENVVAR_DATA_
+ SGTYPE_
+ SGTYPE_VAL_
+ BA_DEF_SGTYPE_
+ BA_SGTYPE_
+ SIG_VALTYPE_
+ SIGTYPE_VALTYPE_
+ BO_TX_BU_
+ BA_DEF_REL_
+ BA_DEF_DEF_REL_
+ BA_REL_
+ BA_DEF_DEF_
+ BU_BO_REL_
+ BA_DEF_
+ BU_SGP_REL_
+ BU_SGT_REL_
+ SG_MUL_VAL_
+
+BS_:
+
+BU_: BDC GW LSCM MMI RSCM RSM RSML RSMR TBOX VCU
+
+BO_ 80 B_SRS_050: 4 GW
+ SG_ SrsRiReBucSwtSts : 18|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ SrsLeReBucSwtSts : 10|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ SrsCrashOutpSts : 4|4@1+ (1,0) [0|15] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ SrsCrashOutpStsChks : 0|4@1+ (1,0) [0|15] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ SrsRi3rdBucSwtSts : 27|2@1+ (1,0) [0|3] "/" GW,RSML,RSMR,RSCM,LSCM
+ SG_ SrsLe3rdBucSwtSts : 29|2@1+ (1,0) [0|3] "/" GW,RSML,RSMR,RSCM,LSCM
+ SG_ SrsPassBucSwtSts : 12|2@1+ (1,0) [0|3] "" GW,LSCM,RSCM
+ SG_ SrsDrvrBucSwtSts : 14|2@1+ (1,0) [0|3] "" GW,LSCM,RSCM
+
+BO_ 536 LSCM_218: 3 LSCM
+ SG_ CLCU_LeReCinchHomeSwitch : 7|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_CinchHomeSwitch : 6|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorAjarSwitch : 5|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DoorAjarSwitch : 4|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorLatchFailStatus : 3|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DrvrDoorLatchFailStatus : 2|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorLatchStatus : 15|3@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DrvrDoorLatchStatus : 12|3@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorLatchMotorStallStatus : 11|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DrvrDoorLatchMotorStallStatus : 10|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorLatchMotorHeatProtectStatu : 9|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DrvrDoorLatchMotorHeatProtectStatu : 8|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorLatchPinchPlayModeStatus : 23|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DrvrDoorLatchPinchPlayModeStatus : 22|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_LeReDoorPawlSwitch : 21|1@1+ (1,0) [0|1] "/" LSCM
+ SG_ CLCU_DrvrDoorPawlSwitch : 20|1@1+ (1,0) [0|1] "/" LSCM
+
+BO_ 540 B_SRS_21C: 1 GW
+ SG_ SrsRi2ndPssengerSts : 3|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ SrsMid2ndPssengerSts : 2|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ SrsLi2ndPssengerSts : 4|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ SrsRi3rdPssengerSts : 0|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ SrsLi3rdPssengerSts : 1|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+
+BO_ 576 I_GW_240: 5 BDC
+ SG_ MFSRightRollerUpSts : 30|2@1+ (1,0) [0|3] "" BDC,GW,RSCM,LSCM
+ SG_ MFSRightRollerDownSts : 14|2@1+ (1,0) [0|3] "" BDC,GW,RSCM,LSCM
+ SG_ MFSRightRollerLeftSts : 32|2@1+ (1,0) [0|3] "" BDC,GW,RSCM,LSCM
+ SG_ MFSRightRollerRightSts : 34|2@1+ (1,0) [0|3] "" BDC,GW,RSCM,LSCM
+
+BO_ 581 I_HMDC_CDC_245: 9 GW
+ SG_ CdcPsmSpinUpSet : 23|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPsmSpinDownSet : 22|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDsmSpinUpSet : 9|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDsmSpinDownSet : 8|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPsmComfortModeSaveReq : 41|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcPassSeatInfoSaveSet : 12|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcPassSeatInfoCallSig : 63|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcCloudSeatWindSet : 15|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcComfortModeFuncSet : 45|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcComfortModeSeatSet : 42|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcDsmComfortModeSaveReq : 40|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ HmdcSasAdjSet : 0|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcPassRespiteSeatInfoSaveSet : 10|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcDrvrRespiteSeatInfoSaveSet : 11|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+
+BO_ 623 B_CCP_26F: 5 GW
+ SG_ CcpRsmLeftSeatHeatReq : 39|1@1+ (1,0) [0|1] "" GW,RSM,RSML,RSCM,LSCM
+ SG_ CcpRsmRightSeatHeatReq : 38|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSCM,LSCM
+ SG_ CcpRsmLeftSeatWindReq : 37|1@1+ (1,0) [0|1] "" GW,RSM,RSML,RSCM,LSCM
+ SG_ CcpRsmRightSeatWindReq : 36|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSCM,LSCM
+ SG_ CcpPassSeatSldBackwSt : 0|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CcpPassSeatSldFwdSt : 1|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+
+BO_ 648 B_BDC_288: 6 GW
+ SG_ BcmPwrStsFb : 42|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,MMI,RSM,RSCM,LSCM
+ SG_ BcmPosnLmpSts : 10|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ BdcDrvrSts : 38|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ BcmDrvrDoorLckSts : 40|2@1+ (1,0) [0|3] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ BcmRiReDoorSts : 20|1@1+ (1,0) [0|1] "" GW,RSM,RSML,RSMR,RSCM,LSCM
+ SG_ BcmLeReDoorSts : 21|1@1+ (1,0) [0|1] "" GW,RSM,RSML,RSMR,RSCM,LSCM
+ SG_ BcmPassDoorSts : 22|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ BcmDrvrDoorSts : 23|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+
+BO_ 662 VCU_296: 5 VCU
+ SG_ TboxRemPaHeatReq : 17|3@1+ (1,0) [0|7] "" VCU,RSCM,LSCM
+ SG_ TboxRemPaWindReq : 27|3@1+ (1,0) [0|7] "" VCU,RSCM,LSCM
+ SG_ TboxRemDrvrHeatReq : 30|3@1+ (1,0) [0|7] "" VCU,RSCM,LSCM
+ SG_ TboxRemDrvrWindReq : 24|3@1+ (1,0) [0|7] "" VCU,RSCM,LSCM
+
+BO_ 663 Data_TBOX5G_TBOX4G_297: 6 GW
+ SG_ TboxLocalTiMins : 8|6@1+ (1,0) [0|63] "minute" GW,RSCM,LSCM
+ SG_ TboxLocalTiSec : 30|6@1+ (1,0) [0|63] "second" GW,RSCM,LSCM
+ SG_ TboxLocalTiYear : 37|8@1+ (1,2000) [2000|2255] "year" GW,RSCM,LSCM
+ SG_ TboxLocalTiDate : 3|5@1+ (1,0) [0|31] "day" GW,RSCM,LSCM
+ SG_ TboxLocalTiHr : 14|5@1+ (1,0) [0|31] "hour" GW,RSCM,LSCM
+ SG_ TboxLocalTiVld : 29|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ TboxLocalTiMth : 20|4@1+ (1,0) [0|15] "month" GW,RSCM,LSCM
+
+BO_ 688 VCU_2B0: 8 VCU
+ SG_ VcuGearPosn : 28|3@1+ (1,0) [0|7] "" VCU,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ VcuExhiHalModSts : 56|2@1+ (1,0) [0|3] "" VCU,RSML,RSMR,RSCM,LSCM
+ SG_ VcuFuLeover : 16|7@1+ (1,0) [0|127] "L" VCU,RSCM,LSCM
+
+BO_ 768 I_HMDC_CDC_300: 8 GW
+ SG_ CdcPsmZeroGSwt : 58|2@1+ (1,0) [0|3] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+
+BO_ 776 VCU_308: 5 VCU
+ SG_ VcuSuperSavesOperSts : 35|1@1+ (1,0) [0|1] "" VCU,RSML,RSMR,RSM,RSCM,LSCM
+
+BO_ 793 I_GW_319: 6 RSCM
+ SG_ PsmComfPosMemReq : 14|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmComfortModeMemoryFb : 38|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmDrvrSeatInfoSaveStsFb : 10|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmDrvrSeatInfoCallSigFb : 8|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmExclSeatInfoSaveStsFb : 34|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmExclSeatInfoCallSigFb : 36|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmSeatSpinSetSts : 15|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PSMRotarySwitchPositionSts : 24|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ PSM_PSMLegPositionSts : 0|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ DsmFrontAntiPinchSts : 43|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ DsmSpaceCubePosSaveFb : 32|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmSpaceCubePosCallFb : 46|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM,MMI
+ SG_ DsmSpaceCubePosSts : 44|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM,MMI
+
+BO_ 796 I_GW_31C: 2 LSCM
+ SG_ DsmAcoustWarnReqALL : 0|5@1+ (1,0) [0|31] "" LSCM,GW
+ SG_ DsmFrontTextDispReq : 8|5@1+ (1,0) [0|31] "" LSCM,GW
+
+BO_ 797 VCU_31D: 4 VCU
+ SG_ TboxMidRightHeatReq : 5|3@1+ (1,0) [0|7] "" VCU,RSMR,TBOX,RSCM,LSCM
+ SG_ TboxMidRightWindReq : 2|3@1+ (1,0) [0|7] "" VCU,RSMR,TBOX,RSCM,LSCM
+ SG_ TboxMidLeftHeatReq : 15|3@1+ (1,0) [0|7] "" VCU,RSML,TBOX,RSCM,LSCM
+ SG_ TboxMidLeftWindReq : 12|3@1+ (1,0) [0|7] "" VCU,RSML,TBOX,RSCM,LSCM
+ SG_ TboxThirdRightSeatHeatReq : 9|3@1+ (1,0) [0|7] "" VCU,RSMR,TBOX,RSCM,LSCM
+ SG_ TboxThirdLeftSeatHeatReq : 22|3@1+ (1,0) [0|7] "" VCU,RSML,TBOX,RSCM,LSCM
+ SG_ TboxSpaceModeAdjReq : 20|2@1+ (1,0) [0|3] "" VCU,RSMR,RSML,TBOX,RSCM,LSCM
+
+BO_ 800 CHF_IBCU_320: 4 GW
+ SG_ EspVehSpd : 16|13@1+ (0.05625,0) [0|460.74375] "km/h" GW,RSCM,LSCM
+ SG_ EspVehSpdVld : 14|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+
+BO_ 801 PT_BCU_321: 9 GW
+ SG_ BcuSocDisp : 58|10@1+ (0.1,0) [0|102.3] "%" GW,RSML,RSMR,RSCM,LSCM
+
+BO_ 803 I_GW_323: 7 LSCM
+ SG_ DsmSasMotPosStsFb1 : 16|8@1+ (0.5,0) [0|100] "%" LSCM
+ SG_ DsmSasMotPosStsFb2 : 24|8@1+ (0.5,0) [0|100] "%" LSCM
+ SG_ DsmBackCockpitBedAdtStsFb : 34|3@1+ (1,0) [0|7] "" LSCM,GW,VCU,RSCM
+ SG_ DsmFrontCockpitBedAdtStsFb : 37|3@1+ (1,0) [0|7] "" LSCM,GW,VCU,RSCM
+ SG_ DsmFrontCBFrontSeatCallStsFb : 48|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM,MMI
+ SG_ DsmBackCBFrontSeatCallStsFb : 52|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM,MMI
+ SG_ DsmFrontCBFrontSeatAdtStsFb : 40|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM
+ SG_ DsmBackCBFrontSeatAdtStsFb : 44|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM
+ SG_ DsmRespiteModForbAdjDis : 33|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+
+BO_ 804 I_HMDC_CDC_324: 8 GW
+ SG_ CdcRespiteSetSts : 16|4@1+ (1,0) [0|15] "" GW,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ CdcCinemaModSetReq : 52|4@1+ (1,0) [0|15] "" GW,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ CdcScArMidLeftSeatAdjustReq : 8|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcScArMidRightSeatAdjustReq : 35|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcSuperSavesModeSts : 0|1@1+ (1,0) [0|1] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ CdcSpaceCubePosSaveSig : 58|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ CdcSpaceCubePosCallSig : 61|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ VcuDisCarPresStsResetReq : 28|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSM,RSCM,LSCM
+ SG_ CdcDrvrSeatHrzntlPer : 48|4@1+ (1,0) [0|15] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPsmExcLocaSave : 4|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcPsmExcLocaCallSig : 13|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CDCSteerElectricAdjFace : 11|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+
+BO_ 826 I_GW_33A: 6 RSCM
+ SG_ PsmComfPosMemReq : 14|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmComfortModeMemoryFb : 38|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmDrvrSeatInfoSaveStsFb : 10|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmDrvrSeatInfoCallSigFb : 8|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmExclSeatInfoSaveStsFb : 34|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmExclSeatInfoCallSigFb : 36|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmSeatSpinSetSts : 15|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PSMRotarySwitchPositionSts : 24|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ PSM_PSMLegPositionSts : 0|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ DsmFrontAntiPinchSts : 43|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ DsmSpaceCubePosSaveFb : 32|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmSpaceCubePosCallFb : 46|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmSpaceCubePosSts : 44|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+
+BO_ 827 I_GW_33B: 8 RSCM
+ SG_ PsmZeroSaveSts : 8|2@1+ (1,0) [0|3] "/" RSCM,GW,LSCM
+ SG_ PsmZeroResetFb : 34|2@1+ (1,0) [0|3] "/" RSCM,GW,LSCM
+ SG_ PsZeroGSwitchSts : 17|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmZeroGSts : 31|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmRespiteModSeatStorgSts : 10|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmParkMassageModSts : 24|4@1+ (1,0) [0|15] "" RSCM,GW,LSCM
+ SG_ PsmParkMassageStrSts : 20|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmPassHeatSts : 5|3@1+ (1,0) [0|7] "" RSCM,BDC,GW,TBOX,LSCM
+ SG_ PsmBackFwdAdjstSts : 16|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PSM_PSMBackrestPositionSts : 56|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ CdcPsmCmtySetFb : 22|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PSM_PSMFrontEndPositionSts : 48|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ PsmHrzntlAdjstSts : 19|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PSM_PSMHorizontalPositionSts : 40|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ DsmPassVentnSts : 2|3@1+ (1,0) [0|7] "/" RSCM,BDC,GW,TBOX,LSCM
+ SG_ PsmPassLegAdjSts : 28|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmTextDispReq : 29|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmRemPassHeatSts : 12|3@1+ (1,0) [0|7] "" RSCM,BDC,TBOX,LSCM
+ SG_ DsmRemPassVentilatieSts : 15|3@1+ (1,0) [0|7] "" RSCM,BDC,TBOX,LSCM
+
+BO_ 835 B_GW_343: 8 RSML
+ SG_ RsmlZeroSaveSts : 22|2@1+ (1,0) [0|3] "/" RSML,GW,LSCM
+ SG_ RsmlZeroResetFb : 9|2@1+ (1,0) [0|3] "/" RSML,GW,LSCM
+ SG_ RsmlZeroGSwitchSts : 19|1@1+ (1,0) [0|1] "" RSML,GW,MMI,LSCM
+ SG_ RsmlZeroGSts : 11|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlParkMassageModSts : 12|4@1+ (1,0) [0|15] "" RSML,GW,RSM,LSCM
+ SG_ RsmlParkMassageStrSts : 0|2@1+ (1,0) [0|3] "" RSML,GW,RSM,LSCM
+ SG_ RsmlBacktTouchHeatSts : 5|3@1+ (1,0) [0|7] "" RSML,GW,TBOX,RSM,LSCM
+ SG_ RsmlBackFwdAdjstSts : 18|1@1+ (1,0) [0|1] "" RSML,GW,RSM,LSCM
+ SG_ RsmlBackrestPositionSts : 40|8@1+ (0.5,0) [0|100] "%" RSML,GW,RSM,LSCM
+ SG_ RsmlHrzntlAdjstSts : 20|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlHorizontalPositionSts : 32|8@1+ (0.5,0) [0|100] "%" RSML,GW,MMI,LSCM
+ SG_ RsmlBacktTouchVentnSts : 2|3@1+ (1,0) [0|7] "" RSML,GW,TBOX,RSM,LSCM
+ SG_ RsmlLegAdjSts : 21|1@1+ (1,0) [0|1] "" RSML,GW,RSM,LSCM
+ SG_ RsmlSeatSpinSetSts : 8|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlRotarySwitchPosSts : 24|8@1+ (0.5,0) [0|100] "%" RSML,GW,MMI,LSCM
+ SG_ RsmLThirdBacktHeatSts : 50|3@1+ (1,0) [0|7] "" RSML,GW,TBOX,LSCM
+ SG_ RsmlThirdBackrestPosSts : 56|8@1+ (0.5,0) [0|100] "%" RSML,GW,LSCM
+ SG_ RsmlThirdBackrestOperSts : 53|2@1+ (1,0) [0|3] "/" RSML,GW,LSCM
+
+BO_ 846 I_GW_34E: 8 RSML
+ SG_ CdcRsmMidLeftSeatLegUpDowPosSts : 0|8@1+ (0.5,0) [0|100] "%" RSML,GW,RSM,LSCM
+ SG_ RsmLDouSeatSwitchSig : 14|1@1+ (1,0) [0|1] "" RSML,GW,MMI,LSCM
+ SG_ RsmLRestoreFactrySetFb : 12|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlThirdOnekeyDownSts : 8|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlThirdOnekeyUpSts : 23|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlThirdBackManualUpSts : 22|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlThirdBackManualDownSts : 31|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlZeroGOperationSts : 20|2@1+ (1,0) [0|3] "" RSML,GW,LSCM
+ SG_ RsmlDouSeatSwitchSetSts : 16|1@1+ (1,0) [0|1] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlArmrestScreenOpenSts : 25|1@1+ (1,0) [0|1] "" RSML,GW,MMI,LSCM
+ SG_ RsmlArmrestScreenQuitSts : 24|1@1+ (1,0) [0|1] "" RSML,GW,MMI,LSCM
+ SG_ RsmlSpaceCubeSaveFb : 38|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlSpaceCubeCallFb : 36|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlCampBedBackSeatCallStsFb : 45|3@1+ (1,0) [0|7] "" RSML,GW,RSMR,MMI,LSCM
+ SG_ RsmlCampBedBackSeatAdtStsFb : 42|3@1+ (1,0) [0|7] "" RSML,GW,RSMR,MMI,LSCM
+ SG_ RsmlRsmChildLockSetSts : 32|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlHighLowconfiguration : 56|1@1+ (1,0) [0|1] "" RSML,MMI,LSCM
+ SG_ RsmlFrontRowControlSig : 54|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlDouSeatSetReqToRsmr : 34|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlTextDispReqALL : 49|5@1+ (1,0) [0|31] "" RSML,GW,LSCM
+ SG_ RsmlAcoustWarnReqALL : 59|5@1+ (1,0) [0|31] "" RSML,GW,LSCM
+ SG_ RsmlSpaceCubeOperationSts : 57|2@1+ (1,0) [0|3] "" RSML,GW,RSMR,LSCM
+ SG_ RsmlRLBedBackSeatAdtStsFb : 9|3@1+ (1,0) [0|7] "" RSML,RSMR,LSCM
+
+BO_ 847 I_GW_34F: 8 RSML
+ SG_ RsmLHorizontalRightPosSts : 0|8@1+ (0.5,0) [0|100] "%" RSML,GW,MMI,LSCM
+ SG_ RsmlExcSeatSaveSetFb : 19|2@1+ (1,0) [0|3] "" RSML,GW,LSCM
+ SG_ RsmlExcSeatCallSetFb : 8|2@1+ (1,0) [0|3] "" RSML,GW,LSCM
+ SG_ RsmlRemHeatStsFb : 10|3@1+ (1,0) [0|7] "" RSML,VCU,TBOX,LSCM
+ SG_ RsmlRemVentilatieStsFb : 13|3@1+ (1,0) [0|7] "" RSML,VCU,TBOX,LSCM
+ SG_ RsmlThirdRemHeatStsFb : 21|3@1+ (1,0) [0|7] "" RSML,VCU,TBOX,LSCM
+ SG_ RsmLDouSeatSetReqFb : 16|3@1+ (1,0) [0|7] "" RSML,GW,LSCM
+ SG_ RsmLMoveInterveneSts : 47|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlbackAntiPinchSts : 46|1@1+ (1,0) [0|1] "" RSML,GW,RSM,RSMR,LSCM
+ SG_ RsmlSpaceCubePosSaveFb : 44|2@1+ (1,0) [0|3] "" RSML,GW,LSCM
+ SG_ RsmlSpaceCubePosCallFb : 42|2@1+ (1,0) [0|3] "" RSML,GW,MMI,LSCM
+ SG_ RsmlSpaceCubePosSts : 40|2@1+ (1,0) [0|3] "" RSML,GW,MMI,LSCM
+ SG_ RsmLFrontCBBackSeatCallStsFb : 53|3@1+ (1,0) [0|7] "" RSML,RSMR,MMI,GW,RSM,LSCM
+ SG_ RsmLBackCBBackSeatCallStsFb : 50|3@1+ (1,0) [0|7] "" RSML,RSMR,MMI,GW,LSCM
+ SG_ RsmLFrontCBBackSeatAdtStsFb : 36|4@1+ (1,0) [0|15] "" RSML,GW,RSM,LSCM
+ SG_ RsmLBackCBBackSeatAdtStsFb : 32|4@1+ (1,0) [0|15] "" RSML,GW,LSCM
+ SG_ RsmLFrontCBBackLeftSeatAdtStsFb : 28|4@1+ (1,0) [0|15] "" RSML,RSMR,LSCM
+ SG_ RsmLBackCBBackLeftSeatAdtStsFb : 24|4@1+ (1,0) [0|15] "" RSML,RSMR,LSCM
+ SG_ RsmrThirdLeftBackrtPosSts : 48|2@1+ (1,0) [0|3] "" RSML,TBOX,RSMR,LSCM
+ SG_ RsmlSpaceModFb : 62|2@1+ (1,0) [0|3] "" RSML,RSMR,LSCM
+ SG_ RsmlLandSlideSts : 61|1@1+ (1,0) [0|1] "" RSML,RSMR,MMI,LSCM
+ SG_ RsmlBackPanelLeftSwitchSts : 56|1@1+ (1,0) [0|1] "" RSML,GW,LSCM
+ SG_ RsmlSecondLeftSeatAntiPinchSts : 58|1@1+ (1,0) [0|1] "" RSML,RSMR,GW,LSCM
+
+BO_ 850 I_GW_352: 7 LSCM
+ SG_ DsmDrvrSeatInfoSaveStsFb : 40|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsmParkSpaceStorg : 50|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsZeroGSwitchSts : 15|1@1+ (1,0) [0|1] "" LSCM,BDC,GW,RSCM
+ SG_ DsmComfortModeMemoryFb : 2|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmDrvrSeatInfoCallSigFb : 48|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsmRespitePosSaveSetFb : 46|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ PSMBacktTouchTextDispReq : 1|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DsmSeatAdjSts : 38|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmZeroSaveSts : 24|2@1+ (1,0) [0|3] "/" LSCM,GW,RSCM
+ SG_ DsmZeroResetFb : 52|2@1+ (1,0) [0|3] "/" LSCM,GW,RSCM
+ SG_ DsmZeroGSts : 0|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DsmParkMassageModSts : 42|4@1+ (1,0) [0|15] "" LSCM,BDC,GW,RSCM
+ SG_ DsmParkMassageStrSts : 4|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsmVrtclAdjsrSts : 28|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmBackFwdAdjstSts : 29|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ CdcDsmCmtySetFb : 6|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmLeadEndAdjstSts : 55|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmHrzntlAdjstSts : 27|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmDrvrLegAdjSts : 54|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmTextDispReq : 35|3@1+ (1,0) [0|7] "" LSCM,BDC,GW,RSCM
+
+BO_ 852 I_GW_354: 7 LSCM
+ SG_ DsmSasMotPosStsFb1 : 16|8@1+ (0.5,0) [0|100] "%" LSCM
+ SG_ DsmSasMotPosStsFb2 : 24|8@1+ (0.5,0) [0|100] "%" LSCM
+ SG_ DsmBackCockpitBedAdtStsFb : 34|3@1+ (1,0) [0|7] "" LSCM,GW,VCU,RSCM
+ SG_ DsmFrontCockpitBedAdtStsFb : 37|3@1+ (1,0) [0|7] "" LSCM,GW,VCU,RSCM
+ SG_ DsmFrontCBFrontSeatCallStsFb : 48|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM
+ SG_ DsmBackCBFrontSeatCallStsFb : 52|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM
+ SG_ DsmFrontCBFrontSeatAdtStsFb : 40|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM
+ SG_ DsmBackCBFrontSeatAdtStsFb : 44|4@1+ (1,0) [0|15] "" LSCM,GW,RSCM
+ SG_ DsmRespiteModForbAdjDis : 33|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+
+BO_ 855 I_GW_357: 7 LSCM
+ SG_ DsmDrvrSeatInfoSaveStsFb : 40|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsmParkSpaceStorg : 50|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsZeroGSwitchSts : 15|1@1+ (1,0) [0|1] "" LSCM,BDC,GW,RSCM
+ SG_ DsmComfortModeMemoryFb : 2|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmDrvrSeatInfoCallSigFb : 48|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsmRespitePosSaveSetFb : 46|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ PSMBacktTouchTextDispReq : 1|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DsmSeatAdjSts : 38|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmZeroSaveSts : 24|2@1+ (1,0) [0|3] "/" LSCM,GW,RSCM
+ SG_ DsmZeroResetFb : 52|2@1+ (1,0) [0|3] "/" LSCM,GW,RSCM
+ SG_ DsmZeroGSts : 0|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DsmParkMassageModSts : 42|4@1+ (1,0) [0|15] "" LSCM,BDC,GW,RSCM
+ SG_ DsmParkMassageStrSts : 4|2@1+ (1,0) [0|3] "" LSCM,BDC,GW,RSCM
+ SG_ DsmVrtclAdjsrSts : 28|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmBackFwdAdjstSts : 29|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ CdcDsmCmtySetFb : 6|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmLeadEndAdjstSts : 55|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmHrzntlAdjstSts : 27|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmDrvrLegAdjSts : 54|1@1+ (1,0) [0|1] "/" LSCM,BDC,GW,RSCM
+ SG_ DsmTextDispReq : 35|3@1+ (1,0) [0|7] "" LSCM,BDC,GW,RSCM
+
+BO_ 858 I_GW_35A: 8 LSCM
+ SG_ DSM_RollingCounter_3DE : 48|4@1+ (1,0) [0|15] "" LSCM,BDC
+ SG_ DSM_CRCCheck_3DE : 56|8@1+ (1,0) [0|255] "" LSCM,BDC
+ SG_ DsmSasAdjStsFb : 46|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmSasSaveSetFb : 44|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DSM_DSMVerticalPositionSts : 16|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DSM_DSMBackrestPositionSts : 24|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DSM_DSMFrontEndPositionSts : 8|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DSM_DSMHorizontalPositionSts : 0|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DsmSeatSpinSetSts : 52|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DSMRotarySwitchPositionSts : 32|8@1+ (0.5,0) [0|100] "%" LSCM,GW,RSCM
+ SG_ DsmRestoreFactrySetFb : 40|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+
+BO_ 859 I_GW_35B: 8 LSCM
+ SG_ DsmRemDrHeatSts : 39|3@1+ (1,0) [0|7] "" LSCM,BDC,TBOX
+ SG_ DsmRemDrVentilatieSts : 40|3@1+ (1,0) [0|7] "" LSCM,BDC,TBOX
+ SG_ DsmComfPosMemReq : 6|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DsmDrvrHeatSts : 13|3@1+ (1,0) [0|7] "" LSCM,BDC,GW,TBOX,RSCM
+ SG_ DsmDrvrVentnSts : 0|3@1+ (1,0) [0|7] "" LSCM,BDC,GW,TBOX,RSCM
+ SG_ DSM_DSMLegPositionSts : 16|8@1+ (0.5,0) [0|100] "%" LSCM,GW,RSCM
+ SG_ DsmCampBedAdtStsFb : 26|3@1+ (1,0) [0|7] "" LSCM,GW,VCU,RSCM
+ SG_ DsmCampBedFrontSeatCallStsFb : 29|3@1+ (1,0) [0|7] "" LSCM,GW,RSCM
+ SG_ DsmCampBedFrontSeatAdtStsFb : 48|3@1+ (1,0) [0|7] "" LSCM,GW,RSCM
+ SG_ PsmZeroGOperationSts : 58|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+
+BO_ 890 I_HMDC_CDC_37A: 5 GW
+ SG_ CdcDrvrSeatHghPer : 28|4@1+ (1,0) [0|15] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrSeatBackPer : 36|4@1+ (1,0) [0|15] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+
+BO_ 893 I_HMDC_CDC_37D: 8 GW
+ SG_ CdcRsmMidRightSeatHeatReq : 16|3@1+ (1,0) [0|7] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatBackBackSt : 26|1@1+ (1,0) [0|1] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatBackFwdSt : 25|1@1+ (1,0) [0|1] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatZeroGSwt : 47|2@1+ (1,0) [0|3] "" GW,RSMR,MMI,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatSldBackSt : 28|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatSldFwdSt : 27|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatWindReq : 19|3@1+ (1,0) [0|7] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatLegSupUpwSt : 24|1@1+ (1,0) [0|1] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatLegSupDowSt : 39|1@1+ (1,0) [0|1] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatSpinUpSet : 38|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatSpinDownSet : 37|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmMidRightMssgModSet : 22|4@1+ (1,0) [0|15] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightMssgStrngthSet : 10|3@1+ (1,0) [0|7] "" GW,RSMR,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatHeatReq : 41|3@1+ (1,0) [0|7] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatBackBackSt : 51|1@1+ (1,0) [0|1] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatBackFwdSt : 50|1@1+ (1,0) [0|1] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatZeroGSwt : 56|2@1+ (1,0) [0|3] "" GW,RSML,MMI,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatSldBackSt : 53|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatSldFwdSt : 52|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatWindReq : 44|3@1+ (1,0) [0|7] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatLegSupUpwSt : 49|1@1+ (1,0) [0|1] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatLegSupDowSt : 48|1@1+ (1,0) [0|1] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatSpinUpSet : 63|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatSpinDownSet : 62|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftMssgModSet : 0|4@1+ (1,0) [0|15] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftMssgStrngthSet : 13|3@1+ (1,0) [0|7] "" GW,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmThirdRightSeatHeatReq : 29|3@1+ (1,0) [0|7] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmThirdRightSeatBackBackSt : 36|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmThirdRightSeatBackFwdSt : 35|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmThirdRightSeatOneDownSt : 34|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmThirdRightSeatOneUpSt : 33|1@1+ (1,0) [0|1] "" GW,RSMR,RSCM,LSCM
+ SG_ CdcRsmThirdLeftSeatHeatReq : 54|3@1+ (1,0) [0|7] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmThirdLeftSeatBackBackSt : 61|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmThirdLeftSeatBackFwdSt : 60|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmThirdLeftSeatOneDownSt : 59|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcRsmThirdLeftSeatOneUpSt : 58|1@1+ (1,0) [0|1] "" GW,RSML,RSCM,LSCM
+ SG_ CdcIntimateCoupleSeatSetReq : 5|3@1+ (1,0) [0|7] "" GW,RSMR,RSML,MMI,RSCM,LSCM
+
+BO_ 895 I_HMDC_CDC_37F: 4 GW
+ SG_ CdcRsmMidRightSeatLegSupBackSt : 0|3@1+ (1,0) [0|7] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatLegSupFwdSt : 14|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatExcLocaSave : 19|3@1+ (1,0) [0|7] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatExcLocaCallSig : 24|3@1+ (1,0) [0|7] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatLegSupBackSt : 7|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatLegSupFwdSt : 6|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatExcLocaSave : 11|3@1+ (1,0) [0|7] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatExcLocaCallSig : 16|3@1+ (1,0) [0|7] "" GW,RSMR,RSML,RSCM,LSCM
+
+BO_ 928 I_HMDC_CDC_3A0: 8 GW
+ SG_ CdcBackCockpitBedSetReq : 51|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ CdcFrontCockpitBedSetReq : 48|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,MMI,RSM,RSCM,LSCM
+ SG_ CdcRsmThirdLeftSeatBackPer : 24|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmThirdRightSeatBackPer : 28|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassSeatSldPer : 16|4@1+ (1,0) [0|15] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassSeatBackPer : 20|4@1+ (1,0) [0|15] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassSeatLegSupDowPer : 60|4@1+ (1,0) [0|15] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcScArSteerWheelAdjustReq : 15|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+
+BO_ 976 I_HMDC_CDC_3D0: 8 GW
+ SG_ CdcRsmMidLeftSeatSldPer : 40|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatBackPer : 44|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidLeftSeatLegSupDowPer : 48|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatSldPer : 52|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatBackPer : 56|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSM,RSCM,LSCM
+ SG_ CdcRsmMidRightSeatLegSupDowPer : 60|4@1+ (1,0) [0|15] "" GW,RSMR,RSML,RSM,RSCM,LSCM
+
+BO_ 988 I_GW_3DC: 8 RSCM
+ SG_ PsmZeroSaveSts : 8|2@1+ (1,0) [0|3] "/" RSCM,GW,LSCM
+ SG_ PsmZeroResetFb : 34|2@1+ (1,0) [0|3] "/" RSCM,GW,LSCM
+ SG_ PsZeroGSwitchSts : 17|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmZeroGSts : 31|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmRespiteModSeatStorgSts : 10|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PsmParkMassageModSts : 24|4@1+ (1,0) [0|15] "" RSCM,GW,LSCM
+ SG_ PsmParkMassageStrSts : 20|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmPassHeatSts : 5|3@1+ (1,0) [0|7] "" RSCM,BDC,GW,TBOX,LSCM
+ SG_ PsmBackFwdAdjstSts : 16|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PSM_PSMBackrestPositionSts : 56|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ CdcPsmCmtySetFb : 22|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ PSM_PSMFrontEndPositionSts : 48|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ PsmHrzntlAdjstSts : 19|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PSM_PSMHorizontalPositionSts : 40|8@1+ (0.5,0) [0|100] "%" RSCM,GW,LSCM
+ SG_ DsmPassVentnSts : 2|3@1+ (1,0) [0|7] "/" RSCM,BDC,GW,TBOX,LSCM
+ SG_ PsmPassLegAdjSts : 28|1@1+ (1,0) [0|1] "" RSCM,GW,LSCM
+ SG_ PsmTextDispReq : 29|2@1+ (1,0) [0|3] "" RSCM,GW,LSCM
+ SG_ DsmRemPassHeatSts : 12|3@1+ (1,0) [0|7] "" RSCM,BDC,TBOX,LSCM
+ SG_ DsmRemPassVentilatieSts : 15|3@1+ (1,0) [0|7] "" RSCM,BDC,TBOX,LSCM
+
+BO_ 990 I_GW_3DE: 8 LSCM
+ SG_ DSM_RollingCounter_3DE : 48|4@1+ (1,0) [0|15] "" LSCM,BDC
+ SG_ DSM_CRCCheck_3DE : 56|8@1+ (1,0) [0|255] "" LSCM,BDC
+ SG_ DsmSasAdjStsFb : 46|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DsmSasSaveSetFb : 44|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+ SG_ DSM_DSMVerticalPositionSts : 16|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DSM_DSMBackrestPositionSts : 24|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DSM_DSMFrontEndPositionSts : 8|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DSM_DSMHorizontalPositionSts : 0|8@1+ (0.5,0) [0|100] "%" LSCM,BDC,GW,RSCM
+ SG_ DsmSeatSpinSetSts : 52|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DSMRotarySwitchPositionSts : 32|8@1+ (0.5,0) [0|100] "%" LSCM,GW,RSCM
+ SG_ DsmRestoreFactrySetFb : 40|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+
+BO_ 991 I_GW_3DF: 4 MMI
+ SG_ MmiPositionSts : 1|7@1+ (1,0) [0|100] "" MMI,GW,RSML,RSMR,RSCM,LSCM
+ SG_ MmiOperationSts : 13|3@1+ (1,0) [0|7] "" MMI,GW,RSML,RSMR,RSCM,LSCM
+ SG_ MmiSpaceCubePosCallSigFb : 20|2@1+ (1,0) [0|3] "" MMI,GW,RSML,RSMR,RSCM,LSCM
+ SG_ MmiBedFuncPosCallStsFb : 26|3@1+ (1,0) [0|7] "" MMI,RSML,RSMR,GW,RSCM,LSCM
+
+BO_ 1002 I_GW_3EA: 8 LSCM
+ SG_ DsmRemDrHeatSts : 39|3@1+ (1,0) [0|7] "" LSCM,BDC,TBOX
+ SG_ DsmRemDrVentilatieSts : 40|3@1+ (1,0) [0|7] "" LSCM,BDC,TBOX
+ SG_ DsmComfPosMemReq : 6|1@1+ (1,0) [0|1] "" LSCM,GW,RSCM
+ SG_ DsmDrvrHeatSts : 13|3@1+ (1,0) [0|7] "" LSCM,BDC,GW,TBOX,RSCM
+ SG_ DsmDrvrVentnSts : 0|3@1+ (1,0) [0|7] "" LSCM,BDC,GW,TBOX,RSCM
+ SG_ DSM_DSMLegPositionSts : 16|8@1+ (0.5,0) [0|100] "%" LSCM,GW,RSCM
+ SG_ DsmCampBedAdtStsFb : 26|3@1+ (1,0) [0|7] "" LSCM,GW,VCU,RSCM,MMI
+ SG_ DsmCampBedFrontSeatCallStsFb : 29|3@1+ (1,0) [0|7] "" LSCM,GW,RSCM,MMI
+ SG_ DsmCampBedFrontSeatAdtStsFb : 48|3@1+ (1,0) [0|7] "" LSCM,GW,RSCM
+ SG_ PsmZeroGOperationSts : 58|2@1+ (1,0) [0|3] "" LSCM,GW,RSCM
+
+BO_ 1007 B_BDC_3EF: 1 GW
+ SG_ BdcPassOccpnSts : 7|1@1+ (1,0) [0|1] "" GW,RSMR,RSML,RSCM,LSCM
+
+BO_ 1173 LSCM_495: 2 LSCM
+ SG_ LSCMNetworkActiveWakeupBit : 12|1@1+ (1,0) [0|1] "" LSCM,TBOX
+ SG_ LSCMNetworkRepeatBit : 8|1@1+ (1,0) [0|1] "" LSCM,TBOX
+
+BO_ 1283 I_HMDC_CDC_503: 15 GW
+ SG_ CdcCurrentAccountCmd : 56|64@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+
+BO_ 1285 I_HMDC_CDC_505: 1 GW
+ SG_ CdcCampBedSetReq : 0|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,MMI,RSCM,LSCM
+ SG_ CdcRsmChildLockSetReq : 4|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,RSCM,LSCM
+
+BO_ 1328 I_HMDC_CDC_530: 8 GW
+ SG_ CdcPassLegSupUpwSt : 50|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassLegSupDowSt : 51|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrLegSupUpwSt : 48|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrLegSupDowSt : 49|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPsmZeroSeatReset : 63|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcPsmMssgModSet : 56|4@1+ (1,0) [0|15] "" GW,RSCM,LSCM
+ SG_ CdcPsmCmtySet : 60|2@1+ (1,0) [0|3] "" GW,RSCM,LSCM
+ SG_ CdcDsmZeroSave : 47|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcDsmZeroSeatReset : 62|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcDsmMssgModSet : 52|4@1+ (1,0) [0|15] "" GW,RSCM,LSCM
+
+BO_ 1521 B_BDC_5F1: 3 GW
+ SG_ BcmDimmerLvl : 19|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,RSCM,LSCM
+
+BO_ 1536 I_HMDC_CDC_600: 4 GW
+ SG_ CdcDimmerLvlSet : 18|3@1+ (1,0) [0|7] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ CdcPassSeatBackBackSt : 0|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassSeatBackFwdSt : 1|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassSeatSldBackwSt : 6|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcPassSeatSldFwdSt : 7|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrReUpwdSt : 10|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrReDwnwdSt : 9|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrBackBackSt : 21|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrBackFwdSt : 22|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrFrntUpwSt : 8|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrFrntDwnwdSt : 23|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrSldBackwSt : 11|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcDrvrSldFwdSt : 12|1@1+ (1,0) [0|1] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcMainDrvrSeatInfoSaveSet : 25|2@1+ (1,0) [0|3] "" GW,RSCM,LSCM
+
+BO_ 1537 I_HMDC_CDC_601: 8 GW
+ SG_ CdcThCockpitFctSetSts : 58|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ CDCRestoreFactrySet : 47|1@1+ (1,0) [0|1] "" GW,RSML,RSMR,RSM,RSCM,LSCM
+ SG_ CdcAccountSetSts : 1|4@1+ (1,0) [0|15] "" GW,RSCM,LSCM
+ SG_ CdcPassSeatHeatSet : 26|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcDrvrSeatInfoSaveSet : 17|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcDrvrSeatInfoCallSig : 16|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcDrvrSeatHeatSet : 29|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcPsmMssgStrngthSet : 32|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcDsmCmtySet : 18|2@1+ (1,0) [0|3] "" GW,RSCM,LSCM
+
+BO_ 1538 I_HMDC_CDC_602: 8 GW
+ SG_ CdcRespiteModSts : 33|2@1+ (1,0) [0|3] "" GW,RSML,RSMR,RSCM,LSCM
+ SG_ CdcDsmZeroGSwt : 48|2@1+ (1,0) [0|3] "" GW,RSM,RSMR,RSML,RSCM,LSCM
+ SG_ CdcScArDsmAdjustReq : 50|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcPassSeatWindReq : 18|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcParkSpaceStorg : 25|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcMainDrvrSeatInfoCallSig : 14|2@1+ (1,0) [0|3] "" GW,RSCM,LSCM
+ SG_ CdcDrvrSeatWindReq : 21|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+ SG_ CdcScArPsmAdjustReq : 54|2@1+ (1,0) [0|3] "" GW,RSCM,LSCM
+ SG_ CdcPsmZeroSave : 61|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcRespiteModDsmReq : 47|1@1+ (1,0) [0|1] "" GW,RSCM,LSCM
+ SG_ CdcDsmMssgStrngthSet : 40|3@1+ (1,0) [0|7] "" GW,RSCM,LSCM
+
+BO_ 1591 LSCM_637: 8 LSCM
+ SG_ LSCM_DTC1_HighByte : 0|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC1_LowByte : 16|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC1_MiddByte : 8|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC1_Status : 24|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC2_HighByte : 32|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC2_LowByte : 48|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC2_MiddByte : 40|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+ SG_ LSCM_DTC2_Status : 56|8@1+ (1,0) [0|255] "/" LSCM,TBOX
+
+BO_ 1616 Data_GW_650: 6 LSCM
+ SG_ LSCM_WakeUp1 : 39|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp2 : 38|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp3 : 37|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp4 : 36|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp5 : 35|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp6 : 34|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp7 : 33|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp8 : 32|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp9 : 47|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_WakeUp10 : 46|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep1 : 15|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep2 : 14|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep3 : 13|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep4 : 12|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep5 : 11|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep6 : 10|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep7 : 9|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep8 : 8|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep9 : 23|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep10 : 22|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep11 : 21|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep12 : 20|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep13 : 19|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep14 : 18|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep15 : 17|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep16 : 16|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep17 : 31|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep18 : 30|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep19 : 29|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep20 : 28|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep21 : 27|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep22 : 26|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep23 : 25|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep24 : 24|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep25 : 7|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep26 : 6|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep27 : 5|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep28 : 4|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep29 : 3|1@1+ (1,0) [0|1] "" LSCM,GW
+ SG_ LSCM_NotSleep30 : 2|1@1+ (1,0) [0|1] "" LSCM,GW
+
+BO_ 1908 D_Tester_774: 1 GW
+ SG_ DiagnoseMessage0x774 : 0|1@1+ (1,0) [0|1] "/" GW,LSCM
+
+BO_ 1916 D_GW_77C: 1 LSCM
+ SG_ DiagnoseMessage0x77C : 0|1@1+ (1,0) [0|1] "/" LSCM,GW
+
+BO_ 1941 D_Tester_795: 1 GW
+ SG_ DiagnoseMessage0x795 : 0|1@1+ (1,0) [0|1] "/" GW,LSCM
+
+BO_ 1949 D_GW_79D: 1 LSCM
+ SG_ DiagnoseMessage0x79D : 0|1@1+ (1,0) [0|1] "/" LSCM,GW
+
+CM_ SG_ 80 SrsRiReBucSwtSts "SrsRiReBucSwtSts";
+CM_ SG_ 80 SrsLeReBucSwtSts "SrsLeReBucSwtSts";
+CM_ SG_ 80 SrsCrashOutpSts "SrsCrashOutpSts";
+CM_ SG_ 80 SrsCrashOutpStsChks "SrsCrashOutpStsChks";
+CM_ SG_ 80 SrsRi3rdBucSwtSts "SrsRi3rdBucSwtSts";
+CM_ SG_ 80 SrsLe3rdBucSwtSts "SrsLe3rdBucSwtSts";
+CM_ SG_ 80 SrsPassBucSwtSts "SrsPassBucSwtSts";
+CM_ SG_ 80 SrsDrvrBucSwtSts "SrsDrvrBucSwtSts";
+CM_ SG_ 536 CLCU_LeReCinchHomeSwitch "CLCU_LeReCinchHomeSwitch";
+CM_ SG_ 536 CLCU_CinchHomeSwitch "CLCU_CinchHomeSwitch";
+CM_ SG_ 536 CLCU_LeReDoorAjarSwitch "CLCU_LeReDoorAjarSwitch";
+CM_ SG_ 536 CLCU_DoorAjarSwitch "CLCU_DoorAjarSwitch";
+CM_ SG_ 536 CLCU_LeReDoorLatchFailStatus "CLCU_LeReDoorLatchFailStatus";
+CM_ SG_ 536 CLCU_DrvrDoorLatchFailStatus "CLCU_DrvrDoorLatchFailStatus";
+CM_ SG_ 536 CLCU_LeReDoorLatchStatus "CLCU_LeReDoorLatchStatus";
+CM_ SG_ 536 CLCU_DrvrDoorLatchStatus "CLCU_DrvrDoorLatchStatus";
+CM_ SG_ 536 CLCU_LeReDoorLatchMotorStallStatus "CLCU_LeReDoorLatchMotorStallStatus";
+CM_ SG_ 536 CLCU_DrvrDoorLatchMotorStallStatus "CLCU_DrvrDoorLatchMotorStallStatus";
+CM_ SG_ 536 CLCU_LeReDoorLatchMotorHeatProtectStatu "CLCU_LeReDoorLatchMotorHeatProtectStatu";
+CM_ SG_ 536 CLCU_DrvrDoorLatchMotorHeatProtectStatu "CLCU_DrvrDoorLatchMotorHeatProtectStatu";
+CM_ SG_ 536 CLCU_LeReDoorLatchPinchPlayModeStatus "CLCU_LeReDoorLatchPinchPlayModeStatus";
+CM_ SG_ 536 CLCU_DrvrDoorLatchPinchPlayModeStatus "CLCU_DrvrDoorLatchPinchPlayModeStatus";
+CM_ SG_ 536 CLCU_LeReDoorPawlSwitch "CLCU_LeReDoorPawlSwitch";
+CM_ SG_ 536 CLCU_DrvrDoorPawlSwitch "CLCU_DrvrDoorPawlSwitch";
+CM_ SG_ 540 SrsRi2ndPssengerSts "SrsRi2ndPssengerSts";
+CM_ SG_ 540 SrsMid2ndPssengerSts "SrsMid2ndPssengerSts";
+CM_ SG_ 540 SrsLi2ndPssengerSts "SrsLi2ndPssengerSts";
+CM_ SG_ 540 SrsRi3rdPssengerSts "SrsRi3rdPssengerSts";
+CM_ SG_ 540 SrsLi3rdPssengerSts "SrsLi3rdPssengerSts";
+CM_ SG_ 576 MFSRightRollerUpSts "MFSRightRollerUpSts";
+CM_ SG_ 576 MFSRightRollerDownSts "MFSRightRollerDownSts";
+CM_ SG_ 576 MFSRightRollerLeftSts "MFSRightRollerLeftSts";
+CM_ SG_ 576 MFSRightRollerRightSts "MFSRightRollerRightSts";
+CM_ SG_ 581 CdcPsmSpinUpSet "CdcPsmSpinUpSet";
+CM_ SG_ 581 CdcPsmSpinDownSet "CdcPsmSpinDownSet";
+CM_ SG_ 581 CdcDsmSpinUpSet "CdcDsmSpinUpSet";
+CM_ SG_ 581 CdcDsmSpinDownSet "CdcDsmSpinDownSet";
+CM_ SG_ 581 CdcPsmComfortModeSaveReq "CdcPsmComfortModeSaveReq";
+CM_ SG_ 581 CdcPassSeatInfoSaveSet "CdcPassSeatInfoSaveSet";
+CM_ SG_ 581 CdcPassSeatInfoCallSig "CdcPassSeatInfoCallSig";
+CM_ SG_ 581 CdcCloudSeatWindSet "CdcCloudSeatWindSet";
+CM_ SG_ 581 CdcComfortModeFuncSet "CdcComfortModeFuncSet";
+CM_ SG_ 581 CdcComfortModeSeatSet "CdcComfortModeSeatSet";
+CM_ SG_ 581 CdcDsmComfortModeSaveReq "CdcDsmComfortModeSaveReq";
+CM_ SG_ 581 HmdcSasAdjSet "HmdcSasAdjSet";
+CM_ SG_ 581 CdcPassRespiteSeatInfoSaveSet "CdcPassRespiteSeatInfoSaveSet";
+CM_ SG_ 581 CdcDrvrRespiteSeatInfoSaveSet "CdcDrvrRespiteSeatInfoSaveSet";
+CM_ SG_ 623 CcpRsmLeftSeatHeatReq "CcpRsmLeftSeatHeatReq";
+CM_ SG_ 623 CcpRsmRightSeatHeatReq "CcpRsmRightSeatHeatReq";
+CM_ SG_ 623 CcpRsmLeftSeatWindReq "CcpRsmLeftSeatWindReq";
+CM_ SG_ 623 CcpRsmRightSeatWindReq "CcpRsmRightSeatWindReq";
+CM_ SG_ 623 CcpPassSeatSldBackwSt "CcpPassSeatSldBackwSt";
+CM_ SG_ 623 CcpPassSeatSldFwdSt "CcpPassSeatSldFwdSt";
+CM_ SG_ 648 BcmPwrStsFb "BcmPwrStsFb";
+CM_ SG_ 648 BcmPosnLmpSts "BcmPosnLmpSts";
+CM_ SG_ 648 BdcDrvrSts "BdcDrvrSts";
+CM_ SG_ 648 BcmDrvrDoorLckSts "BcmDrvrDoorLckSts";
+CM_ SG_ 648 BcmRiReDoorSts "BcmRiReDoorSts";
+CM_ SG_ 648 BcmLeReDoorSts "BcmLeReDoorSts";
+CM_ SG_ 648 BcmPassDoorSts "BcmPassDoorSts";
+CM_ SG_ 648 BcmDrvrDoorSts "BcmDrvrDoorSts";
+CM_ SG_ 662 TboxRemPaHeatReq "TboxRemPaHeatReq";
+CM_ SG_ 662 TboxRemPaWindReq "TboxRemPaWindReq";
+CM_ SG_ 662 TboxRemDrvrHeatReq "TboxRemDrvrHeatReq";
+CM_ SG_ 662 TboxRemDrvrWindReq "TboxRemDrvrWindReq";
+CM_ SG_ 663 TboxLocalTiMins "TboxLocalTiMins";
+CM_ SG_ 663 TboxLocalTiSec "TboxLocalTiSec";
+CM_ SG_ 663 TboxLocalTiYear "TboxLocalTiYear";
+CM_ SG_ 663 TboxLocalTiDate "TboxLocalTiDate";
+CM_ SG_ 663 TboxLocalTiHr "TboxLocalTiHr";
+CM_ SG_ 663 TboxLocalTiVld "TboxLocalTiVld";
+CM_ SG_ 663 TboxLocalTiMth "TboxLocalTiMth";
+CM_ SG_ 688 VcuGearPosn "VcuGearPosn";
+CM_ SG_ 688 VcuExhiHalModSts "VcuExhiHalModSts";
+CM_ SG_ 688 VcuFuLeover "VcuFuLeover";
+CM_ SG_ 768 CdcPsmZeroGSwt "CdcPsmZeroGSwt";
+CM_ SG_ 776 VcuSuperSavesOperSts "VcuSuperSavesOperSts";
+CM_ SG_ 793 PsmComfPosMemReq "PsmComfPosMemReq";
+CM_ SG_ 793 PsmComfortModeMemoryFb "PsmComfortModeMemoryFb";
+CM_ SG_ 793 PsmDrvrSeatInfoSaveStsFb "PsmDrvrSeatInfoSaveStsFb";
+CM_ SG_ 793 PsmDrvrSeatInfoCallSigFb "PsmDrvrSeatInfoCallSigFb";
+CM_ SG_ 793 PsmExclSeatInfoSaveStsFb "PsmExclSeatInfoSaveStsFb";
+CM_ SG_ 793 PsmExclSeatInfoCallSigFb "PsmExclSeatInfoCallSigFb";
+CM_ SG_ 793 PsmSeatSpinSetSts "PsmSeatSpinSetSts";
+CM_ SG_ 793 PSMRotarySwitchPositionSts "PSMRotarySwitchPositionSts";
+CM_ SG_ 793 PSM_PSMLegPositionSts "PSM_PSMLegPositionSts";
+CM_ SG_ 793 DsmFrontAntiPinchSts "DsmFrontAntiPinchSts";
+CM_ SG_ 793 DsmSpaceCubePosSaveFb "DsmSpaceCubePosSaveFb";
+CM_ SG_ 793 DsmSpaceCubePosCallFb "DsmSpaceCubePosCallFb";
+CM_ SG_ 793 DsmSpaceCubePosSts "DsmSpaceCubePosSts";
+CM_ SG_ 796 DsmAcoustWarnReqALL "DsmAcoustWarnReqALL";
+CM_ SG_ 796 DsmFrontTextDispReq "DsmFrontTextDispReq";
+CM_ SG_ 797 TboxMidRightHeatReq "TboxMidRightHeatReq";
+CM_ SG_ 797 TboxMidRightWindReq "TboxMidRightWindReq";
+CM_ SG_ 797 TboxMidLeftHeatReq "TboxMidLeftHeatReq";
+CM_ SG_ 797 TboxMidLeftWindReq "TboxMidLeftWindReq";
+CM_ SG_ 797 TboxThirdRightSeatHeatReq "TboxThirdRightSeatHeatReq";
+CM_ SG_ 797 TboxThirdLeftSeatHeatReq "TboxThirdLeftSeatHeatReq";
+CM_ SG_ 797 TboxSpaceModeAdjReq "TboxSpaceModeAdjReq";
+CM_ SG_ 800 EspVehSpd "EspVehSpd";
+CM_ SG_ 800 EspVehSpdVld "EspVehSpdVld";
+CM_ SG_ 801 BcuSocDisp "BcuSocDisp";
+CM_ SG_ 803 DsmSasMotPosStsFb1 "1";
+CM_ SG_ 803 DsmSasMotPosStsFb2 "2";
+CM_ SG_ 803 DsmBackCockpitBedAdtStsFb "DsmBackCockpitBedAdtStsFb";
+CM_ SG_ 803 DsmFrontCockpitBedAdtStsFb "DsmFrontCockpitBedAdtStsFb";
+CM_ SG_ 803 DsmFrontCBFrontSeatCallStsFb "DsmFrontCBFrontSeatCallStsFb";
+CM_ SG_ 803 DsmBackCBFrontSeatCallStsFb "DsmBackCBFrontSeatCallStsFb";
+CM_ SG_ 803 DsmFrontCBFrontSeatAdtStsFb "DsmFrontCBFrontSeatAdtStsFb";
+CM_ SG_ 803 DsmBackCBFrontSeatAdtStsFb "DsmBackCBFrontSeatAdtStsFb";
+CM_ SG_ 803 DsmRespiteModForbAdjDis "DsmRespiteModForbAdjDis";
+CM_ SG_ 804 CdcRespiteSetSts "CdcRespiteSetSts";
+CM_ SG_ 804 CdcCinemaModSetReq "CdcCinemaModSetReq";
+CM_ SG_ 804 CdcScArMidLeftSeatAdjustReq "CdcScArMidLeftSeatAdjustReq";
+CM_ SG_ 804 CdcScArMidRightSeatAdjustReq "CdcScArMidRightSeatAdjustReq";
+CM_ SG_ 804 CdcSuperSavesModeSts "CdcSuperSavesModeSts";
+CM_ SG_ 804 CdcSpaceCubePosSaveSig "CdcSpaceCubePosSaveSig";
+CM_ SG_ 804 CdcSpaceCubePosCallSig "CdcSpaceCubePosCallSig";
+CM_ SG_ 804 VcuDisCarPresStsResetReq "VcuDisCarPresStsResetReq";
+CM_ SG_ 804 CdcDrvrSeatHrzntlPer "CdcDrvrSeatHrzntlPer";
+CM_ SG_ 804 CdcPsmExcLocaSave "CdcPsmExcLocaSave";
+CM_ SG_ 804 CdcPsmExcLocaCallSig "CdcPsmExcLocaCallSig";
+CM_ SG_ 804 CDCSteerElectricAdjFace "CDCSteerElectricAdjFace";
+CM_ SG_ 826 PsmComfPosMemReq "PsmComfPosMemReq";
+CM_ SG_ 826 PsmComfortModeMemoryFb "PsmComfortModeMemoryFb";
+CM_ SG_ 826 PsmDrvrSeatInfoSaveStsFb "PsmDrvrSeatInfoSaveStsFb";
+CM_ SG_ 826 PsmDrvrSeatInfoCallSigFb "PsmDrvrSeatInfoCallSigFb";
+CM_ SG_ 826 PsmExclSeatInfoSaveStsFb "PsmExclSeatInfoSaveStsFb";
+CM_ SG_ 826 PsmExclSeatInfoCallSigFb "PsmExclSeatInfoCallSigFb";
+CM_ SG_ 826 PsmSeatSpinSetSts "PsmSeatSpinSetSts";
+CM_ SG_ 826 PSMRotarySwitchPositionSts "PSMRotarySwitchPositionSts";
+CM_ SG_ 826 PSM_PSMLegPositionSts "PSM_PSMLegPositionSts";
+CM_ SG_ 826 DsmFrontAntiPinchSts "DsmFrontAntiPinchSts";
+CM_ SG_ 826 DsmSpaceCubePosSaveFb "DsmSpaceCubePosSaveFb";
+CM_ SG_ 826 DsmSpaceCubePosCallFb "DsmSpaceCubePosCallFb";
+CM_ SG_ 826 DsmSpaceCubePosSts "DsmSpaceCubePosSts";
+CM_ SG_ 827 PsmZeroSaveSts "PsmZeroSaveSts";
+CM_ SG_ 827 PsmZeroResetFb "PsmZeroResetFb";
+CM_ SG_ 827 PsZeroGSwitchSts "PsZeroGSwitchSts";
+CM_ SG_ 827 PsmZeroGSts "PsmZeroGSts";
+CM_ SG_ 827 PsmRespiteModSeatStorgSts "PsmRespiteModSeatStorgSts";
+CM_ SG_ 827 PsmParkMassageModSts "PsmParkMassageModSts";
+CM_ SG_ 827 PsmParkMassageStrSts "PsmParkMassageStrSts";
+CM_ SG_ 827 DsmPassHeatSts "DsmPassHeatSts";
+CM_ SG_ 827 PsmBackFwdAdjstSts "PsmBackFwdAdjstSts";
+CM_ SG_ 827 PSM_PSMBackrestPositionSts "PSM_PSMBackrestPositionSts";
+CM_ SG_ 827 CdcPsmCmtySetFb "CdcPsmCmtySetFb";
+CM_ SG_ 827 PSM_PSMFrontEndPositionSts "PSM_PSMFrontEndPositionSts";
+CM_ SG_ 827 PsmHrzntlAdjstSts "PsmHrzntlAdjstSts";
+CM_ SG_ 827 PSM_PSMHorizontalPositionSts "PSM_PSMHorizontalPositionSts";
+CM_ SG_ 827 DsmPassVentnSts "DsmPassVentnSts";
+CM_ SG_ 827 PsmPassLegAdjSts "PsmPassLegAdjSts";
+CM_ SG_ 827 PsmTextDispReq "PsmTextDispReq";
+CM_ SG_ 827 DsmRemPassHeatSts "DsmRemPassHeatSts";
+CM_ SG_ 827 DsmRemPassVentilatieSts "DsmRemPassVentilatieSts";
+CM_ SG_ 835 RsmlZeroSaveSts "RsmlZeroSaveSts";
+CM_ SG_ 835 RsmlZeroResetFb "RsmlZeroResetFb";
+CM_ SG_ 835 RsmlZeroGSwitchSts "RsmlZeroGSwitchSts";
+CM_ SG_ 835 RsmlZeroGSts "RsmlZeroGSts";
+CM_ SG_ 835 RsmlParkMassageModSts "RsmlParkMassageModSts";
+CM_ SG_ 835 RsmlParkMassageStrSts "RsmlParkMassageStrSts";
+CM_ SG_ 835 RsmlBacktTouchHeatSts "RsmlBacktTouchHeatSts";
+CM_ SG_ 835 RsmlBackFwdAdjstSts "RsmlBackFwdAdjstSts";
+CM_ SG_ 835 RsmlBackrestPositionSts "RsmlBackrestPositionSts";
+CM_ SG_ 835 RsmlHrzntlAdjstSts "RsmlHrzntlAdjstSts";
+CM_ SG_ 835 RsmlHorizontalPositionSts "RsmlHorizontalPositionSts";
+CM_ SG_ 835 RsmlBacktTouchVentnSts "RsmlBacktTouchVentnSts";
+CM_ SG_ 835 RsmlLegAdjSts "RsmlLegAdjSts";
+CM_ SG_ 835 RsmlSeatSpinSetSts "RsmlSeatSpinSetSts";
+CM_ SG_ 835 RsmlRotarySwitchPosSts "RsmlRotarySwitchPosSts";
+CM_ SG_ 835 RsmLThirdBacktHeatSts "RsmLThirdBacktHeatSts";
+CM_ SG_ 835 RsmlThirdBackrestPosSts "RsmlThirdBackrestPosSts";
+CM_ SG_ 835 RsmlThirdBackrestOperSts "RsmlThirdBackrestOperSts";
+CM_ SG_ 846 CdcRsmMidLeftSeatLegUpDowPosSts "CdcRsmMidLeftSeatLegUpDowPosSts";
+CM_ SG_ 846 RsmLDouSeatSwitchSig "RsmLDouSeatSwitchSig";
+CM_ SG_ 846 RsmLRestoreFactrySetFb "RsmLRestoreFactrySetFb";
+CM_ SG_ 846 RsmlThirdOnekeyDownSts "RsmlThirdOnekeyDownSts";
+CM_ SG_ 846 RsmlThirdOnekeyUpSts "RsmlThirdOnekeyUpSts";
+CM_ SG_ 846 RsmlThirdBackManualUpSts "RsmlThirdBackManualUpSts";
+CM_ SG_ 846 RsmlThirdBackManualDownSts "RsmlThirdBackManualDownSts";
+CM_ SG_ 846 RsmlZeroGOperationSts "RsmlZeroGOperationSts";
+CM_ SG_ 846 RsmlDouSeatSwitchSetSts "RsmlDouSeatSwitchSetSts";
+CM_ SG_ 846 RsmlArmrestScreenOpenSts "RsmlArmrestScreenOpenSts";
+CM_ SG_ 846 RsmlArmrestScreenQuitSts "RsmlArmrestScreenQuitSts";
+CM_ SG_ 846 RsmlSpaceCubeSaveFb "RSM-L";
+CM_ SG_ 846 RsmlSpaceCubeCallFb "RSM-L";
+CM_ SG_ 846 RsmlCampBedBackSeatCallStsFb "RsmlCampBedBackSeatCallStsFb";
+CM_ SG_ 846 RsmlCampBedBackSeatAdtStsFb "RsmlCampBedBackSeatAdtStsFb";
+CM_ SG_ 846 RsmlRsmChildLockSetSts "RsmlRsmChildLockSetSts";
+CM_ SG_ 846 RsmlHighLowconfiguration "RsmlHighLowconfiguration";
+CM_ SG_ 846 RsmlFrontRowControlSig "RsmlFrontRowControlSig";
+CM_ SG_ 846 RsmlDouSeatSetReqToRsmr "RSM-L RSM_R";
+CM_ SG_ 846 RsmlTextDispReqALL "RsmlTextDispReqALL";
+CM_ SG_ 846 RsmlAcoustWarnReqALL "RsmlAcoustWarnReqALL";
+CM_ SG_ 846 RsmlSpaceCubeOperationSts "RSM-L";
+CM_ SG_ 846 RsmlRLBedBackSeatAdtStsFb "RsmlRLBedBackSeatAdtStsFb";
+CM_ SG_ 847 RsmLHorizontalRightPosSts "RsmLHorizontalRightPosSts";
+CM_ SG_ 847 RsmlExcSeatSaveSetFb "RsmlExcSeatSaveSetFb";
+CM_ SG_ 847 RsmlExcSeatCallSetFb "RsmlExcSeatCallSetFb";
+CM_ SG_ 847 RsmlRemHeatStsFb "RsmlRemHeatStsFb";
+CM_ SG_ 847 RsmlRemVentilatieStsFb "RsmlRemVentilatieStsFb";
+CM_ SG_ 847 RsmlThirdRemHeatStsFb "RsmlThirdRemHeatStsFb";
+CM_ SG_ 847 RsmLDouSeatSetReqFb "RsmLDouSeatSetReqFb";
+CM_ SG_ 847 RsmLMoveInterveneSts "RsmLMoveInterveneSts";
+CM_ SG_ 847 RsmlbackAntiPinchSts "RsmlbackAntiPinchSts";
+CM_ SG_ 847 RsmlSpaceCubePosSaveFb "RsmlSpaceCubePosSaveFb";
+CM_ SG_ 847 RsmlSpaceCubePosCallFb "RsmlSpaceCubePosCallFb";
+CM_ SG_ 847 RsmlSpaceCubePosSts "RsmlSpaceCubePosSts";
+CM_ SG_ 847 RsmLFrontCBBackSeatCallStsFb "RsmLFrontCBBackSeatCallStsFb";
+CM_ SG_ 847 RsmLBackCBBackSeatCallStsFb "RsmLBackCBBackSeatCallStsFb";
+CM_ SG_ 847 RsmLFrontCBBackSeatAdtStsFb "RsmLFrontCBBackSeatAdtStsFb";
+CM_ SG_ 847 RsmLBackCBBackSeatAdtStsFb "RsmLBackCBBackSeatAdtStsFb";
+CM_ SG_ 847 RsmLFrontCBBackLeftSeatAdtStsFb "RsmLFrontCBBackLeftSeatAdtStsFb";
+CM_ SG_ 847 RsmLBackCBBackLeftSeatAdtStsFb "RsmLBackCBBackLeftSeatAdtStsFb";
+CM_ SG_ 847 RsmrThirdLeftBackrtPosSts "RsmrThirdLeftBackrtPosSts";
+CM_ SG_ 847 RsmlSpaceModFb "RsmlSpaceModFb";
+CM_ SG_ 847 RsmlLandSlideSts "RsmlLandSlideSts";
+CM_ SG_ 847 RsmlBackPanelLeftSwitchSts "RsmlBackPanelLeftSwitchSts";
+CM_ SG_ 847 RsmlSecondLeftSeatAntiPinchSts "RsmlSecondLeftSeatAntiPinchSts";
+CM_ SG_ 850 DsmDrvrSeatInfoSaveStsFb "DsmDrvrSeatInfoSaveStsFb";
+CM_ SG_ 850 DsmParkSpaceStorg "DsmParkSpaceStorg";
+CM_ SG_ 850 DsZeroGSwitchSts "DsZeroGSwitchSts";
+CM_ SG_ 850 DsmComfortModeMemoryFb "DsmComfortModeMemoryFb";
+CM_ SG_ 850 DsmDrvrSeatInfoCallSigFb "DsmDrvrSeatInfoCallSigFb";
+CM_ SG_ 850 DsmRespitePosSaveSetFb "DsmRespitePosSaveSetFb";
+CM_ SG_ 850 PSMBacktTouchTextDispReq "PSMBacktTouchTextDispReq";
+CM_ SG_ 850 DsmSeatAdjSts "DsmSeatAdjSts";
+CM_ SG_ 850 DsmZeroSaveSts "DsmZeroSaveSts";
+CM_ SG_ 850 DsmZeroResetFb "DsmZeroResetFb";
+CM_ SG_ 850 DsmZeroGSts "DsmZeroGSts";
+CM_ SG_ 850 DsmParkMassageModSts "DsmParkMassageModSts";
+CM_ SG_ 850 DsmParkMassageStrSts "DsmParkMassageStrSts";
+CM_ SG_ 850 DsmVrtclAdjsrSts "DsmVrtclAdjsrSts";
+CM_ SG_ 850 DsmBackFwdAdjstSts "DsmBackFwdAdjstSts";
+CM_ SG_ 850 CdcDsmCmtySetFb "CdcDsmCmtySetFb";
+CM_ SG_ 850 DsmLeadEndAdjstSts "DsmLeadEndAdjstSts";
+CM_ SG_ 850 DsmHrzntlAdjstSts "DsmHrzntlAdjstSts";
+CM_ SG_ 850 DsmDrvrLegAdjSts "DsmDrvrLegAdjSts";
+CM_ SG_ 850 DsmTextDispReq "DsmTextDispReq";
+CM_ SG_ 852 DsmSasMotPosStsFb1 "1";
+CM_ SG_ 852 DsmSasMotPosStsFb2 "2";
+CM_ SG_ 852 DsmBackCockpitBedAdtStsFb "DsmBackCockpitBedAdtStsFb";
+CM_ SG_ 852 DsmFrontCockpitBedAdtStsFb "DsmFrontCockpitBedAdtStsFb";
+CM_ SG_ 852 DsmFrontCBFrontSeatCallStsFb "DsmFrontCBFrontSeatCallStsFb";
+CM_ SG_ 852 DsmBackCBFrontSeatCallStsFb "DsmBackCBFrontSeatCallStsFb";
+CM_ SG_ 852 DsmFrontCBFrontSeatAdtStsFb "DsmFrontCBFrontSeatAdtStsFb";
+CM_ SG_ 852 DsmBackCBFrontSeatAdtStsFb "DsmBackCBFrontSeatAdtStsFb";
+CM_ SG_ 852 DsmRespiteModForbAdjDis "DsmRespiteModForbAdjDis";
+CM_ SG_ 855 DsmDrvrSeatInfoSaveStsFb "DsmDrvrSeatInfoSaveStsFb";
+CM_ SG_ 855 DsmParkSpaceStorg "DsmParkSpaceStorg";
+CM_ SG_ 855 DsZeroGSwitchSts "DsZeroGSwitchSts";
+CM_ SG_ 855 DsmComfortModeMemoryFb "DsmComfortModeMemoryFb";
+CM_ SG_ 855 DsmDrvrSeatInfoCallSigFb "DsmDrvrSeatInfoCallSigFb";
+CM_ SG_ 855 DsmRespitePosSaveSetFb "DsmRespitePosSaveSetFb";
+CM_ SG_ 855 PSMBacktTouchTextDispReq "PSMBacktTouchTextDispReq";
+CM_ SG_ 855 DsmSeatAdjSts "DsmSeatAdjSts";
+CM_ SG_ 855 DsmZeroSaveSts "DsmZeroSaveSts";
+CM_ SG_ 855 DsmZeroResetFb "DsmZeroResetFb";
+CM_ SG_ 855 DsmZeroGSts "DsmZeroGSts";
+CM_ SG_ 855 DsmParkMassageModSts "DsmParkMassageModSts";
+CM_ SG_ 855 DsmParkMassageStrSts "DsmParkMassageStrSts";
+CM_ SG_ 855 DsmVrtclAdjsrSts "DsmVrtclAdjsrSts";
+CM_ SG_ 855 DsmBackFwdAdjstSts "DsmBackFwdAdjstSts";
+CM_ SG_ 855 CdcDsmCmtySetFb "CdcDsmCmtySetFb";
+CM_ SG_ 855 DsmLeadEndAdjstSts "DsmLeadEndAdjstSts";
+CM_ SG_ 855 DsmHrzntlAdjstSts "DsmHrzntlAdjstSts";
+CM_ SG_ 855 DsmDrvrLegAdjSts "DsmDrvrLegAdjSts";
+CM_ SG_ 855 DsmTextDispReq "DsmTextDispReq";
+CM_ SG_ 858 DSM_RollingCounter_3DE "DSM_3DE";
+CM_ SG_ 858 DSM_CRCCheck_3DE "DSM_3DE";
+CM_ SG_ 858 DsmSasAdjStsFb "DsmSasAdjStsFb";
+CM_ SG_ 858 DsmSasSaveSetFb "DsmSasSaveSetFb";
+CM_ SG_ 858 DSM_DSMVerticalPositionSts "DSM_DSMVerticalPositionSts";
+CM_ SG_ 858 DSM_DSMBackrestPositionSts "DSM_DSMBackrestPositionSts";
+CM_ SG_ 858 DSM_DSMFrontEndPositionSts "DSM_DSMFrontEndPositionSts";
+CM_ SG_ 858 DSM_DSMHorizontalPositionSts "DSM_DSMHorizontalPositionSts";
+CM_ SG_ 858 DsmSeatSpinSetSts "DsmSeatSpinSetSts";
+CM_ SG_ 858 DSMRotarySwitchPositionSts "DSMRotarySwitchPositionSts";
+CM_ SG_ 858 DsmRestoreFactrySetFb "DsmRestoreFactrySetFb";
+CM_ SG_ 859 DsmRemDrHeatSts "DsmRemDrHeatSts";
+CM_ SG_ 859 DsmRemDrVentilatieSts "DsmRemDrVentilatieSts";
+CM_ SG_ 859 DsmComfPosMemReq "DsmComfPosMemReq";
+CM_ SG_ 859 DsmDrvrHeatSts "DsmDrvrHeatSts";
+CM_ SG_ 859 DsmDrvrVentnSts "DsmDrvrVentnSts";
+CM_ SG_ 859 DSM_DSMLegPositionSts "DSM_DSMLegPositionSts";
+CM_ SG_ 859 DsmCampBedAdtStsFb "DsmCampBedAdtStsFb";
+CM_ SG_ 859 DsmCampBedFrontSeatCallStsFb "DsmCampBedFrontSeatCallStsFb";
+CM_ SG_ 859 DsmCampBedFrontSeatAdtStsFb "DsmCampBedFrontSeatAdtStsFb";
+CM_ SG_ 859 PsmZeroGOperationSts "PsmZeroGOperationSts";
+CM_ SG_ 890 CdcDrvrSeatHghPer "CdcDrvrSeatHghPer";
+CM_ SG_ 890 CdcDrvrSeatBackPer "CdcDrvrSeatBackPer";
+CM_ SG_ 893 CdcRsmMidRightSeatHeatReq "CdcRsmMidRightSeatHeatReq";
+CM_ SG_ 893 CdcRsmMidRightSeatBackBackSt "CdcRsmMidRightSeatBackBackSt";
+CM_ SG_ 893 CdcRsmMidRightSeatBackFwdSt "CdcRsmMidRightSeatBackFwdSt";
+CM_ SG_ 893 CdcRsmMidRightSeatZeroGSwt "CdcRsmMidRightSeatZeroGSwt";
+CM_ SG_ 893 CdcRsmMidRightSeatSldBackSt "CdcRsmMidRightSeatSldBackSt";
+CM_ SG_ 893 CdcRsmMidRightSeatSldFwdSt "CdcRsmMidRightSeatSldFwdSt";
+CM_ SG_ 893 CdcRsmMidRightSeatWindReq "CdcRsmMidRightSeatWindReq";
+CM_ SG_ 893 CdcRsmMidRightSeatLegSupUpwSt "CdcRsmMidRightSeatLegSupUpwSt";
+CM_ SG_ 893 CdcRsmMidRightSeatLegSupDowSt "CdcRsmMidRightSeatLegSupDowSt";
+CM_ SG_ 893 CdcRsmMidRightSeatSpinUpSet "CdcRsmMidRightSeatSpinUpSet";
+CM_ SG_ 893 CdcRsmMidRightSeatSpinDownSet "CdcRsmMidRightSeatSpinDownSet";
+CM_ SG_ 893 CdcRsmMidRightMssgModSet "CdcRsmMidRightMssgModSet";
+CM_ SG_ 893 CdcRsmMidRightMssgStrngthSet "CdcRsmMidRightMssgStrngthSet";
+CM_ SG_ 893 CdcRsmMidLeftSeatHeatReq "CdcRsmMidLeftSeatHeatReq";
+CM_ SG_ 893 CdcRsmMidLeftSeatBackBackSt "CdcRsmMidLeftSeatBackBackSt";
+CM_ SG_ 893 CdcRsmMidLeftSeatBackFwdSt "CdcRsmMidLeftSeatBackFwdSt";
+CM_ SG_ 893 CdcRsmMidLeftSeatZeroGSwt "CdcRsmMidLeftSeatZeroGSwt";
+CM_ SG_ 893 CdcRsmMidLeftSeatSldBackSt "CdcRsmMidLeftSeatSldBackSt";
+CM_ SG_ 893 CdcRsmMidLeftSeatSldFwdSt "CdcRsmMidLeftSeatSldFwdSt";
+CM_ SG_ 893 CdcRsmMidLeftSeatWindReq "CdcRsmMidLeftSeatWindReq";
+CM_ SG_ 893 CdcRsmMidLeftSeatLegSupUpwSt "CdcRsmMidLeftSeatLegSupUpwSt";
+CM_ SG_ 893 CdcRsmMidLeftSeatLegSupDowSt "CdcRsmMidLeftSeatLegSupDowSt";
+CM_ SG_ 893 CdcRsmMidLeftSeatSpinUpSet "CdcRsmMidLeftSeatSpinUpSet";
+CM_ SG_ 893 CdcRsmMidLeftSeatSpinDownSet "CdcRsmMidLeftSeatSpinDownSet";
+CM_ SG_ 893 CdcRsmMidLeftMssgModSet "CdcRsmMidLeftMssgModSet";
+CM_ SG_ 893 CdcRsmMidLeftMssgStrngthSet "CdcRsmMidLeftMssgStrngthSet";
+CM_ SG_ 893 CdcRsmThirdRightSeatHeatReq "CdcRsmThirdRightSeatHeatReq";
+CM_ SG_ 893 CdcRsmThirdRightSeatBackBackSt "CdcRsmThirdRightSeatBackBackSt";
+CM_ SG_ 893 CdcRsmThirdRightSeatBackFwdSt "CdcRsmThirdRightSeatBackFwdSt";
+CM_ SG_ 893 CdcRsmThirdRightSeatOneDownSt "CdcRsmThirdRightSeatOneDownSt";
+CM_ SG_ 893 CdcRsmThirdRightSeatOneUpSt "CdcRsmThirdRightSeatOneUpSt";
+CM_ SG_ 893 CdcRsmThirdLeftSeatHeatReq "CdcRsmThirdLeftSeatHeatReq";
+CM_ SG_ 893 CdcRsmThirdLeftSeatBackBackSt "CdcRsmThirdLeftSeatBackBackSt";
+CM_ SG_ 893 CdcRsmThirdLeftSeatBackFwdSt "CdcRsmThirdLeftSeatBackFwdSt";
+CM_ SG_ 893 CdcRsmThirdLeftSeatOneDownSt "CdcRsmThirdLeftSeatOneDownSt";
+CM_ SG_ 893 CdcRsmThirdLeftSeatOneUpSt "CdcRsmThirdLeftSeatOneUpSt";
+CM_ SG_ 893 CdcIntimateCoupleSeatSetReq "CdcIntimateCoupleSeatSetReq";
+CM_ SG_ 895 CdcRsmMidRightSeatLegSupBackSt "CdcRsmMidRightSeatLegSupBackSt";
+CM_ SG_ 895 CdcRsmMidRightSeatLegSupFwdSt "CdcRsmMidRightSeatLegSupFwdSt";
+CM_ SG_ 895 CdcRsmMidRightSeatExcLocaSave "CdcRsmMidRightSeatExcLocaSave";
+CM_ SG_ 895 CdcRsmMidRightSeatExcLocaCallSig "CdcRsmMidRightSeatExcLocaCallSig";
+CM_ SG_ 895 CdcRsmMidLeftSeatLegSupBackSt "CdcRsmMidLeftSeatLegSupBackSt";
+CM_ SG_ 895 CdcRsmMidLeftSeatLegSupFwdSt "CdcRsmMidLeftSeatLegSupFwdSt";
+CM_ SG_ 895 CdcRsmMidLeftSeatExcLocaSave "CdcRsmMidLeftSeatExcLocaSave";
+CM_ SG_ 895 CdcRsmMidLeftSeatExcLocaCallSig "CdcRsmMidLeftSeatExcLocaCallSig";
+CM_ SG_ 928 CdcBackCockpitBedSetReq "CdcBackCockpitBedSetReq";
+CM_ SG_ 928 CdcFrontCockpitBedSetReq "CdcFrontCockpitBedSetReq";
+CM_ SG_ 928 CdcRsmThirdLeftSeatBackPer "CdcRsmThirdLeftSeatBackPer";
+CM_ SG_ 928 CdcRsmThirdRightSeatBackPer "CdcRsmThirdRightSeatBackPer";
+CM_ SG_ 928 CdcPassSeatSldPer "CdcPassSeatSldPer";
+CM_ SG_ 928 CdcPassSeatBackPer "CdcPassSeatBackPer";
+CM_ SG_ 928 CdcPassSeatLegSupDowPer "CdcPassSeatLegSupDowPer";
+CM_ SG_ 928 CdcScArSteerWheelAdjustReq "CdcScArSteerWheelAdjustReq";
+CM_ SG_ 976 CdcRsmMidLeftSeatSldPer "CdcRsmMidLeftSeatSldPer";
+CM_ SG_ 976 CdcRsmMidLeftSeatBackPer "CdcRsmMidLeftSeatBackPer";
+CM_ SG_ 976 CdcRsmMidLeftSeatLegSupDowPer "CdcRsmMidLeftSeatLegSupDowPer";
+CM_ SG_ 976 CdcRsmMidRightSeatSldPer "CdcRsmMidRightSeatSldPer";
+CM_ SG_ 976 CdcRsmMidRightSeatBackPer "CdcRsmMidRightSeatBackPer";
+CM_ SG_ 976 CdcRsmMidRightSeatLegSupDowPer "CdcRsmMidRightSeatLegSupDowPer";
+CM_ SG_ 988 PsmZeroSaveSts "PsmZeroSaveSts";
+CM_ SG_ 988 PsmZeroResetFb "PsmZeroResetFb";
+CM_ SG_ 988 PsZeroGSwitchSts "PsZeroGSwitchSts";
+CM_ SG_ 988 PsmZeroGSts "PsmZeroGSts";
+CM_ SG_ 988 PsmRespiteModSeatStorgSts "PsmRespiteModSeatStorgSts";
+CM_ SG_ 988 PsmParkMassageModSts "PsmParkMassageModSts";
+CM_ SG_ 988 PsmParkMassageStrSts "PsmParkMassageStrSts";
+CM_ SG_ 988 DsmPassHeatSts "DsmPassHeatSts";
+CM_ SG_ 988 PsmBackFwdAdjstSts "PsmBackFwdAdjstSts";
+CM_ SG_ 988 PSM_PSMBackrestPositionSts "PSM_PSMBackrestPositionSts";
+CM_ SG_ 988 CdcPsmCmtySetFb "CdcPsmCmtySetFb";
+CM_ SG_ 988 PSM_PSMFrontEndPositionSts "PSM_PSMFrontEndPositionSts";
+CM_ SG_ 988 PsmHrzntlAdjstSts "PsmHrzntlAdjstSts";
+CM_ SG_ 988 PSM_PSMHorizontalPositionSts "PSM_PSMHorizontalPositionSts";
+CM_ SG_ 988 DsmPassVentnSts "DsmPassVentnSts";
+CM_ SG_ 988 PsmPassLegAdjSts "PsmPassLegAdjSts";
+CM_ SG_ 988 PsmTextDispReq "PsmTextDispReq";
+CM_ SG_ 988 DsmRemPassHeatSts "DsmRemPassHeatSts";
+CM_ SG_ 988 DsmRemPassVentilatieSts "DsmRemPassVentilatieSts";
+CM_ SG_ 990 DSM_RollingCounter_3DE "DSM_3DE";
+CM_ SG_ 990 DSM_CRCCheck_3DE "DSM_3DE";
+CM_ SG_ 990 DsmSasAdjStsFb "DsmSasAdjStsFb";
+CM_ SG_ 990 DsmSasSaveSetFb "DsmSasSaveSetFb";
+CM_ SG_ 990 DSM_DSMVerticalPositionSts "DSM_DSMVerticalPositionSts";
+CM_ SG_ 990 DSM_DSMBackrestPositionSts "DSM_DSMBackrestPositionSts";
+CM_ SG_ 990 DSM_DSMFrontEndPositionSts "DSM_DSMFrontEndPositionSts";
+CM_ SG_ 990 DSM_DSMHorizontalPositionSts "DSM_DSMHorizontalPositionSts";
+CM_ SG_ 990 DsmSeatSpinSetSts "DsmSeatSpinSetSts";
+CM_ SG_ 990 DSMRotarySwitchPositionSts "DSMRotarySwitchPositionSts";
+CM_ SG_ 990 DsmRestoreFactrySetFb "DsmRestoreFactrySetFb";
+CM_ SG_ 991 MmiPositionSts "MmiPositionSts";
+CM_ SG_ 991 MmiOperationSts "MmiOperationSts";
+CM_ SG_ 991 MmiSpaceCubePosCallSigFb "MmiSpaceCubePosCallSigFb";
+CM_ SG_ 991 MmiBedFuncPosCallStsFb "MmiBedFuncPosCallStsFb";
+CM_ SG_ 1002 DsmRemDrHeatSts "DsmRemDrHeatSts";
+CM_ SG_ 1002 DsmRemDrVentilatieSts "DsmRemDrVentilatieSts";
+CM_ SG_ 1002 DsmComfPosMemReq "DsmComfPosMemReq";
+CM_ SG_ 1002 DsmDrvrHeatSts "DsmDrvrHeatSts";
+CM_ SG_ 1002 DsmDrvrVentnSts "DsmDrvrVentnSts";
+CM_ SG_ 1002 DSM_DSMLegPositionSts "DSM_DSMLegPositionSts";
+CM_ SG_ 1002 DsmCampBedAdtStsFb "DsmCampBedAdtStsFb";
+CM_ SG_ 1002 DsmCampBedFrontSeatCallStsFb "DsmCampBedFrontSeatCallStsFb";
+CM_ SG_ 1002 DsmCampBedFrontSeatAdtStsFb "DsmCampBedFrontSeatAdtStsFb";
+CM_ SG_ 1002 PsmZeroGOperationSts "PsmZeroGOperationSts";
+CM_ SG_ 1007 BdcPassOccpnSts "BdcPassOccpnSts";
+CM_ SG_ 1173 LSCMNetworkActiveWakeupBit "LSCMNetworkActiveWakeupBit";
+CM_ SG_ 1173 LSCMNetworkRepeatBit "LSCMNetworkRepeatBit";
+CM_ SG_ 1283 CdcCurrentAccountCmd "ID";
+CM_ SG_ 1285 CdcCampBedSetReq "CdcCampBedSetReq";
+CM_ SG_ 1285 CdcRsmChildLockSetReq "CdcRsmChildLockSetReq";
+CM_ SG_ 1328 CdcPassLegSupUpwSt "CdcPassLegSupUpwSt";
+CM_ SG_ 1328 CdcPassLegSupDowSt "CdcPassLegSupDowSt";
+CM_ SG_ 1328 CdcDrvrLegSupUpwSt "CdcDrvrLegSupUpwSt";
+CM_ SG_ 1328 CdcDrvrLegSupDowSt "CdcDrvrLegSupDowSt";
+CM_ SG_ 1328 CdcPsmZeroSeatReset "CdcPsmZeroSeatReset";
+CM_ SG_ 1328 CdcPsmMssgModSet "CdcPsmMssgModSet";
+CM_ SG_ 1328 CdcPsmCmtySet "CdcPsmCmtySet";
+CM_ SG_ 1328 CdcDsmZeroSave "CdcDsmZeroSave";
+CM_ SG_ 1328 CdcDsmZeroSeatReset "CdcDsmZeroSeatReset";
+CM_ SG_ 1328 CdcDsmMssgModSet "CdcDsmMssgModSet";
+CM_ SG_ 1521 BcmDimmerLvl "BcmDimmerLvl";
+CM_ SG_ 1536 CdcDimmerLvlSet "CdcDimmerLvlSet";
+CM_ SG_ 1536 CdcPassSeatBackBackSt "CdcPassSeatBackBackSt";
+CM_ SG_ 1536 CdcPassSeatBackFwdSt "CdcPassSeatBackFwdSt";
+CM_ SG_ 1536 CdcPassSeatSldBackwSt "CdcPassSeatSldBackwSt";
+CM_ SG_ 1536 CdcPassSeatSldFwdSt "CdcPassSeatSldFwdSt";
+CM_ SG_ 1536 CdcDrvrReUpwdSt "CdcDrvrReUpwdSt";
+CM_ SG_ 1536 CdcDrvrReDwnwdSt "CdcDrvrReDwnwdSt";
+CM_ SG_ 1536 CdcDrvrBackBackSt "CdcDrvrBackBackSt";
+CM_ SG_ 1536 CdcDrvrBackFwdSt "CdcDrvrBackFwdSt";
+CM_ SG_ 1536 CdcDrvrFrntUpwSt "CdcDrvrFrntUpwSt";
+CM_ SG_ 1536 CdcDrvrFrntDwnwdSt "CdcDrvrFrntDwnwdSt";
+CM_ SG_ 1536 CdcDrvrSldBackwSt "CdcDrvrSldBackwSt";
+CM_ SG_ 1536 CdcDrvrSldFwdSt "CdcDrvrSldFwdSt";
+CM_ SG_ 1536 CdcMainDrvrSeatInfoSaveSet "CdcMainDrvrSeatInfoSaveSet";
+CM_ SG_ 1537 CdcThCockpitFctSetSts "CdcThCockpitFctSetSts";
+CM_ SG_ 1537 CDCRestoreFactrySet "CDCRestoreFactrySet";
+CM_ SG_ 1537 CdcAccountSetSts "ID";
+CM_ SG_ 1537 CdcPassSeatHeatSet "CdcPassSeatHeatSet";
+CM_ SG_ 1537 CdcDrvrSeatInfoSaveSet "CdcDrvrSeatInfoSaveSet";
+CM_ SG_ 1537 CdcDrvrSeatInfoCallSig "CdcDrvrSeatInfoCallSig";
+CM_ SG_ 1537 CdcDrvrSeatHeatSet "CdcDrvrSeatHeatSet";
+CM_ SG_ 1537 CdcPsmMssgStrngthSet "CdcPsmMssgStrngthSet";
+CM_ SG_ 1537 CdcDsmCmtySet "CdcDsmCmtySet";
+CM_ SG_ 1538 CdcRespiteModSts "CdcRespiteModSts";
+CM_ SG_ 1538 CdcDsmZeroGSwt "CdcDsmZeroGSwt";
+CM_ SG_ 1538 CdcScArDsmAdjustReq "CdcScArDsmAdjustReq";
+CM_ SG_ 1538 CdcPassSeatWindReq "CdcPassSeatWindReq";
+CM_ SG_ 1538 CdcParkSpaceStorg "CdcParkSpaceStorg";
+CM_ SG_ 1538 CdcMainDrvrSeatInfoCallSig "CdcMainDrvrSeatInfoCallSig";
+CM_ SG_ 1538 CdcDrvrSeatWindReq "CdcDrvrSeatWindReq";
+CM_ SG_ 1538 CdcScArPsmAdjustReq "CdcScArPsmAdjustReq";
+CM_ SG_ 1538 CdcPsmZeroSave "CdcPsmZeroSave";
+CM_ SG_ 1538 CdcRespiteModDsmReq "CdcRespiteModDsmReq";
+CM_ SG_ 1538 CdcDsmMssgStrngthSet "CdcDsmMssgStrngthSet";
+CM_ SG_ 1591 LSCM_DTC1_HighByte "LSCM DTC1";
+CM_ SG_ 1591 LSCM_DTC1_LowByte "LSCM DTC1";
+CM_ SG_ 1591 LSCM_DTC1_MiddByte "LSCM DTC1";
+CM_ SG_ 1591 LSCM_DTC1_Status "LSCM DTC1";
+CM_ SG_ 1591 LSCM_DTC2_HighByte "LSCM DTC2";
+CM_ SG_ 1591 LSCM_DTC2_LowByte "LSCM DTC2";
+CM_ SG_ 1591 LSCM_DTC2_MiddByte "LSCM DTC2";
+CM_ SG_ 1591 LSCM_DTC2_Status "LSCM DTC2";
+CM_ SG_ 1616 LSCM_WakeUp1 "LSCM 1";
+CM_ SG_ 1616 LSCM_WakeUp2 "LSCM 2";
+CM_ SG_ 1616 LSCM_WakeUp3 "LSCM 3";
+CM_ SG_ 1616 LSCM_WakeUp4 "LSCM 4";
+CM_ SG_ 1616 LSCM_WakeUp5 "LSCM 5";
+CM_ SG_ 1616 LSCM_WakeUp6 "LSCM 6";
+CM_ SG_ 1616 LSCM_WakeUp7 "LSCM 7";
+CM_ SG_ 1616 LSCM_WakeUp8 "LSCM 8";
+CM_ SG_ 1616 LSCM_WakeUp9 "LSCM 9";
+CM_ SG_ 1616 LSCM_WakeUp10 "LSCM 10";
+CM_ SG_ 1616 LSCM_NotSleep1 "LSCM _1";
+CM_ SG_ 1616 LSCM_NotSleep2 "LSCM _2";
+CM_ SG_ 1616 LSCM_NotSleep3 "LSCM _3";
+CM_ SG_ 1616 LSCM_NotSleep4 "LSCM _4";
+CM_ SG_ 1616 LSCM_NotSleep5 "LSCM _5";
+CM_ SG_ 1616 LSCM_NotSleep6 "LSCM _6";
+CM_ SG_ 1616 LSCM_NotSleep7 "LSCM _7";
+CM_ SG_ 1616 LSCM_NotSleep8 "LSCM _8";
+CM_ SG_ 1616 LSCM_NotSleep9 "LSCM _9";
+CM_ SG_ 1616 LSCM_NotSleep10 "LSCM _10";
+CM_ SG_ 1616 LSCM_NotSleep11 "LSCM _11";
+CM_ SG_ 1616 LSCM_NotSleep12 "LSCM _12";
+CM_ SG_ 1616 LSCM_NotSleep13 "LSCM _13";
+CM_ SG_ 1616 LSCM_NotSleep14 "LSCM _14";
+CM_ SG_ 1616 LSCM_NotSleep15 "LSCM _15";
+CM_ SG_ 1616 LSCM_NotSleep16 "LSCM _16";
+CM_ SG_ 1616 LSCM_NotSleep17 "LSCM _17";
+CM_ SG_ 1616 LSCM_NotSleep18 "LSCM _18";
+CM_ SG_ 1616 LSCM_NotSleep19 "LSCM _19";
+CM_ SG_ 1616 LSCM_NotSleep20 "LSCM _20";
+CM_ SG_ 1616 LSCM_NotSleep21 "LSCM _21";
+CM_ SG_ 1616 LSCM_NotSleep22 "LSCM _22";
+CM_ SG_ 1616 LSCM_NotSleep23 "LSCM _23";
+CM_ SG_ 1616 LSCM_NotSleep24 "LSCM _24";
+CM_ SG_ 1616 LSCM_NotSleep25 "LSCM _25";
+CM_ SG_ 1616 LSCM_NotSleep26 "LSCM _26";
+CM_ SG_ 1616 LSCM_NotSleep27 "LSCM _27";
+CM_ SG_ 1616 LSCM_NotSleep28 "LSCM _28";
+CM_ SG_ 1616 LSCM_NotSleep29 "LSCM _29";
+CM_ SG_ 1616 LSCM_NotSleep30 "LSCM _30";
+CM_ SG_ 1908 DiagnoseMessage0x774 "DBC";
+CM_ SG_ 1916 DiagnoseMessage0x77C "DBC";
+CM_ SG_ 1941 DiagnoseMessage0x795 "DBC";
+CM_ SG_ 1949 DiagnoseMessage0x79D "DBC";
+
+CM_ BO_ 80 "B_SRS_050";
+CM_ BO_ 536 "LSCM_218";
+CM_ BO_ 540 "B_SRS_21C";
+CM_ BO_ 576 "I_GW_240";
+CM_ BO_ 581 "I_HMDC_CDC_245";
+CM_ BO_ 623 "B_CCP_26F";
+CM_ BO_ 648 "B_BDC_288";
+CM_ BO_ 662 "VCU_296";
+CM_ BO_ 663 "Data_TBOX5G_TBOX4G_297";
+CM_ BO_ 688 "VCU_2B0";
+CM_ BO_ 768 "I_HMDC_CDC_3E2";
+CM_ BO_ 776 "VCU_308";
+CM_ BO_ 793 "I_GW_319";
+CM_ BO_ 796 "I_GW_31C";
+CM_ BO_ 797 "VCU_31D";
+CM_ BO_ 800 "CHF_IBCU_1C2";
+CM_ BO_ 801 "PT_BCU_2A5";
+CM_ BO_ 803 "I_GW_323";
+CM_ BO_ 804 "I_HMDC_CDC_324";
+CM_ BO_ 826 "I_GW_33A";
+CM_ BO_ 827 "I_GW_33B";
+CM_ BO_ 835 "B_GW_343";
+CM_ BO_ 846 "I_GW_34E";
+CM_ BO_ 847 "I_GW_34F";
+CM_ BO_ 850 "I_GW_352";
+CM_ BO_ 852 "I_GW_354";
+CM_ BO_ 855 "I_GW_357";
+CM_ BO_ 858 "I_GW_35A";
+CM_ BO_ 859 "I_GW_35B";
+CM_ BO_ 890 "I_HMDC_CDC_37A";
+CM_ BO_ 893 "I_HMDC_CDC_37D";
+CM_ BO_ 895 "I_HMDC_CDC_37F";
+CM_ BO_ 928 "I_HMDC_CDC_3A0";
+CM_ BO_ 976 "I_HMDC_CDC_3D0";
+CM_ BO_ 988 "I_GW_3DC";
+CM_ BO_ 990 "I_GW_3DE";
+CM_ BO_ 991 "I_GW_3DF";
+CM_ BO_ 1002 "I_GW_3B5";
+CM_ BO_ 1007 "B_BDC_3EF";
+CM_ BO_ 1173 "LSCM_495";
+CM_ BO_ 1283 "I_HMDC_CDC_503";
+CM_ BO_ 1285 "I_HMDC_CDC_3BD";
+CM_ BO_ 1328 "I_HMDC_CDC_3BD";
+CM_ BO_ 1521 "B_BDC_5F1";
+CM_ BO_ 1536 "I_HMDC_CDC_2D2";
+CM_ BO_ 1537 "I_HMDC_CDC_2D2";
+CM_ BO_ 1538 "I_HMDC_CDC_2D2";
+CM_ BO_ 1591 "LSCM_637";
+CM_ BO_ 1616 "Data_GW_5D7";
+CM_ BO_ 1908 "D_Tester_774";
+CM_ BO_ 1916 "D_GW_77C";
+CM_ BO_ 1941 "D_Tester_795";
+CM_ BO_ 1949 "D_GW_79D";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_ "GenMsgSendType" STRING;
+
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "Cyclic";
+
+BA_ "GenMsgCycleTime" BO_ 80 500;
+BA_ "GenMsgSendType" BO_ 80 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 536 100;
+BA_ "GenMsgSendType" BO_ 536 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 540 40;
+BA_ "GenMsgSendType" BO_ 540 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 576 40;
+BA_ "GenMsgSendType" BO_ 576 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 581 100;
+BA_ "GenMsgSendType" BO_ 581 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 623 50;
+BA_ "GenMsgSendType" BO_ 623 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 648 40;
+BA_ "GenMsgSendType" BO_ 648 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 662 100;
+BA_ "GenMsgSendType" BO_ 662 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 663 100;
+BA_ "GenMsgSendType" BO_ 663 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 688 50;
+BA_ "GenMsgSendType" BO_ 688 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 768 100;
+BA_ "GenMsgSendType" BO_ 768 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 776 100;
+BA_ "GenMsgSendType" BO_ 776 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 793 100;
+BA_ "GenMsgSendType" BO_ 793 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 796 100;
+BA_ "GenMsgSendType" BO_ 796 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 797 100;
+BA_ "GenMsgSendType" BO_ 797 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 800 10;
+BA_ "GenMsgSendType" BO_ 800 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 801 100;
+BA_ "GenMsgSendType" BO_ 801 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 803 100;
+BA_ "GenMsgSendType" BO_ 803 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 804 100;
+BA_ "GenMsgSendType" BO_ 804 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 826 100;
+BA_ "GenMsgSendType" BO_ 826 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 827 100;
+BA_ "GenMsgSendType" BO_ 827 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 835 100;
+BA_ "GenMsgSendType" BO_ 835 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 846 100;
+BA_ "GenMsgSendType" BO_ 846 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 847 100;
+BA_ "GenMsgSendType" BO_ 847 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 850 100;
+BA_ "GenMsgSendType" BO_ 850 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 852 100;
+BA_ "GenMsgSendType" BO_ 852 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 855 100;
+BA_ "GenMsgSendType" BO_ 855 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 858 100;
+BA_ "GenMsgSendType" BO_ 858 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 859 100;
+BA_ "GenMsgSendType" BO_ 859 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 890 40;
+BA_ "GenMsgSendType" BO_ 890 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 893 40;
+BA_ "GenMsgSendType" BO_ 893 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 895 100;
+BA_ "GenMsgSendType" BO_ 895 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 928 100;
+BA_ "GenMsgSendType" BO_ 928 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 976 100;
+BA_ "GenMsgSendType" BO_ 976 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 988 100;
+BA_ "GenMsgSendType" BO_ 988 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 990 100;
+BA_ "GenMsgSendType" BO_ 990 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 991 100;
+BA_ "GenMsgSendType" BO_ 991 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1002 100;
+BA_ "GenMsgSendType" BO_ 1002 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1007 100;
+BA_ "GenMsgSendType" BO_ 1007 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1173 0;
+BA_ "GenMsgSendType" BO_ 1173 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1283 0;
+BA_ "GenMsgSendType" BO_ 1283 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1285 100;
+BA_ "GenMsgSendType" BO_ 1285 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1328 100;
+BA_ "GenMsgSendType" BO_ 1328 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1521 100;
+BA_ "GenMsgSendType" BO_ 1521 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1536 100;
+BA_ "GenMsgSendType" BO_ 1536 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1537 100;
+BA_ "GenMsgSendType" BO_ 1537 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1538 100;
+BA_ "GenMsgSendType" BO_ 1538 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1591 500;
+BA_ "GenMsgSendType" BO_ 1591 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1616 500;
+BA_ "GenMsgSendType" BO_ 1616 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1908 0;
+BA_ "GenMsgSendType" BO_ 1908 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1916 0;
+BA_ "GenMsgSendType" BO_ 1916 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1941 0;
+BA_ "GenMsgSendType" BO_ 1941 "Cyclic";
+BA_ "GenMsgCycleTime" BO_ 1949 0;
+BA_ "GenMsgSendType" BO_ 1949 "Cyclic";
+
+VAL_ 80 SrsRiReBucSwtSts 0 "Buckled" ;
+VAL_ 80 SrsRiReBucSwtSts 1 "Unbuckle" ;
+VAL_ 80 SrsRiReBucSwtSts 2 "Not used" ;
+VAL_ 80 SrsRiReBucSwtSts 3 "Not used" ;
+VAL_ 80 SrsLeReBucSwtSts 0 "Buckled" ;
+VAL_ 80 SrsLeReBucSwtSts 1 "Unbuckle" ;
+VAL_ 80 SrsLeReBucSwtSts 2 "Not used" ;
+VAL_ 80 SrsLeReBucSwtSts 3 "Not used" ;
+VAL_ 80 SrsCrashOutpSts 0 "NoCrash" ;
+VAL_ 80 SrsCrashOutpSts 1 "crash" ;
+VAL_ 80 SrsRi3rdBucSwtSts 0 "Buckled" ;
+VAL_ 80 SrsRi3rdBucSwtSts 1 "Unbuckle" ;
+VAL_ 80 SrsRi3rdBucSwtSts 2 "Not defined" ;
+VAL_ 80 SrsRi3rdBucSwtSts 3 "Not Used" ;
+VAL_ 80 SrsLe3rdBucSwtSts 0 "Buckled" ;
+VAL_ 80 SrsLe3rdBucSwtSts 1 "Unbuckle" ;
+VAL_ 80 SrsLe3rdBucSwtSts 2 "Not defined" ;
+VAL_ 80 SrsLe3rdBucSwtSts 3 "Not Used" ;
+VAL_ 80 SrsPassBucSwtSts 0 "Buckled" ;
+VAL_ 80 SrsPassBucSwtSts 1 "Unbuckle" ;
+VAL_ 80 SrsPassBucSwtSts 2 "Not used" ;
+VAL_ 80 SrsPassBucSwtSts 3 "Not used" ;
+VAL_ 80 SrsDrvrBucSwtSts 0 "Buckled" ;
+VAL_ 80 SrsDrvrBucSwtSts 1 "Unbuckle" ;
+VAL_ 80 SrsDrvrBucSwtSts 2 "Not used" ;
+VAL_ 80 SrsDrvrBucSwtSts 3 "Not used" ;
+VAL_ 536 CLCU_LeReCinchHomeSwitch 0 "Close" ;
+VAL_ 536 CLCU_LeReCinchHomeSwitch 1 "Open" ;
+VAL_ 536 CLCU_CinchHomeSwitch 0 "Close" ;
+VAL_ 536 CLCU_CinchHomeSwitch 1 "Open" ;
+VAL_ 536 CLCU_LeReDoorAjarSwitch 0 "Close" ;
+VAL_ 536 CLCU_LeReDoorAjarSwitch 1 "Open" ;
+VAL_ 536 CLCU_DoorAjarSwitch 0 "Close" ;
+VAL_ 536 CLCU_DoorAjarSwitch 1 "Open" ;
+VAL_ 536 CLCU_LeReDoorLatchFailStatus 0 "NotFailure" ;
+VAL_ 536 CLCU_LeReDoorLatchFailStatus 1 "Failure" ;
+VAL_ 536 CLCU_DrvrDoorLatchFailStatus 0 "NotFailure" ;
+VAL_ 536 CLCU_DrvrDoorLatchFailStatus 1 "Failure" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 0 "Unkonw" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 1 "Cinching" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 2 "Cinched" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 3 "Releasing" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 4 "Released" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 5 "Reserved" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 6 "Reserved" ;
+VAL_ 536 CLCU_LeReDoorLatchStatus 7 "Reserved" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 0 "Unkonw" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 1 "Cinching" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 2 "Cinched" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 3 "Releasing" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 4 "Released" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 5 "Reserved" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 6 "Reserved" ;
+VAL_ 536 CLCU_DrvrDoorLatchStatus 7 "Reserved" ;
+VAL_ 536 CLCU_LeReDoorLatchMotorStallStatus 0 "Natural" ;
+VAL_ 536 CLCU_LeReDoorLatchMotorStallStatus 1 "Stuck Error" ;
+VAL_ 536 CLCU_DrvrDoorLatchMotorStallStatus 0 "Natural" ;
+VAL_ 536 CLCU_DrvrDoorLatchMotorStallStatus 1 "Stuck Error" ;
+VAL_ 536 CLCU_LeReDoorLatchMotorHeatProtectStatu 0 "OFF" ;
+VAL_ 536 CLCU_LeReDoorLatchMotorHeatProtectStatu 1 "ON" ;
+VAL_ 536 CLCU_DrvrDoorLatchMotorHeatProtectStatu 0 "OFF" ;
+VAL_ 536 CLCU_DrvrDoorLatchMotorHeatProtectStatu 1 "ON" ;
+VAL_ 536 CLCU_LeReDoorLatchPinchPlayModeStatus 0 "OFF" ;
+VAL_ 536 CLCU_LeReDoorLatchPinchPlayModeStatus 1 "ON" ;
+VAL_ 536 CLCU_DrvrDoorLatchPinchPlayModeStatus 0 "OFF" ;
+VAL_ 536 CLCU_DrvrDoorLatchPinchPlayModeStatus 1 "ON" ;
+VAL_ 536 CLCU_LeReDoorPawlSwitch 0 "Close" ;
+VAL_ 536 CLCU_LeReDoorPawlSwitch 1 "Open" ;
+VAL_ 536 CLCU_DrvrDoorPawlSwitch 0 "Close" ;
+VAL_ 536 CLCU_DrvrDoorPawlSwitch 1 "Open" ;
+VAL_ 540 SrsRi2ndPssengerSts 0 "not occupied" ;
+VAL_ 540 SrsRi2ndPssengerSts 1 "occupied" ;
+VAL_ 540 SrsMid2ndPssengerSts 0 "not occupied" ;
+VAL_ 540 SrsMid2ndPssengerSts 1 "occupied" ;
+VAL_ 540 SrsLi2ndPssengerSts 0 "not occupied" ;
+VAL_ 540 SrsLi2ndPssengerSts 1 "occupied" ;
+VAL_ 540 SrsRi3rdPssengerSts 0 "not occupied" ;
+VAL_ 540 SrsRi3rdPssengerSts 1 "occupied" ;
+VAL_ 540 SrsLi3rdPssengerSts 0 "not occupied" ;
+VAL_ 540 SrsLi3rdPssengerSts 1 "occupied" ;
+VAL_ 576 MFSRightRollerUpSts 0 " " ;
+VAL_ 576 MFSRightRollerUpSts 1 " " ;
+VAL_ 576 MFSRightRollerUpSts 2 " " ;
+VAL_ 576 MFSRightRollerUpSts 3 "Error" ;
+VAL_ 576 MFSRightRollerDownSts 0 " " ;
+VAL_ 576 MFSRightRollerDownSts 1 " " ;
+VAL_ 576 MFSRightRollerDownSts 2 " " ;
+VAL_ 576 MFSRightRollerDownSts 3 "Error" ;
+VAL_ 576 MFSRightRollerLeftSts 0 " " ;
+VAL_ 576 MFSRightRollerLeftSts 1 " " ;
+VAL_ 576 MFSRightRollerLeftSts 2 " " ;
+VAL_ 576 MFSRightRollerLeftSts 3 "Error" ;
+VAL_ 576 MFSRightRollerRightSts 0 " " ;
+VAL_ 576 MFSRightRollerRightSts 1 " " ;
+VAL_ 576 MFSRightRollerRightSts 2 " " ;
+VAL_ 576 MFSRightRollerRightSts 3 "Error" ;
+VAL_ 581 CdcPsmSpinUpSet 0 " " ;
+VAL_ 581 CdcPsmSpinUpSet 1 " " ;
+VAL_ 581 CdcPsmSpinDownSet 0 " " ;
+VAL_ 581 CdcPsmSpinDownSet 1 " " ;
+VAL_ 581 CdcDsmSpinUpSet 0 " " ;
+VAL_ 581 CdcDsmSpinUpSet 1 " " ;
+VAL_ 581 CdcDsmSpinDownSet 0 " " ;
+VAL_ 581 CdcDsmSpinDownSet 1 " " ;
+VAL_ 581 CdcPsmComfortModeSaveReq 0 " " ;
+VAL_ 581 CdcPsmComfortModeSaveReq 1 " " ;
+VAL_ 581 CdcPassSeatInfoSaveSet 0 "Norequest" ;
+VAL_ 581 CdcPassSeatInfoSaveSet 1 " 1 " ;
+VAL_ 581 CdcPassSeatInfoSaveSet 2 " 2 " ;
+VAL_ 581 CdcPassSeatInfoCallSig 0 "Norequest" ;
+VAL_ 581 CdcPassSeatInfoCallSig 1 " 1 " ;
+VAL_ 581 CdcPassSeatInfoCallSig 2 " 2 " ;
+VAL_ 581 CdcCloudSeatWindSet 0 " " ;
+VAL_ 581 CdcCloudSeatWindSet 1 " " ;
+VAL_ 581 CdcComfortModeFuncSet 0 " " ;
+VAL_ 581 CdcComfortModeFuncSet 1 " " ;
+VAL_ 581 CdcComfortModeFuncSet 2 " " ;
+VAL_ 581 CdcComfortModeFuncSet 3 " " ;
+VAL_ 581 CdcComfortModeSeatSet 0 " " ;
+VAL_ 581 CdcComfortModeSeatSet 1 " " ;
+VAL_ 581 CdcComfortModeSeatSet 2 " " ;
+VAL_ 581 CdcComfortModeSeatSet 3 " " ;
+VAL_ 581 CdcDsmComfortModeSaveReq 0 " " ;
+VAL_ 581 CdcDsmComfortModeSaveReq 1 " " ;
+VAL_ 581 HmdcSasAdjSet 0 " " ;
+VAL_ 581 HmdcSasAdjSet 1 " " ;
+VAL_ 581 HmdcSasAdjSet 2 " " ;
+VAL_ 581 HmdcSasAdjSet 3 " " ;
+VAL_ 581 HmdcSasAdjSet 4 " " ;
+VAL_ 581 CdcPassRespiteSeatInfoSaveSet 0 "Norequest" ;
+VAL_ 581 CdcPassRespiteSeatInfoSaveSet 1 " " ;
+VAL_ 581 CdcDrvrRespiteSeatInfoSaveSet 0 "Norequest" ;
+VAL_ 581 CdcDrvrRespiteSeatInfoSaveSet 1 " " ;
+VAL_ 623 CcpRsmLeftSeatHeatReq 0 " " ;
+VAL_ 623 CcpRsmLeftSeatHeatReq 1 " " ;
+VAL_ 623 CcpRsmRightSeatHeatReq 0 " " ;
+VAL_ 623 CcpRsmRightSeatHeatReq 1 " " ;
+VAL_ 623 CcpRsmLeftSeatWindReq 0 " " ;
+VAL_ 623 CcpRsmLeftSeatWindReq 1 " " ;
+VAL_ 623 CcpRsmRightSeatWindReq 0 " " ;
+VAL_ 623 CcpRsmRightSeatWindReq 1 " " ;
+VAL_ 623 CcpPassSeatSldBackwSt 0 " " ;
+VAL_ 623 CcpPassSeatSldBackwSt 1 " " ;
+VAL_ 623 CcpPassSeatSldFwdSt 0 " " ;
+VAL_ 623 CcpPassSeatSldFwdSt 1 " " ;
+VAL_ 648 BcmPwrStsFb 0 "OFF" ;
+VAL_ 648 BcmPwrStsFb 1 "FBLPower" ;
+VAL_ 648 BcmPwrStsFb 2 "ON" ;
+VAL_ 648 BcmPwrStsFb 3 "Start" ;
+VAL_ 648 BcmPosnLmpSts 0 "OFF" ;
+VAL_ 648 BcmPosnLmpSts 1 "ON" ;
+VAL_ 648 BcmPosnLmpSts 2 "Not used" ;
+VAL_ 648 BcmPosnLmpSts 3 "Reserved" ;
+VAL_ 648 BdcDrvrSts 0 " " ;
+VAL_ 648 BdcDrvrSts 1 " " ;
+VAL_ 648 BcmDrvrDoorLckSts 0 "Lock" ;
+VAL_ 648 BcmDrvrDoorLckSts 1 "Unlock" ;
+VAL_ 648 BcmDrvrDoorLckSts 2 "Notused" ;
+VAL_ 648 BcmDrvrDoorLckSts 3 "Error" ;
+VAL_ 648 BcmRiReDoorSts 0 "Close" ;
+VAL_ 648 BcmRiReDoorSts 1 "Open" ;
+VAL_ 648 BcmLeReDoorSts 0 "Close" ;
+VAL_ 648 BcmLeReDoorSts 1 "Open" ;
+VAL_ 648 BcmPassDoorSts 0 "Close" ;
+VAL_ 648 BcmPassDoorSts 1 "Open" ;
+VAL_ 648 BcmDrvrDoorSts 0 "Close" ;
+VAL_ 648 BcmDrvrDoorSts 1 "Open" ;
+VAL_ 662 TboxRemPaHeatReq 0 "Not request" ;
+VAL_ 662 TboxRemPaHeatReq 1 "1 " ;
+VAL_ 662 TboxRemPaHeatReq 2 "2 " ;
+VAL_ 662 TboxRemPaHeatReq 3 "3 " ;
+VAL_ 662 TboxRemPaHeatReq 4 " " ;
+VAL_ 662 TboxRemPaHeatReq 5 "Reserved" ;
+VAL_ 662 TboxRemPaHeatReq 6 "Reserved" ;
+VAL_ 662 TboxRemPaHeatReq 7 "Invalid" ;
+VAL_ 662 TboxRemPaWindReq 0 "Not request" ;
+VAL_ 662 TboxRemPaWindReq 1 "1 " ;
+VAL_ 662 TboxRemPaWindReq 2 "2 " ;
+VAL_ 662 TboxRemPaWindReq 3 "3 " ;
+VAL_ 662 TboxRemPaWindReq 4 " " ;
+VAL_ 662 TboxRemPaWindReq 5 "Reserved" ;
+VAL_ 662 TboxRemPaWindReq 6 "Reserved" ;
+VAL_ 662 TboxRemPaWindReq 7 "Invalid" ;
+VAL_ 662 TboxRemDrvrHeatReq 0 "Not request" ;
+VAL_ 662 TboxRemDrvrHeatReq 1 "1 " ;
+VAL_ 662 TboxRemDrvrHeatReq 2 "2 " ;
+VAL_ 662 TboxRemDrvrHeatReq 3 "3 " ;
+VAL_ 662 TboxRemDrvrHeatReq 4 " " ;
+VAL_ 662 TboxRemDrvrHeatReq 5 "Reserved" ;
+VAL_ 662 TboxRemDrvrHeatReq 6 "Reserved" ;
+VAL_ 662 TboxRemDrvrHeatReq 7 "Invalid" ;
+VAL_ 662 TboxRemDrvrWindReq 0 "Not request" ;
+VAL_ 662 TboxRemDrvrWindReq 1 "1 " ;
+VAL_ 662 TboxRemDrvrWindReq 2 "2 " ;
+VAL_ 662 TboxRemDrvrWindReq 3 "3 " ;
+VAL_ 662 TboxRemDrvrWindReq 4 " " ;
+VAL_ 662 TboxRemDrvrWindReq 5 "Reserved" ;
+VAL_ 662 TboxRemDrvrWindReq 6 "Reserved" ;
+VAL_ 662 TboxRemDrvrWindReq 7 "Invalid" ;
+VAL_ 663 TboxLocalTiVld 0 "Valid" ;
+VAL_ 663 TboxLocalTiVld 1 "Invalid" ;
+VAL_ 688 VcuGearPosn 0 "Invalid" ;
+VAL_ 688 VcuGearPosn 1 "P" ;
+VAL_ 688 VcuGearPosn 2 "R" ;
+VAL_ 688 VcuGearPosn 3 "N" ;
+VAL_ 688 VcuGearPosn 4 "D" ;
+VAL_ 688 VcuGearPosn 5 "reserved" ;
+VAL_ 688 VcuExhiHalModSts 0 " " ;
+VAL_ 688 VcuExhiHalModSts 1 " " ;
+VAL_ 688 VcuExhiHalModSts 2 " " ;
+VAL_ 688 VcuExhiHalModSts 3 " " ;
+VAL_ 768 CdcPsmZeroGSwt 0 " " ;
+VAL_ 768 CdcPsmZeroGSwt 1 " " ;
+VAL_ 768 CdcPsmZeroGSwt 2 " " ;
+VAL_ 776 VcuSuperSavesOperSts 0 "OFF" ;
+VAL_ 776 VcuSuperSavesOperSts 1 "ON" ;
+VAL_ 793 PsmComfPosMemReq 0 " " ;
+VAL_ 793 PsmComfPosMemReq 1 " " ;
+VAL_ 793 PsmComfortModeMemoryFb 0 "Not used" ;
+VAL_ 793 PsmComfortModeMemoryFb 1 " " ;
+VAL_ 793 PsmComfortModeMemoryFb 2 " " ;
+VAL_ 793 PsmDrvrSeatInfoSaveStsFb 0 "Not used" ;
+VAL_ 793 PsmDrvrSeatInfoSaveStsFb 1 " " ;
+VAL_ 793 PsmDrvrSeatInfoSaveStsFb 2 " " ;
+VAL_ 793 PsmDrvrSeatInfoCallSigFb 0 "Norequest" ;
+VAL_ 793 PsmDrvrSeatInfoCallSigFb 1 " " ;
+VAL_ 793 PsmDrvrSeatInfoCallSigFb 2 " " ;
+VAL_ 793 PsmDrvrSeatInfoCallSigFb 3 " " ;
+VAL_ 793 PsmExclSeatInfoSaveStsFb 0 " " ;
+VAL_ 793 PsmExclSeatInfoSaveStsFb 1 " " ;
+VAL_ 793 PsmExclSeatInfoSaveStsFb 2 " " ;
+VAL_ 793 PsmExclSeatInfoCallSigFb 0 "Norequest" ;
+VAL_ 793 PsmExclSeatInfoCallSigFb 1 " " ;
+VAL_ 793 PsmExclSeatInfoCallSigFb 2 " " ;
+VAL_ 793 PsmExclSeatInfoCallSigFb 3 " " ;
+VAL_ 793 PsmSeatSpinSetSts 0 " " ;
+VAL_ 793 PsmSeatSpinSetSts 1 " " ;
+VAL_ 793 PSMRotarySwitchPositionSts 0 "Inactive" ;
+VAL_ 793 PSMRotarySwitchPositionSts 255 "Invalid" ;
+VAL_ 793 PSM_PSMLegPositionSts 0 "Inactive" ;
+VAL_ 793 PSM_PSMLegPositionSts 255 "Invalid" ;
+VAL_ 793 DsmFrontAntiPinchSts 0 " " ;
+VAL_ 793 DsmFrontAntiPinchSts 1 " " ;
+VAL_ 793 DsmSpaceCubePosSaveFb 0 " " ;
+VAL_ 793 DsmSpaceCubePosSaveFb 1 " " ;
+VAL_ 793 DsmSpaceCubePosSaveFb 2 " " ;
+VAL_ 793 DsmSpaceCubePosCallFb 0 " " ;
+VAL_ 793 DsmSpaceCubePosCallFb 1 " " ;
+VAL_ 793 DsmSpaceCubePosCallFb 2 " " ;
+VAL_ 793 DsmSpaceCubePosSts 0 " " ;
+VAL_ 793 DsmSpaceCubePosSts 1 " " ;
+VAL_ 793 DsmSpaceCubePosSts 2 " " ;
+VAL_ 793 DsmSpaceCubePosSts 3 " " ;
+VAL_ 796 DsmAcoustWarnReqALL 0 " " ;
+VAL_ 796 DsmAcoustWarnReqALL 1 " " ;
+VAL_ 796 DsmAcoustWarnReqALL 2 " " ;
+VAL_ 796 DsmAcoustWarnReqALL 3 " " ;
+VAL_ 796 DsmAcoustWarnReqALL 4 " " ;
+VAL_ 796 DsmAcoustWarnReqALL 5 " " ;
+VAL_ 796 DsmFrontTextDispReq 0 " " ;
+VAL_ 796 DsmFrontTextDispReq 1 " " ;
+VAL_ 796 DsmFrontTextDispReq 2 " " ;
+VAL_ 797 TboxMidRightHeatReq 0 " " ;
+VAL_ 797 TboxMidRightHeatReq 1 "Level1" ;
+VAL_ 797 TboxMidRightHeatReq 2 "Level2" ;
+VAL_ 797 TboxMidRightHeatReq 3 "Level3" ;
+VAL_ 797 TboxMidRightHeatReq 4 "off" ;
+VAL_ 797 TboxMidRightWindReq 0 "Not request" ;
+VAL_ 797 TboxMidRightWindReq 1 "1 " ;
+VAL_ 797 TboxMidRightWindReq 2 "2 " ;
+VAL_ 797 TboxMidRightWindReq 3 "3 " ;
+VAL_ 797 TboxMidRightWindReq 4 " " ;
+VAL_ 797 TboxMidRightWindReq 5 "Reserved" ;
+VAL_ 797 TboxMidRightWindReq 6 "Reserved" ;
+VAL_ 797 TboxMidRightWindReq 7 "Invalid" ;
+VAL_ 797 TboxMidLeftHeatReq 0 " " ;
+VAL_ 797 TboxMidLeftHeatReq 1 "Level1" ;
+VAL_ 797 TboxMidLeftHeatReq 2 "Level2" ;
+VAL_ 797 TboxMidLeftHeatReq 3 "Level3" ;
+VAL_ 797 TboxMidLeftHeatReq 4 "off" ;
+VAL_ 797 TboxMidLeftWindReq 0 "Not request" ;
+VAL_ 797 TboxMidLeftWindReq 1 "1 " ;
+VAL_ 797 TboxMidLeftWindReq 2 "2 " ;
+VAL_ 797 TboxMidLeftWindReq 3 "3 " ;
+VAL_ 797 TboxMidLeftWindReq 4 " " ;
+VAL_ 797 TboxMidLeftWindReq 5 "Reserved" ;
+VAL_ 797 TboxMidLeftWindReq 6 "Reserved" ;
+VAL_ 797 TboxMidLeftWindReq 7 "Invalid" ;
+VAL_ 797 TboxThirdRightSeatHeatReq 0 " " ;
+VAL_ 797 TboxThirdRightSeatHeatReq 1 "Level1" ;
+VAL_ 797 TboxThirdRightSeatHeatReq 2 "Level2" ;
+VAL_ 797 TboxThirdRightSeatHeatReq 3 "Level3" ;
+VAL_ 797 TboxThirdRightSeatHeatReq 4 "off" ;
+VAL_ 797 TboxThirdLeftSeatHeatReq 0 " " ;
+VAL_ 797 TboxThirdLeftSeatHeatReq 1 "Level1" ;
+VAL_ 797 TboxThirdLeftSeatHeatReq 2 "Level2" ;
+VAL_ 797 TboxThirdLeftSeatHeatReq 3 "Level3" ;
+VAL_ 797 TboxThirdLeftSeatHeatReq 4 "off" ;
+VAL_ 797 TboxSpaceModeAdjReq 0 " " ;
+VAL_ 797 TboxSpaceModeAdjReq 1 " " ;
+VAL_ 797 TboxSpaceModeAdjReq 2 " " ;
+VAL_ 797 TboxSpaceModeAdjReq 3 " " ;
+VAL_ 800 EspVehSpdVld 0 "Valid" ;
+VAL_ 800 EspVehSpdVld 1 "Invalid" ;
+VAL_ 803 DsmSasMotPosStsFb1 0 "Inactive" ;
+VAL_ 803 DsmSasMotPosStsFb1 255 "Invalid" ;
+VAL_ 803 DsmSasMotPosStsFb2 0 "Inactive" ;
+VAL_ 803 DsmSasMotPosStsFb2 255 "Invalid" ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 1 " " ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 2 " " ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 3 " " ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 4 " " ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 5 " " ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 6 " " ;
+VAL_ 803 DsmBackCockpitBedAdtStsFb 7 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 1 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 2 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 3 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 4 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 5 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 6 " " ;
+VAL_ 803 DsmFrontCockpitBedAdtStsFb 7 " " ;
+VAL_ 803 DsmFrontCBFrontSeatCallStsFb 0 " " ;
+VAL_ 803 DsmFrontCBFrontSeatCallStsFb 1 " " ;
+VAL_ 803 DsmFrontCBFrontSeatCallStsFb 2 " " ;
+VAL_ 803 DsmFrontCBFrontSeatCallStsFb 3 " " ;
+VAL_ 803 DsmFrontCBFrontSeatCallStsFb 4 " " ;
+VAL_ 803 DsmFrontCBFrontSeatCallStsFb 5 " " ;
+VAL_ 803 DsmBackCBFrontSeatCallStsFb 0 " " ;
+VAL_ 803 DsmBackCBFrontSeatCallStsFb 1 " " ;
+VAL_ 803 DsmBackCBFrontSeatCallStsFb 2 " " ;
+VAL_ 803 DsmBackCBFrontSeatCallStsFb 3 " " ;
+VAL_ 803 DsmBackCBFrontSeatCallStsFb 4 " " ;
+VAL_ 803 DsmBackCBFrontSeatCallStsFb 5 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 0 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 1 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 2 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 3 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 4 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 5 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 6 " " ;
+VAL_ 803 DsmFrontCBFrontSeatAdtStsFb 7 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 0 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 1 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 2 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 3 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 4 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 5 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 6 " " ;
+VAL_ 803 DsmBackCBFrontSeatAdtStsFb 7 " " ;
+VAL_ 803 DsmRespiteModForbAdjDis 0 " " ;
+VAL_ 803 DsmRespiteModForbAdjDis 1 " " ;
+VAL_ 804 CdcRespiteSetSts 0 " " ;
+VAL_ 804 CdcRespiteSetSts 1 " " ;
+VAL_ 804 CdcRespiteSetSts 2 " " ;
+VAL_ 804 CdcRespiteSetSts 3 " " ;
+VAL_ 804 CdcRespiteSetSts 4 " " ;
+VAL_ 804 CdcRespiteSetSts 5 " " ;
+VAL_ 804 CdcRespiteSetSts 6 " " ;
+VAL_ 804 CdcRespiteSetSts 7 " " ;
+VAL_ 804 CdcRespiteSetSts 8 " " ;
+VAL_ 804 CdcRespiteSetSts 9 " " ;
+VAL_ 804 CdcCinemaModSetReq 0 " " ;
+VAL_ 804 CdcCinemaModSetReq 1 " " ;
+VAL_ 804 CdcCinemaModSetReq 2 " " ;
+VAL_ 804 CdcCinemaModSetReq 3 " " ;
+VAL_ 804 CdcCinemaModSetReq 4 " " ;
+VAL_ 804 CdcCinemaModSetReq 5 " " ;
+VAL_ 804 CdcScArMidLeftSeatAdjustReq 0 " " ;
+VAL_ 804 CdcScArMidLeftSeatAdjustReq 1 " " ;
+VAL_ 804 CdcScArMidRightSeatAdjustReq 0 " " ;
+VAL_ 804 CdcScArMidRightSeatAdjustReq 1 " " ;
+VAL_ 804 CdcSuperSavesModeSts 0 "OFF" ;
+VAL_ 804 CdcSuperSavesModeSts 1 "ON" ;
+VAL_ 804 CdcSpaceCubePosSaveSig 0 " " ;
+VAL_ 804 CdcSpaceCubePosSaveSig 1 " 1 " ;
+VAL_ 804 CdcSpaceCubePosSaveSig 2 " 2 " ;
+VAL_ 804 CdcSpaceCubePosSaveSig 3 " 3 " ;
+VAL_ 804 CdcSpaceCubePosCallSig 0 " " ;
+VAL_ 804 CdcSpaceCubePosCallSig 1 " " ;
+VAL_ 804 CdcSpaceCubePosCallSig 2 " " ;
+VAL_ 804 CdcSpaceCubePosCallSig 3 " 1 " ;
+VAL_ 804 CdcSpaceCubePosCallSig 4 " 2 " ;
+VAL_ 804 CdcSpaceCubePosCallSig 5 " " ;
+VAL_ 804 CdcSpaceCubePosCallSig 6 " " ;
+VAL_ 804 VcuDisCarPresStsResetReq 0 " " ;
+VAL_ 804 VcuDisCarPresStsResetReq 1 " " ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 0 " " ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 1 "0%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 2 "10%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 3 "20%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 4 "30%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 5 "40%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 6 "50%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 7 "60%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 8 "70%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 9 "80%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 10 "90%" ;
+VAL_ 804 CdcDrvrSeatHrzntlPer 11 "100%" ;
+VAL_ 804 CdcPsmExcLocaSave 0 " " ;
+VAL_ 804 CdcPsmExcLocaSave 1 " 1 " ;
+VAL_ 804 CdcPsmExcLocaSave 2 " 2 " ;
+VAL_ 804 CdcPsmExcLocaSave 3 " 3 " ;
+VAL_ 804 CdcPsmExcLocaSave 4 " 4 " ;
+VAL_ 804 CdcPsmExcLocaSave 5 " 5 " ;
+VAL_ 804 CdcPsmExcLocaSave 6 " 6 " ;
+VAL_ 804 CdcPsmExcLocaSave 7 " " ;
+VAL_ 804 CdcPsmExcLocaCallSig 0 " " ;
+VAL_ 804 CdcPsmExcLocaCallSig 1 " 1 " ;
+VAL_ 804 CdcPsmExcLocaCallSig 2 " 2 " ;
+VAL_ 804 CdcPsmExcLocaCallSig 3 " 3 " ;
+VAL_ 804 CdcPsmExcLocaCallSig 4 " 4 " ;
+VAL_ 804 CdcPsmExcLocaCallSig 5 " 5 " ;
+VAL_ 804 CdcPsmExcLocaCallSig 6 " 6 " ;
+VAL_ 804 CdcPsmExcLocaCallSig 7 " " ;
+VAL_ 804 CDCSteerElectricAdjFace 0 " " ;
+VAL_ 804 CDCSteerElectricAdjFace 1 " " ;
+VAL_ 826 PsmComfPosMemReq 0 " " ;
+VAL_ 826 PsmComfPosMemReq 1 " " ;
+VAL_ 826 PsmComfortModeMemoryFb 0 "Not used" ;
+VAL_ 826 PsmComfortModeMemoryFb 1 " " ;
+VAL_ 826 PsmComfortModeMemoryFb 2 " " ;
+VAL_ 826 PsmDrvrSeatInfoSaveStsFb 0 "Not used" ;
+VAL_ 826 PsmDrvrSeatInfoSaveStsFb 1 " " ;
+VAL_ 826 PsmDrvrSeatInfoSaveStsFb 2 " " ;
+VAL_ 826 PsmDrvrSeatInfoCallSigFb 0 "Norequest" ;
+VAL_ 826 PsmDrvrSeatInfoCallSigFb 1 " " ;
+VAL_ 826 PsmDrvrSeatInfoCallSigFb 2 " " ;
+VAL_ 826 PsmDrvrSeatInfoCallSigFb 3 " " ;
+VAL_ 826 PsmExclSeatInfoSaveStsFb 0 " " ;
+VAL_ 826 PsmExclSeatInfoSaveStsFb 1 " " ;
+VAL_ 826 PsmExclSeatInfoSaveStsFb 2 " " ;
+VAL_ 826 PsmExclSeatInfoCallSigFb 0 "Norequest" ;
+VAL_ 826 PsmExclSeatInfoCallSigFb 1 " " ;
+VAL_ 826 PsmExclSeatInfoCallSigFb 2 " " ;
+VAL_ 826 PsmExclSeatInfoCallSigFb 3 " " ;
+VAL_ 826 PsmSeatSpinSetSts 0 " " ;
+VAL_ 826 PsmSeatSpinSetSts 1 " " ;
+VAL_ 826 PSMRotarySwitchPositionSts 0 "Inactive" ;
+VAL_ 826 PSMRotarySwitchPositionSts 255 "Invalid" ;
+VAL_ 826 PSM_PSMLegPositionSts 0 "Inactive" ;
+VAL_ 826 PSM_PSMLegPositionSts 255 "Invalid" ;
+VAL_ 826 DsmFrontAntiPinchSts 0 " " ;
+VAL_ 826 DsmFrontAntiPinchSts 1 " " ;
+VAL_ 826 DsmSpaceCubePosSaveFb 0 " " ;
+VAL_ 826 DsmSpaceCubePosSaveFb 1 " " ;
+VAL_ 826 DsmSpaceCubePosSaveFb 2 " " ;
+VAL_ 826 DsmSpaceCubePosCallFb 0 " " ;
+VAL_ 826 DsmSpaceCubePosCallFb 1 " " ;
+VAL_ 826 DsmSpaceCubePosCallFb 2 " " ;
+VAL_ 826 DsmSpaceCubePosSts 0 " " ;
+VAL_ 826 DsmSpaceCubePosSts 1 " " ;
+VAL_ 826 DsmSpaceCubePosSts 2 " " ;
+VAL_ 826 DsmSpaceCubePosSts 3 " " ;
+VAL_ 827 PsmZeroSaveSts 0 " " ;
+VAL_ 827 PsmZeroSaveSts 1 " " ;
+VAL_ 827 PsmZeroSaveSts 2 " " ;
+VAL_ 827 PsmZeroResetFb 0 " " ;
+VAL_ 827 PsmZeroResetFb 1 " " ;
+VAL_ 827 PsmZeroResetFb 2 " " ;
+VAL_ 827 PsmZeroResetFb 3 " " ;
+VAL_ 827 PsZeroGSwitchSts 0 " " ;
+VAL_ 827 PsZeroGSwitchSts 1 " " ;
+VAL_ 827 PsmZeroGSts 0 " " ;
+VAL_ 827 PsmZeroGSts 1 " " ;
+VAL_ 827 PsmRespiteModSeatStorgSts 0 "Notused" ;
+VAL_ 827 PsmRespiteModSeatStorgSts 1 " " ;
+VAL_ 827 PsmRespiteModSeatStorgSts 2 " " ;
+VAL_ 827 PsmParkMassageModSts 0 " 1 " ;
+VAL_ 827 PsmParkMassageModSts 1 " 2 " ;
+VAL_ 827 PsmParkMassageModSts 2 " 3 " ;
+VAL_ 827 PsmParkMassageModSts 3 " 4 " ;
+VAL_ 827 PsmParkMassageModSts 4 " 5 " ;
+VAL_ 827 PsmParkMassageModSts 5 " 6 " ;
+VAL_ 827 PsmParkMassageModSts 6 " 7 " ;
+VAL_ 827 PsmParkMassageModSts 7 " 8 " ;
+VAL_ 827 PsmParkMassageStrSts 0 "OFF" ;
+VAL_ 827 PsmParkMassageStrSts 1 " " ;
+VAL_ 827 PsmParkMassageStrSts 2 " " ;
+VAL_ 827 PsmParkMassageStrSts 3 " " ;
+VAL_ 827 DsmPassHeatSts 0 "Notused" ;
+VAL_ 827 DsmPassHeatSts 1 "Level1" ;
+VAL_ 827 DsmPassHeatSts 2 "Level2" ;
+VAL_ 827 DsmPassHeatSts 3 "Level3" ;
+VAL_ 827 DsmPassHeatSts 4 "Reserved" ;
+VAL_ 827 DsmPassHeatSts 5 "Reserved" ;
+VAL_ 827 DsmPassHeatSts 6 "off" ;
+VAL_ 827 DsmPassHeatSts 7 "Reserved" ;
+VAL_ 827 PsmBackFwdAdjstSts 0 "Nopress" ;
+VAL_ 827 PsmBackFwdAdjstSts 1 "press" ;
+VAL_ 827 PSM_PSMBackrestPositionSts 0 "Inactive" ;
+VAL_ 827 PSM_PSMBackrestPositionSts 255 "Invalid" ;
+VAL_ 827 CdcPsmCmtySetFb 0 "off" ;
+VAL_ 827 CdcPsmCmtySetFb 1 "on" ;
+VAL_ 827 PSM_PSMFrontEndPositionSts 0 "Inactive" ;
+VAL_ 827 PSM_PSMFrontEndPositionSts 255 "Invalid" ;
+VAL_ 827 PsmHrzntlAdjstSts 0 "Nopress" ;
+VAL_ 827 PsmHrzntlAdjstSts 1 "press" ;
+VAL_ 827 PSM_PSMHorizontalPositionSts 0 "Inactive" ;
+VAL_ 827 PSM_PSMHorizontalPositionSts 255 "Invalid" ;
+VAL_ 827 DsmPassVentnSts 0 "Notused" ;
+VAL_ 827 DsmPassVentnSts 1 "Level1" ;
+VAL_ 827 DsmPassVentnSts 2 "Level2" ;
+VAL_ 827 DsmPassVentnSts 3 "Level3" ;
+VAL_ 827 DsmPassVentnSts 4 "Reserved" ;
+VAL_ 827 DsmPassVentnSts 5 "Reserved" ;
+VAL_ 827 DsmPassVentnSts 6 "off" ;
+VAL_ 827 DsmPassVentnSts 7 "Reserved" ;
+VAL_ 827 PsmPassLegAdjSts 0 "Nopress" ;
+VAL_ 827 PsmPassLegAdjSts 1 "press" ;
+VAL_ 827 PsmTextDispReq 0 " " ;
+VAL_ 827 PsmTextDispReq 1 " " ;
+VAL_ 827 PsmTextDispReq 2 " " ;
+VAL_ 827 PsmTextDispReq 3 " " ;
+VAL_ 827 DsmRemPassHeatSts 0 " " ;
+VAL_ 827 DsmRemPassHeatSts 1 " " ;
+VAL_ 827 DsmRemPassHeatSts 2 " " ;
+VAL_ 827 DsmRemPassHeatSts 3 " " ;
+VAL_ 827 DsmRemPassHeatSts 4 " " ;
+VAL_ 827 DsmRemPassHeatSts 5 "OFF" ;
+VAL_ 827 DsmRemPassHeatSts 6 " " ;
+VAL_ 827 DsmRemPassVentilatieSts 0 " " ;
+VAL_ 827 DsmRemPassVentilatieSts 1 " " ;
+VAL_ 827 DsmRemPassVentilatieSts 2 " " ;
+VAL_ 827 DsmRemPassVentilatieSts 3 " " ;
+VAL_ 827 DsmRemPassVentilatieSts 4 " " ;
+VAL_ 827 DsmRemPassVentilatieSts 5 "OFF" ;
+VAL_ 827 DsmRemPassVentilatieSts 6 " " ;
+VAL_ 835 RsmlZeroSaveSts 0 " " ;
+VAL_ 835 RsmlZeroSaveSts 1 " " ;
+VAL_ 835 RsmlZeroSaveSts 2 " " ;
+VAL_ 835 RsmlZeroResetFb 0 " " ;
+VAL_ 835 RsmlZeroResetFb 1 " " ;
+VAL_ 835 RsmlZeroResetFb 2 " " ;
+VAL_ 835 RsmlZeroResetFb 3 " " ;
+VAL_ 835 RsmlZeroGSwitchSts 0 " " ;
+VAL_ 835 RsmlZeroGSwitchSts 1 " " ;
+VAL_ 835 RsmlZeroGSts 0 " " ;
+VAL_ 835 RsmlZeroGSts 1 " " ;
+VAL_ 835 RsmlParkMassageModSts 0 " 1 " ;
+VAL_ 835 RsmlParkMassageModSts 1 " 2 " ;
+VAL_ 835 RsmlParkMassageModSts 2 " 3 " ;
+VAL_ 835 RsmlParkMassageModSts 3 " 4 " ;
+VAL_ 835 RsmlParkMassageModSts 4 " 5 " ;
+VAL_ 835 RsmlParkMassageModSts 5 " 6 " ;
+VAL_ 835 RsmlParkMassageModSts 6 " 7 " ;
+VAL_ 835 RsmlParkMassageModSts 7 " 8 " ;
+VAL_ 835 RsmlParkMassageStrSts 0 "OFF" ;
+VAL_ 835 RsmlParkMassageStrSts 1 " " ;
+VAL_ 835 RsmlParkMassageStrSts 2 " " ;
+VAL_ 835 RsmlParkMassageStrSts 3 " " ;
+VAL_ 835 RsmlBacktTouchHeatSts 0 "Notused" ;
+VAL_ 835 RsmlBacktTouchHeatSts 1 "Level1" ;
+VAL_ 835 RsmlBacktTouchHeatSts 2 "Level2" ;
+VAL_ 835 RsmlBacktTouchHeatSts 3 "Level3" ;
+VAL_ 835 RsmlBacktTouchHeatSts 4 "Reserved" ;
+VAL_ 835 RsmlBacktTouchHeatSts 5 "Reserved" ;
+VAL_ 835 RsmlBacktTouchHeatSts 6 "off" ;
+VAL_ 835 RsmlBacktTouchHeatSts 7 "Reserved" ;
+VAL_ 835 RsmlBackFwdAdjstSts 0 " " ;
+VAL_ 835 RsmlBackFwdAdjstSts 1 " " ;
+VAL_ 835 RsmlBackrestPositionSts 0 "Inactive" ;
+VAL_ 835 RsmlBackrestPositionSts 255 "Invalid" ;
+VAL_ 835 RsmlHrzntlAdjstSts 0 " " ;
+VAL_ 835 RsmlHrzntlAdjstSts 1 " " ;
+VAL_ 835 RsmlHorizontalPositionSts 0 "Inactive" ;
+VAL_ 835 RsmlHorizontalPositionSts 255 "Invalid" ;
+VAL_ 835 RsmlBacktTouchVentnSts 0 "Notused" ;
+VAL_ 835 RsmlBacktTouchVentnSts 1 "Level1" ;
+VAL_ 835 RsmlBacktTouchVentnSts 2 "Level2" ;
+VAL_ 835 RsmlBacktTouchVentnSts 3 "Level3" ;
+VAL_ 835 RsmlBacktTouchVentnSts 4 "Reserved" ;
+VAL_ 835 RsmlBacktTouchVentnSts 5 "Reserved" ;
+VAL_ 835 RsmlBacktTouchVentnSts 6 "off" ;
+VAL_ 835 RsmlBacktTouchVentnSts 7 "Reserved" ;
+VAL_ 835 RsmlLegAdjSts 0 " " ;
+VAL_ 835 RsmlLegAdjSts 1 " " ;
+VAL_ 835 RsmlSeatSpinSetSts 0 " " ;
+VAL_ 835 RsmlSeatSpinSetSts 1 " " ;
+VAL_ 835 RsmlRotarySwitchPosSts 0 "Inactive" ;
+VAL_ 835 RsmlRotarySwitchPosSts 255 "Invalid" ;
+VAL_ 835 RsmLThirdBacktHeatSts 0 "Notused" ;
+VAL_ 835 RsmLThirdBacktHeatSts 1 "Level1" ;
+VAL_ 835 RsmLThirdBacktHeatSts 2 "Level2" ;
+VAL_ 835 RsmLThirdBacktHeatSts 3 "Level3" ;
+VAL_ 835 RsmLThirdBacktHeatSts 4 "Reserved" ;
+VAL_ 835 RsmLThirdBacktHeatSts 5 "Reserved" ;
+VAL_ 835 RsmLThirdBacktHeatSts 6 "off" ;
+VAL_ 835 RsmLThirdBacktHeatSts 7 "Reserved" ;
+VAL_ 835 RsmlThirdBackrestPosSts 0 "Inactive" ;
+VAL_ 835 RsmlThirdBackrestPosSts 255 "Invalid" ;
+VAL_ 835 RsmlThirdBackrestOperSts 0 " " ;
+VAL_ 835 RsmlThirdBackrestOperSts 1 " " ;
+VAL_ 835 RsmlThirdBackrestOperSts 2 " " ;
+VAL_ 846 CdcRsmMidLeftSeatLegUpDowPosSts 0 "Inactive" ;
+VAL_ 846 CdcRsmMidLeftSeatLegUpDowPosSts 255 "Invalid" ;
+VAL_ 846 RsmLDouSeatSwitchSig 0 " " ;
+VAL_ 846 RsmLDouSeatSwitchSig 1 " " ;
+VAL_ 846 RsmLRestoreFactrySetFb 0 " " ;
+VAL_ 846 RsmLRestoreFactrySetFb 1 " " ;
+VAL_ 846 RsmLRestoreFactrySetFb 2 " " ;
+VAL_ 846 RsmLRestoreFactrySetFb 3 " " ;
+VAL_ 846 RsmlThirdOnekeyDownSts 0 " " ;
+VAL_ 846 RsmlThirdOnekeyDownSts 1 " " ;
+VAL_ 846 RsmlThirdOnekeyUpSts 0 " " ;
+VAL_ 846 RsmlThirdOnekeyUpSts 1 " " ;
+VAL_ 846 RsmlThirdBackManualUpSts 0 " " ;
+VAL_ 846 RsmlThirdBackManualUpSts 1 " " ;
+VAL_ 846 RsmlThirdBackManualDownSts 0 " " ;
+VAL_ 846 RsmlThirdBackManualDownSts 1 " " ;
+VAL_ 846 RsmlZeroGOperationSts 0 " " ;
+VAL_ 846 RsmlZeroGOperationSts 1 " " ;
+VAL_ 846 RsmlZeroGOperationSts 2 " " ;
+VAL_ 846 RsmlDouSeatSwitchSetSts 0 " " ;
+VAL_ 846 RsmlDouSeatSwitchSetSts 1 " " ;
+VAL_ 846 RsmlArmrestScreenOpenSts 0 " " ;
+VAL_ 846 RsmlArmrestScreenOpenSts 1 " " ;
+VAL_ 846 RsmlArmrestScreenQuitSts 0 " " ;
+VAL_ 846 RsmlArmrestScreenQuitSts 1 " " ;
+VAL_ 846 RsmlSpaceCubeSaveFb 0 " " ;
+VAL_ 846 RsmlSpaceCubeSaveFb 1 " " ;
+VAL_ 846 RsmlSpaceCubeSaveFb 2 " " ;
+VAL_ 846 RsmlSpaceCubeCallFb 0 " " ;
+VAL_ 846 RsmlSpaceCubeCallFb 1 " " ;
+VAL_ 846 RsmlSpaceCubeCallFb 2 " " ;
+VAL_ 846 RsmlCampBedBackSeatCallStsFb 0 " " ;
+VAL_ 846 RsmlCampBedBackSeatCallStsFb 1 " " ;
+VAL_ 846 RsmlCampBedBackSeatCallStsFb 2 " " ;
+VAL_ 846 RsmlCampBedBackSeatCallStsFb 3 " " ;
+VAL_ 846 RsmlCampBedBackSeatCallStsFb 4 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 0 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 1 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 2 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 3 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 4 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 5 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 6 " " ;
+VAL_ 846 RsmlCampBedBackSeatAdtStsFb 7 " " ;
+VAL_ 846 RsmlRsmChildLockSetSts 0 " " ;
+VAL_ 846 RsmlRsmChildLockSetSts 1 " " ;
+VAL_ 846 RsmlRsmChildLockSetSts 2 " " ;
+VAL_ 846 RsmlHighLowconfiguration 0 " " ;
+VAL_ 846 RsmlHighLowconfiguration 1 " " ;
+VAL_ 846 RsmlFrontRowControlSig 0 " " ;
+VAL_ 846 RsmlFrontRowControlSig 1 " " ;
+VAL_ 846 RsmlFrontRowControlSig 2 " " ;
+VAL_ 846 RsmlDouSeatSetReqToRsmr 0 " " ;
+VAL_ 846 RsmlDouSeatSetReqToRsmr 1 " " ;
+VAL_ 846 RsmlDouSeatSetReqToRsmr 2 " " ;
+VAL_ 846 RsmlDouSeatSetReqToRsmr 3 " " ;
+VAL_ 846 RsmlTextDispReqALL 0 " " ;
+VAL_ 846 RsmlTextDispReqALL 1 " " ;
+VAL_ 846 RsmlTextDispReqALL 2 " " ;
+VAL_ 846 RsmlTextDispReqALL 3 " " ;
+VAL_ 846 RsmlTextDispReqALL 4 " " ;
+VAL_ 846 RsmlTextDispReqALL 5 " " ;
+VAL_ 846 RsmlTextDispReqALL 6 " " ;
+VAL_ 846 RsmlTextDispReqALL 7 " " ;
+VAL_ 846 RsmlTextDispReqALL 8 " " ;
+VAL_ 846 RsmlTextDispReqALL 9 " P " ;
+VAL_ 846 RsmlAcoustWarnReqALL 0 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 1 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 2 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 3 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 4 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 5 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 6 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 7 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 8 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 9 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 10 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 11 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 12 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 13 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 14 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 15 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 16 " " ;
+VAL_ 846 RsmlAcoustWarnReqALL 17 " P " ;
+VAL_ 846 RsmlSpaceCubeOperationSts 0 " " ;
+VAL_ 846 RsmlSpaceCubeOperationSts 1 " " ;
+VAL_ 846 RsmlSpaceCubeOperationSts 2 " " ;
+VAL_ 846 RsmlSpaceCubeOperationSts 3 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 0 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 1 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 2 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 3 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 4 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 5 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 6 " " ;
+VAL_ 846 RsmlRLBedBackSeatAdtStsFb 7 " " ;
+VAL_ 847 RsmLHorizontalRightPosSts 0 "Inactive" ;
+VAL_ 847 RsmLHorizontalRightPosSts 255 "Invalid" ;
+VAL_ 847 RsmlExcSeatSaveSetFb 0 "Not used" ;
+VAL_ 847 RsmlExcSeatSaveSetFb 1 " " ;
+VAL_ 847 RsmlExcSeatSaveSetFb 2 " " ;
+VAL_ 847 RsmlExcSeatCallSetFb 0 "Norequest" ;
+VAL_ 847 RsmlExcSeatCallSetFb 1 " " ;
+VAL_ 847 RsmlExcSeatCallSetFb 2 " " ;
+VAL_ 847 RsmlExcSeatCallSetFb 3 " " ;
+VAL_ 847 RsmlRemHeatStsFb 0 " " ;
+VAL_ 847 RsmlRemHeatStsFb 1 " " ;
+VAL_ 847 RsmlRemHeatStsFb 2 " " ;
+VAL_ 847 RsmlRemHeatStsFb 3 " " ;
+VAL_ 847 RsmlRemHeatStsFb 4 " " ;
+VAL_ 847 RsmlRemHeatStsFb 5 "OFF" ;
+VAL_ 847 RsmlRemHeatStsFb 6 " " ;
+VAL_ 847 RsmlRemVentilatieStsFb 0 " " ;
+VAL_ 847 RsmlRemVentilatieStsFb 1 " " ;
+VAL_ 847 RsmlRemVentilatieStsFb 2 " " ;
+VAL_ 847 RsmlRemVentilatieStsFb 3 " " ;
+VAL_ 847 RsmlRemVentilatieStsFb 4 " " ;
+VAL_ 847 RsmlRemVentilatieStsFb 5 "OFF" ;
+VAL_ 847 RsmlRemVentilatieStsFb 6 " " ;
+VAL_ 847 RsmlThirdRemHeatStsFb 0 " " ;
+VAL_ 847 RsmlThirdRemHeatStsFb 1 " " ;
+VAL_ 847 RsmlThirdRemHeatStsFb 2 " " ;
+VAL_ 847 RsmlThirdRemHeatStsFb 3 " " ;
+VAL_ 847 RsmlThirdRemHeatStsFb 4 " " ;
+VAL_ 847 RsmlThirdRemHeatStsFb 5 "OFF" ;
+VAL_ 847 RsmlThirdRemHeatStsFb 6 " " ;
+VAL_ 847 RsmLDouSeatSetReqFb 0 " " ;
+VAL_ 847 RsmLDouSeatSetReqFb 1 " " ;
+VAL_ 847 RsmLDouSeatSetReqFb 2 " " ;
+VAL_ 847 RsmLDouSeatSetReqFb 3 " " ;
+VAL_ 847 RsmLDouSeatSetReqFb 4 " " ;
+VAL_ 847 RsmLMoveInterveneSts 0 " " ;
+VAL_ 847 RsmLMoveInterveneSts 1 " " ;
+VAL_ 847 RsmlbackAntiPinchSts 0 " " ;
+VAL_ 847 RsmlbackAntiPinchSts 1 " " ;
+VAL_ 847 RsmlSpaceCubePosSaveFb 0 " " ;
+VAL_ 847 RsmlSpaceCubePosSaveFb 1 " " ;
+VAL_ 847 RsmlSpaceCubePosSaveFb 2 " " ;
+VAL_ 847 RsmlSpaceCubePosCallFb 0 " " ;
+VAL_ 847 RsmlSpaceCubePosCallFb 1 " " ;
+VAL_ 847 RsmlSpaceCubePosCallFb 2 " " ;
+VAL_ 847 RsmlSpaceCubePosSts 0 " " ;
+VAL_ 847 RsmlSpaceCubePosSts 1 " " ;
+VAL_ 847 RsmlSpaceCubePosSts 2 " " ;
+VAL_ 847 RsmlSpaceCubePosSts 3 " " ;
+VAL_ 847 RsmLFrontCBBackSeatCallStsFb 0 " " ;
+VAL_ 847 RsmLFrontCBBackSeatCallStsFb 1 " " ;
+VAL_ 847 RsmLFrontCBBackSeatCallStsFb 2 " " ;
+VAL_ 847 RsmLFrontCBBackSeatCallStsFb 3 " " ;
+VAL_ 847 RsmLFrontCBBackSeatCallStsFb 4 " " ;
+VAL_ 847 RsmLBackCBBackSeatCallStsFb 0 " " ;
+VAL_ 847 RsmLBackCBBackSeatCallStsFb 1 " " ;
+VAL_ 847 RsmLBackCBBackSeatCallStsFb 2 " " ;
+VAL_ 847 RsmLBackCBBackSeatCallStsFb 3 " " ;
+VAL_ 847 RsmLBackCBBackSeatCallStsFb 4 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 0 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 1 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 2 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 3 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 4 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 5 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 6 " " ;
+VAL_ 847 RsmLFrontCBBackSeatAdtStsFb 7 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 0 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 1 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 2 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 3 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 4 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 5 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 6 " " ;
+VAL_ 847 RsmLBackCBBackSeatAdtStsFb 7 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 0 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 1 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 2 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 3 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 4 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 5 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 6 " " ;
+VAL_ 847 RsmLFrontCBBackLeftSeatAdtStsFb 7 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 0 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 1 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 2 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 3 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 4 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 5 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 6 " " ;
+VAL_ 847 RsmLBackCBBackLeftSeatAdtStsFb 7 " " ;
+VAL_ 847 RsmrThirdLeftBackrtPosSts 0 " " ;
+VAL_ 847 RsmrThirdLeftBackrtPosSts 1 " " ;
+VAL_ 847 RsmrThirdLeftBackrtPosSts 2 " " ;
+VAL_ 847 RsmrThirdLeftBackrtPosSts 3 " " ;
+VAL_ 847 RsmlSpaceModFb 0 " " ;
+VAL_ 847 RsmlSpaceModFb 1 " " ;
+VAL_ 847 RsmlSpaceModFb 2 " " ;
+VAL_ 847 RsmlSpaceModFb 3 " " ;
+VAL_ 847 RsmlLandSlideSts 0 " " ;
+VAL_ 847 RsmlLandSlideSts 1 " " ;
+VAL_ 847 RsmlBackPanelLeftSwitchSts 0 " " ;
+VAL_ 847 RsmlBackPanelLeftSwitchSts 1 " " ;
+VAL_ 847 RsmlSecondLeftSeatAntiPinchSts 0 " " ;
+VAL_ 847 RsmlSecondLeftSeatAntiPinchSts 1 " " ;
+VAL_ 850 DsmDrvrSeatInfoSaveStsFb 0 "Not used" ;
+VAL_ 850 DsmDrvrSeatInfoSaveStsFb 1 " " ;
+VAL_ 850 DsmDrvrSeatInfoSaveStsFb 2 " " ;
+VAL_ 850 DsmDrvrSeatInfoSaveStsFb 3 " " ;
+VAL_ 850 DsmParkSpaceStorg 0 "Notused" ;
+VAL_ 850 DsmParkSpaceStorg 1 " " ;
+VAL_ 850 DsmParkSpaceStorg 2 " " ;
+VAL_ 850 DsZeroGSwitchSts 0 " " ;
+VAL_ 850 DsZeroGSwitchSts 1 " " ;
+VAL_ 850 DsmComfortModeMemoryFb 0 "Notused" ;
+VAL_ 850 DsmComfortModeMemoryFb 1 " " ;
+VAL_ 850 DsmComfortModeMemoryFb 2 " " ;
+VAL_ 850 DsmDrvrSeatInfoCallSigFb 0 "Norequest" ;
+VAL_ 850 DsmDrvrSeatInfoCallSigFb 1 " " ;
+VAL_ 850 DsmDrvrSeatInfoCallSigFb 2 " " ;
+VAL_ 850 DsmDrvrSeatInfoCallSigFb 3 " " ;
+VAL_ 850 DsmRespitePosSaveSetFb 0 "Notused" ;
+VAL_ 850 DsmRespitePosSaveSetFb 1 " " ;
+VAL_ 850 DsmRespitePosSaveSetFb 2 " " ;
+VAL_ 850 PSMBacktTouchTextDispReq 0 " " ;
+VAL_ 850 PSMBacktTouchTextDispReq 1 " " ;
+VAL_ 850 DsmSeatAdjSts 0 " " ;
+VAL_ 850 DsmSeatAdjSts 1 " " ;
+VAL_ 850 DsmSeatAdjSts 2 " " ;
+VAL_ 850 DsmZeroSaveSts 0 " " ;
+VAL_ 850 DsmZeroSaveSts 1 " " ;
+VAL_ 850 DsmZeroSaveSts 2 " " ;
+VAL_ 850 DsmZeroResetFb 0 " " ;
+VAL_ 850 DsmZeroResetFb 1 " " ;
+VAL_ 850 DsmZeroResetFb 2 " " ;
+VAL_ 850 DsmZeroResetFb 3 " " ;
+VAL_ 850 DsmZeroGSts 0 " " ;
+VAL_ 850 DsmZeroGSts 1 " " ;
+VAL_ 850 DsmParkMassageModSts 0 " 1 " ;
+VAL_ 850 DsmParkMassageModSts 1 " 2 " ;
+VAL_ 850 DsmParkMassageModSts 2 " 3 " ;
+VAL_ 850 DsmParkMassageModSts 3 " 4 " ;
+VAL_ 850 DsmParkMassageModSts 4 " 5 " ;
+VAL_ 850 DsmParkMassageModSts 5 " 6 " ;
+VAL_ 850 DsmParkMassageModSts 6 " 7 " ;
+VAL_ 850 DsmParkMassageModSts 7 " 8 " ;
+VAL_ 850 DsmParkMassageStrSts 0 "OFF" ;
+VAL_ 850 DsmParkMassageStrSts 1 " " ;
+VAL_ 850 DsmParkMassageStrSts 2 " " ;
+VAL_ 850 DsmParkMassageStrSts 3 " " ;
+VAL_ 850 DsmVrtclAdjsrSts 0 "Nopress" ;
+VAL_ 850 DsmVrtclAdjsrSts 1 "press" ;
+VAL_ 850 DsmBackFwdAdjstSts 0 "Nopress" ;
+VAL_ 850 DsmBackFwdAdjstSts 1 "press" ;
+VAL_ 850 CdcDsmCmtySetFb 0 "off" ;
+VAL_ 850 CdcDsmCmtySetFb 1 "on" ;
+VAL_ 850 DsmLeadEndAdjstSts 0 "Nopress" ;
+VAL_ 850 DsmLeadEndAdjstSts 1 "press" ;
+VAL_ 850 DsmHrzntlAdjstSts 0 "Nopress" ;
+VAL_ 850 DsmHrzntlAdjstSts 1 "press" ;
+VAL_ 850 DsmDrvrLegAdjSts 0 "Nopress" ;
+VAL_ 850 DsmDrvrLegAdjSts 1 "press" ;
+VAL_ 850 DsmTextDispReq 0 " " ;
+VAL_ 850 DsmTextDispReq 1 " P " ;
+VAL_ 850 DsmTextDispReq 2 " " ;
+VAL_ 850 DsmTextDispReq 3 " P " ;
+VAL_ 852 DsmSasMotPosStsFb1 0 "Inactive" ;
+VAL_ 852 DsmSasMotPosStsFb1 255 "Invalid" ;
+VAL_ 852 DsmSasMotPosStsFb2 0 "Inactive" ;
+VAL_ 852 DsmSasMotPosStsFb2 255 "Invalid" ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 1 " " ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 2 " " ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 3 " " ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 4 " " ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 5 " " ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 6 " " ;
+VAL_ 852 DsmBackCockpitBedAdtStsFb 7 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 1 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 2 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 3 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 4 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 5 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 6 " " ;
+VAL_ 852 DsmFrontCockpitBedAdtStsFb 7 " " ;
+VAL_ 852 DsmFrontCBFrontSeatCallStsFb 0 " " ;
+VAL_ 852 DsmFrontCBFrontSeatCallStsFb 1 " " ;
+VAL_ 852 DsmFrontCBFrontSeatCallStsFb 2 " " ;
+VAL_ 852 DsmFrontCBFrontSeatCallStsFb 3 " " ;
+VAL_ 852 DsmFrontCBFrontSeatCallStsFb 4 " " ;
+VAL_ 852 DsmFrontCBFrontSeatCallStsFb 5 " " ;
+VAL_ 852 DsmBackCBFrontSeatCallStsFb 0 " " ;
+VAL_ 852 DsmBackCBFrontSeatCallStsFb 1 " " ;
+VAL_ 852 DsmBackCBFrontSeatCallStsFb 2 " " ;
+VAL_ 852 DsmBackCBFrontSeatCallStsFb 3 " " ;
+VAL_ 852 DsmBackCBFrontSeatCallStsFb 4 " " ;
+VAL_ 852 DsmBackCBFrontSeatCallStsFb 5 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 0 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 1 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 2 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 3 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 4 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 5 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 6 " " ;
+VAL_ 852 DsmFrontCBFrontSeatAdtStsFb 7 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 0 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 1 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 2 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 3 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 4 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 5 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 6 " " ;
+VAL_ 852 DsmBackCBFrontSeatAdtStsFb 7 " " ;
+VAL_ 852 DsmRespiteModForbAdjDis 0 " " ;
+VAL_ 852 DsmRespiteModForbAdjDis 1 " " ;
+VAL_ 855 DsmDrvrSeatInfoSaveStsFb 0 "Not used" ;
+VAL_ 855 DsmDrvrSeatInfoSaveStsFb 1 " " ;
+VAL_ 855 DsmDrvrSeatInfoSaveStsFb 2 " " ;
+VAL_ 855 DsmDrvrSeatInfoSaveStsFb 3 " " ;
+VAL_ 855 DsmParkSpaceStorg 0 "Notused" ;
+VAL_ 855 DsmParkSpaceStorg 1 " " ;
+VAL_ 855 DsmParkSpaceStorg 2 " " ;
+VAL_ 855 DsZeroGSwitchSts 0 " " ;
+VAL_ 855 DsZeroGSwitchSts 1 " " ;
+VAL_ 855 DsmComfortModeMemoryFb 0 "Notused" ;
+VAL_ 855 DsmComfortModeMemoryFb 1 " " ;
+VAL_ 855 DsmComfortModeMemoryFb 2 " " ;
+VAL_ 855 DsmDrvrSeatInfoCallSigFb 0 "Norequest" ;
+VAL_ 855 DsmDrvrSeatInfoCallSigFb 1 " " ;
+VAL_ 855 DsmDrvrSeatInfoCallSigFb 2 " " ;
+VAL_ 855 DsmDrvrSeatInfoCallSigFb 3 " " ;
+VAL_ 855 DsmRespitePosSaveSetFb 0 "Notused" ;
+VAL_ 855 DsmRespitePosSaveSetFb 1 " " ;
+VAL_ 855 DsmRespitePosSaveSetFb 2 " " ;
+VAL_ 855 PSMBacktTouchTextDispReq 0 " " ;
+VAL_ 855 PSMBacktTouchTextDispReq 1 " " ;
+VAL_ 855 DsmSeatAdjSts 0 " " ;
+VAL_ 855 DsmSeatAdjSts 1 " " ;
+VAL_ 855 DsmSeatAdjSts 2 " " ;
+VAL_ 855 DsmZeroSaveSts 0 " " ;
+VAL_ 855 DsmZeroSaveSts 1 " " ;
+VAL_ 855 DsmZeroSaveSts 2 " " ;
+VAL_ 855 DsmZeroResetFb 0 " " ;
+VAL_ 855 DsmZeroResetFb 1 " " ;
+VAL_ 855 DsmZeroResetFb 2 " " ;
+VAL_ 855 DsmZeroResetFb 3 " " ;
+VAL_ 855 DsmZeroGSts 0 " " ;
+VAL_ 855 DsmZeroGSts 1 " " ;
+VAL_ 855 DsmParkMassageModSts 0 " 1 " ;
+VAL_ 855 DsmParkMassageModSts 1 " 2 " ;
+VAL_ 855 DsmParkMassageModSts 2 " 3 " ;
+VAL_ 855 DsmParkMassageModSts 3 " 4 " ;
+VAL_ 855 DsmParkMassageModSts 4 " 5 " ;
+VAL_ 855 DsmParkMassageModSts 5 " 6 " ;
+VAL_ 855 DsmParkMassageModSts 6 " 7 " ;
+VAL_ 855 DsmParkMassageModSts 7 " 8 " ;
+VAL_ 855 DsmParkMassageStrSts 0 "OFF" ;
+VAL_ 855 DsmParkMassageStrSts 1 " " ;
+VAL_ 855 DsmParkMassageStrSts 2 " " ;
+VAL_ 855 DsmParkMassageStrSts 3 " " ;
+VAL_ 855 DsmVrtclAdjsrSts 0 "Nopress" ;
+VAL_ 855 DsmVrtclAdjsrSts 1 "press" ;
+VAL_ 855 DsmBackFwdAdjstSts 0 "Nopress" ;
+VAL_ 855 DsmBackFwdAdjstSts 1 "press" ;
+VAL_ 855 CdcDsmCmtySetFb 0 "off" ;
+VAL_ 855 CdcDsmCmtySetFb 1 "on" ;
+VAL_ 855 DsmLeadEndAdjstSts 0 "Nopress" ;
+VAL_ 855 DsmLeadEndAdjstSts 1 "press" ;
+VAL_ 855 DsmHrzntlAdjstSts 0 "Nopress" ;
+VAL_ 855 DsmHrzntlAdjstSts 1 "press" ;
+VAL_ 855 DsmDrvrLegAdjSts 0 "Nopress" ;
+VAL_ 855 DsmDrvrLegAdjSts 1 "press" ;
+VAL_ 855 DsmTextDispReq 0 " " ;
+VAL_ 855 DsmTextDispReq 1 " P " ;
+VAL_ 855 DsmTextDispReq 2 " " ;
+VAL_ 855 DsmTextDispReq 3 " P " ;
+VAL_ 858 DsmSasAdjStsFb 0 " " ;
+VAL_ 858 DsmSasAdjStsFb 1 " " ;
+VAL_ 858 DsmSasAdjStsFb 2 " " ;
+VAL_ 858 DsmSasAdjStsFb 3 " " ;
+VAL_ 858 DsmSasSaveSetFb 0 "No request" ;
+VAL_ 858 DsmSasSaveSetFb 1 " " ;
+VAL_ 858 DsmSasSaveSetFb 2 " " ;
+VAL_ 858 DSM_DSMVerticalPositionSts 0 "Inactive" ;
+VAL_ 858 DSM_DSMVerticalPositionSts 255 "Invalid" ;
+VAL_ 858 DSM_DSMBackrestPositionSts 0 "Inactive" ;
+VAL_ 858 DSM_DSMBackrestPositionSts 255 "Invalid" ;
+VAL_ 858 DSM_DSMFrontEndPositionSts 0 "Inactive" ;
+VAL_ 858 DSM_DSMFrontEndPositionSts 255 "Invalid" ;
+VAL_ 858 DSM_DSMHorizontalPositionSts 0 "Inactive" ;
+VAL_ 858 DSM_DSMHorizontalPositionSts 255 "Invalid" ;
+VAL_ 858 DsmSeatSpinSetSts 0 " " ;
+VAL_ 858 DsmSeatSpinSetSts 1 " " ;
+VAL_ 858 DSMRotarySwitchPositionSts 0 "Inactive" ;
+VAL_ 858 DSMRotarySwitchPositionSts 255 "Invalid" ;
+VAL_ 858 DsmRestoreFactrySetFb 0 " " ;
+VAL_ 858 DsmRestoreFactrySetFb 1 " " ;
+VAL_ 858 DsmRestoreFactrySetFb 2 " " ;
+VAL_ 858 DsmRestoreFactrySetFb 3 " " ;
+VAL_ 859 DsmRemDrHeatSts 0 " " ;
+VAL_ 859 DsmRemDrHeatSts 1 " " ;
+VAL_ 859 DsmRemDrHeatSts 2 " " ;
+VAL_ 859 DsmRemDrHeatSts 3 " " ;
+VAL_ 859 DsmRemDrHeatSts 4 " " ;
+VAL_ 859 DsmRemDrHeatSts 5 "OFF" ;
+VAL_ 859 DsmRemDrHeatSts 6 " " ;
+VAL_ 859 DsmRemDrVentilatieSts 0 " " ;
+VAL_ 859 DsmRemDrVentilatieSts 1 " " ;
+VAL_ 859 DsmRemDrVentilatieSts 2 " " ;
+VAL_ 859 DsmRemDrVentilatieSts 3 " " ;
+VAL_ 859 DsmRemDrVentilatieSts 4 " " ;
+VAL_ 859 DsmRemDrVentilatieSts 5 "OFF" ;
+VAL_ 859 DsmRemDrVentilatieSts 6 " " ;
+VAL_ 859 DsmComfPosMemReq 0 " " ;
+VAL_ 859 DsmComfPosMemReq 1 " " ;
+VAL_ 859 DsmDrvrHeatSts 0 "Notused" ;
+VAL_ 859 DsmDrvrHeatSts 1 "Level1" ;
+VAL_ 859 DsmDrvrHeatSts 2 "Level2" ;
+VAL_ 859 DsmDrvrHeatSts 3 "Level3" ;
+VAL_ 859 DsmDrvrHeatSts 4 "Reserved" ;
+VAL_ 859 DsmDrvrHeatSts 5 "Reserved" ;
+VAL_ 859 DsmDrvrHeatSts 6 "off" ;
+VAL_ 859 DsmDrvrHeatSts 7 "Reserved" ;
+VAL_ 859 DsmDrvrVentnSts 0 "Notused" ;
+VAL_ 859 DsmDrvrVentnSts 1 "Level1" ;
+VAL_ 859 DsmDrvrVentnSts 2 "Level2" ;
+VAL_ 859 DsmDrvrVentnSts 3 "Level3" ;
+VAL_ 859 DsmDrvrVentnSts 4 "Reserved" ;
+VAL_ 859 DsmDrvrVentnSts 5 "Reserved" ;
+VAL_ 859 DsmDrvrVentnSts 6 "off" ;
+VAL_ 859 DsmDrvrVentnSts 7 "Reserved" ;
+VAL_ 859 DSM_DSMLegPositionSts 0 "Inactive" ;
+VAL_ 859 DSM_DSMLegPositionSts 255 "Invalid" ;
+VAL_ 859 DsmCampBedAdtStsFb 1 " " ;
+VAL_ 859 DsmCampBedAdtStsFb 2 " " ;
+VAL_ 859 DsmCampBedAdtStsFb 3 " " ;
+VAL_ 859 DsmCampBedAdtStsFb 4 " " ;
+VAL_ 859 DsmCampBedAdtStsFb 5 " " ;
+VAL_ 859 DsmCampBedAdtStsFb 6 " " ;
+VAL_ 859 DsmCampBedAdtStsFb 7 " " ;
+VAL_ 859 DsmCampBedFrontSeatCallStsFb 0 " " ;
+VAL_ 859 DsmCampBedFrontSeatCallStsFb 1 " " ;
+VAL_ 859 DsmCampBedFrontSeatCallStsFb 2 " " ;
+VAL_ 859 DsmCampBedFrontSeatCallStsFb 3 " " ;
+VAL_ 859 DsmCampBedFrontSeatCallStsFb 4 " " ;
+VAL_ 859 DsmCampBedFrontSeatCallStsFb 5 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 0 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 1 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 2 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 3 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 4 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 5 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 6 " " ;
+VAL_ 859 DsmCampBedFrontSeatAdtStsFb 7 " " ;
+VAL_ 859 PsmZeroGOperationSts 0 " " ;
+VAL_ 859 PsmZeroGOperationSts 1 " " ;
+VAL_ 859 PsmZeroGOperationSts 2 " " ;
+VAL_ 890 CdcDrvrSeatHghPer 0 " " ;
+VAL_ 890 CdcDrvrSeatHghPer 1 "0%" ;
+VAL_ 890 CdcDrvrSeatHghPer 2 "10%" ;
+VAL_ 890 CdcDrvrSeatHghPer 3 "20%" ;
+VAL_ 890 CdcDrvrSeatHghPer 4 "30%" ;
+VAL_ 890 CdcDrvrSeatHghPer 5 "40%" ;
+VAL_ 890 CdcDrvrSeatHghPer 6 "50%" ;
+VAL_ 890 CdcDrvrSeatHghPer 7 "60%" ;
+VAL_ 890 CdcDrvrSeatHghPer 8 "70%" ;
+VAL_ 890 CdcDrvrSeatHghPer 9 "80%" ;
+VAL_ 890 CdcDrvrSeatHghPer 10 "90%" ;
+VAL_ 890 CdcDrvrSeatHghPer 11 "100%" ;
+VAL_ 890 CdcDrvrSeatBackPer 0 " " ;
+VAL_ 890 CdcDrvrSeatBackPer 1 "0%" ;
+VAL_ 890 CdcDrvrSeatBackPer 2 "10%" ;
+VAL_ 890 CdcDrvrSeatBackPer 3 "20%" ;
+VAL_ 890 CdcDrvrSeatBackPer 4 "30%" ;
+VAL_ 890 CdcDrvrSeatBackPer 5 "40%" ;
+VAL_ 890 CdcDrvrSeatBackPer 6 "50%" ;
+VAL_ 890 CdcDrvrSeatBackPer 7 "60%" ;
+VAL_ 890 CdcDrvrSeatBackPer 8 "70%" ;
+VAL_ 890 CdcDrvrSeatBackPer 9 "80%" ;
+VAL_ 890 CdcDrvrSeatBackPer 10 "90%" ;
+VAL_ 890 CdcDrvrSeatBackPer 11 "100%" ;
+VAL_ 893 CdcRsmMidRightSeatHeatReq 0 "No request" ;
+VAL_ 893 CdcRsmMidRightSeatHeatReq 1 "1 " ;
+VAL_ 893 CdcRsmMidRightSeatHeatReq 2 "2 " ;
+VAL_ 893 CdcRsmMidRightSeatHeatReq 3 "3 " ;
+VAL_ 893 CdcRsmMidRightSeatHeatReq 7 "OFF" ;
+VAL_ 893 CdcRsmMidRightSeatBackBackSt 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatBackBackSt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatBackFwdSt 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatBackFwdSt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatZeroGSwt 0 "No request" ;
+VAL_ 893 CdcRsmMidRightSeatZeroGSwt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatZeroGSwt 2 " " ;
+VAL_ 893 CdcRsmMidRightSeatSldBackSt 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatSldBackSt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatSldFwdSt 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatSldFwdSt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatWindReq 0 "No request" ;
+VAL_ 893 CdcRsmMidRightSeatWindReq 1 "1 " ;
+VAL_ 893 CdcRsmMidRightSeatWindReq 2 "2 " ;
+VAL_ 893 CdcRsmMidRightSeatWindReq 3 "3 " ;
+VAL_ 893 CdcRsmMidRightSeatWindReq 7 "OFF" ;
+VAL_ 893 CdcRsmMidRightSeatLegSupUpwSt 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatLegSupUpwSt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatLegSupDowSt 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatLegSupDowSt 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatSpinUpSet 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatSpinUpSet 1 " " ;
+VAL_ 893 CdcRsmMidRightSeatSpinDownSet 0 " " ;
+VAL_ 893 CdcRsmMidRightSeatSpinDownSet 1 " " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 0 " " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 1 " 1 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 2 " 2 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 3 " 3 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 4 " 4 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 5 " 5 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 6 " 6 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 7 " 7 " ;
+VAL_ 893 CdcRsmMidRightMssgModSet 8 " 8 " ;
+VAL_ 893 CdcRsmMidRightMssgStrngthSet 0 " " ;
+VAL_ 893 CdcRsmMidRightMssgStrngthSet 1 " " ;
+VAL_ 893 CdcRsmMidRightMssgStrngthSet 2 " " ;
+VAL_ 893 CdcRsmMidRightMssgStrngthSet 3 " " ;
+VAL_ 893 CdcRsmMidRightMssgStrngthSet 7 " " ;
+VAL_ 893 CdcRsmMidLeftSeatHeatReq 0 "No request" ;
+VAL_ 893 CdcRsmMidLeftSeatHeatReq 1 "1 " ;
+VAL_ 893 CdcRsmMidLeftSeatHeatReq 2 "2 " ;
+VAL_ 893 CdcRsmMidLeftSeatHeatReq 3 "3 " ;
+VAL_ 893 CdcRsmMidLeftSeatHeatReq 7 "OFF" ;
+VAL_ 893 CdcRsmMidLeftSeatBackBackSt 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatBackBackSt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatBackFwdSt 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatBackFwdSt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatZeroGSwt 0 "No request" ;
+VAL_ 893 CdcRsmMidLeftSeatZeroGSwt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatZeroGSwt 2 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSldBackSt 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSldBackSt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSldFwdSt 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSldFwdSt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatWindReq 0 "No request" ;
+VAL_ 893 CdcRsmMidLeftSeatWindReq 1 "1 " ;
+VAL_ 893 CdcRsmMidLeftSeatWindReq 2 "2 " ;
+VAL_ 893 CdcRsmMidLeftSeatWindReq 3 "3 " ;
+VAL_ 893 CdcRsmMidLeftSeatWindReq 7 "OFF" ;
+VAL_ 893 CdcRsmMidLeftSeatLegSupUpwSt 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatLegSupUpwSt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatLegSupDowSt 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatLegSupDowSt 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSpinUpSet 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSpinUpSet 1 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSpinDownSet 0 " " ;
+VAL_ 893 CdcRsmMidLeftSeatSpinDownSet 1 " " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 0 " " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 1 " 1 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 2 " 2 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 3 " 3 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 4 " 4 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 5 " 5 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 6 " 6 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 7 " 7 " ;
+VAL_ 893 CdcRsmMidLeftMssgModSet 8 " 8 " ;
+VAL_ 893 CdcRsmMidLeftMssgStrngthSet 0 " " ;
+VAL_ 893 CdcRsmMidLeftMssgStrngthSet 1 " " ;
+VAL_ 893 CdcRsmMidLeftMssgStrngthSet 2 " " ;
+VAL_ 893 CdcRsmMidLeftMssgStrngthSet 3 " " ;
+VAL_ 893 CdcRsmMidLeftMssgStrngthSet 7 " " ;
+VAL_ 893 CdcRsmThirdRightSeatHeatReq 0 "No request" ;
+VAL_ 893 CdcRsmThirdRightSeatHeatReq 1 "1 " ;
+VAL_ 893 CdcRsmThirdRightSeatHeatReq 2 "2 " ;
+VAL_ 893 CdcRsmThirdRightSeatHeatReq 3 "3 " ;
+VAL_ 893 CdcRsmThirdRightSeatHeatReq 7 "OFF" ;
+VAL_ 893 CdcRsmThirdRightSeatBackBackSt 0 " " ;
+VAL_ 893 CdcRsmThirdRightSeatBackBackSt 1 " " ;
+VAL_ 893 CdcRsmThirdRightSeatBackFwdSt 0 " " ;
+VAL_ 893 CdcRsmThirdRightSeatBackFwdSt 1 " " ;
+VAL_ 893 CdcRsmThirdRightSeatOneDownSt 0 " " ;
+VAL_ 893 CdcRsmThirdRightSeatOneDownSt 1 " " ;
+VAL_ 893 CdcRsmThirdRightSeatOneUpSt 0 " " ;
+VAL_ 893 CdcRsmThirdRightSeatOneUpSt 1 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatHeatReq 0 "No request" ;
+VAL_ 893 CdcRsmThirdLeftSeatHeatReq 1 "1 " ;
+VAL_ 893 CdcRsmThirdLeftSeatHeatReq 2 "2 " ;
+VAL_ 893 CdcRsmThirdLeftSeatHeatReq 3 "3 " ;
+VAL_ 893 CdcRsmThirdLeftSeatHeatReq 7 "OFF" ;
+VAL_ 893 CdcRsmThirdLeftSeatBackBackSt 0 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatBackBackSt 1 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatBackFwdSt 0 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatBackFwdSt 1 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatOneDownSt 0 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatOneDownSt 1 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatOneUpSt 0 " " ;
+VAL_ 893 CdcRsmThirdLeftSeatOneUpSt 1 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 0 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 1 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 2 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 3 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 4 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 5 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 6 " " ;
+VAL_ 893 CdcIntimateCoupleSeatSetReq 7 " " ;
+VAL_ 895 CdcRsmMidRightSeatLegSupBackSt 0 " " ;
+VAL_ 895 CdcRsmMidRightSeatLegSupBackSt 1 " " ;
+VAL_ 895 CdcRsmMidRightSeatLegSupFwdSt 0 " " ;
+VAL_ 895 CdcRsmMidRightSeatLegSupFwdSt 1 " " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 0 " " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 1 " 1 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 2 " 2 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 3 " 3 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 4 " 4 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 5 " 5 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 6 " 6 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaSave 7 " " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 0 " " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 1 " 1 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 2 " 2 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 3 " 3 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 4 " 4 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 5 " 5 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 6 " 6 " ;
+VAL_ 895 CdcRsmMidRightSeatExcLocaCallSig 7 " " ;
+VAL_ 895 CdcRsmMidLeftSeatLegSupBackSt 0 " " ;
+VAL_ 895 CdcRsmMidLeftSeatLegSupBackSt 1 " " ;
+VAL_ 895 CdcRsmMidLeftSeatLegSupFwdSt 0 " " ;
+VAL_ 895 CdcRsmMidLeftSeatLegSupFwdSt 1 " " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 0 " " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 1 " 1 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 2 " 2 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 3 " 3 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 4 " 4 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 5 " 5 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 6 " 6 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaSave 7 " " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 0 " " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 1 " 1 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 2 " 2 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 3 " 3 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 4 " 4 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 5 " 5 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 6 " 6 " ;
+VAL_ 895 CdcRsmMidLeftSeatExcLocaCallSig 7 " " ;
+VAL_ 928 CdcBackCockpitBedSetReq 0 " " ;
+VAL_ 928 CdcBackCockpitBedSetReq 1 " " ;
+VAL_ 928 CdcBackCockpitBedSetReq 2 " " ;
+VAL_ 928 CdcBackCockpitBedSetReq 3 " " ;
+VAL_ 928 CdcBackCockpitBedSetReq 4 " " ;
+VAL_ 928 CdcFrontCockpitBedSetReq 0 " " ;
+VAL_ 928 CdcFrontCockpitBedSetReq 1 " " ;
+VAL_ 928 CdcFrontCockpitBedSetReq 2 " " ;
+VAL_ 928 CdcFrontCockpitBedSetReq 3 " " ;
+VAL_ 928 CdcFrontCockpitBedSetReq 4 " " ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 0 " " ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 1 "0%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 2 "10%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 3 "20%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 4 "30%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 5 "40%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 6 "50%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 7 "60%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 8 "70%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 9 "80%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 10 "90%" ;
+VAL_ 928 CdcRsmThirdLeftSeatBackPer 11 "100%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 0 " " ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 1 "0%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 2 "10%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 3 "20%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 4 "30%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 5 "40%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 6 "50%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 7 "60%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 8 "70%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 9 "80%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 10 "90%" ;
+VAL_ 928 CdcRsmThirdRightSeatBackPer 11 "100%" ;
+VAL_ 928 CdcPassSeatSldPer 0 " " ;
+VAL_ 928 CdcPassSeatSldPer 1 "0%" ;
+VAL_ 928 CdcPassSeatSldPer 2 "10%" ;
+VAL_ 928 CdcPassSeatSldPer 3 "20%" ;
+VAL_ 928 CdcPassSeatSldPer 4 "30%" ;
+VAL_ 928 CdcPassSeatSldPer 5 "40%" ;
+VAL_ 928 CdcPassSeatSldPer 6 "50%" ;
+VAL_ 928 CdcPassSeatSldPer 7 "60%" ;
+VAL_ 928 CdcPassSeatSldPer 8 "70%" ;
+VAL_ 928 CdcPassSeatSldPer 9 "80%" ;
+VAL_ 928 CdcPassSeatSldPer 10 "90%" ;
+VAL_ 928 CdcPassSeatSldPer 11 "100%" ;
+VAL_ 928 CdcPassSeatBackPer 0 " " ;
+VAL_ 928 CdcPassSeatBackPer 1 "0%" ;
+VAL_ 928 CdcPassSeatBackPer 2 "10%" ;
+VAL_ 928 CdcPassSeatBackPer 3 "20%" ;
+VAL_ 928 CdcPassSeatBackPer 4 "30%" ;
+VAL_ 928 CdcPassSeatBackPer 5 "40%" ;
+VAL_ 928 CdcPassSeatBackPer 6 "50%" ;
+VAL_ 928 CdcPassSeatBackPer 7 "60%" ;
+VAL_ 928 CdcPassSeatBackPer 8 "70%" ;
+VAL_ 928 CdcPassSeatBackPer 9 "80%" ;
+VAL_ 928 CdcPassSeatBackPer 10 "90%" ;
+VAL_ 928 CdcPassSeatBackPer 11 "100%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 0 " " ;
+VAL_ 928 CdcPassSeatLegSupDowPer 1 "0%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 2 "10%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 3 "20%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 4 "30%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 5 "40%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 6 "50%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 7 "60%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 8 "70%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 9 "80%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 10 "90%" ;
+VAL_ 928 CdcPassSeatLegSupDowPer 11 "100%" ;
+VAL_ 928 CdcScArSteerWheelAdjustReq 0 " " ;
+VAL_ 928 CdcScArSteerWheelAdjustReq 1 " " ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 0 " " ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 1 "0%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 2 "10%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 3 "20%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 4 "30%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 5 "40%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 6 "50%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 7 "60%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 8 "70%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 9 "80%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 10 "90%" ;
+VAL_ 976 CdcRsmMidLeftSeatSldPer 11 "100%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 0 " " ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 1 "0%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 2 "10%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 3 "20%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 4 "30%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 5 "40%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 6 "50%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 7 "60%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 8 "70%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 9 "80%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 10 "90%" ;
+VAL_ 976 CdcRsmMidLeftSeatBackPer 11 "100%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 0 " " ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 1 "0%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 2 "10%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 3 "20%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 4 "30%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 5 "40%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 6 "50%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 7 "60%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 8 "70%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 9 "80%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 10 "90%" ;
+VAL_ 976 CdcRsmMidLeftSeatLegSupDowPer 11 "100%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 0 " " ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 1 "0%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 2 "10%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 3 "20%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 4 "30%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 5 "40%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 6 "50%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 7 "60%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 8 "70%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 9 "80%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 10 "90%" ;
+VAL_ 976 CdcRsmMidRightSeatSldPer 11 "100%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 0 " " ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 1 "0%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 2 "10%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 3 "20%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 4 "30%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 5 "40%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 6 "50%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 7 "60%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 8 "70%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 9 "80%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 10 "90%" ;
+VAL_ 976 CdcRsmMidRightSeatBackPer 11 "100%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 0 " " ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 1 "0%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 2 "10%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 3 "20%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 4 "30%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 5 "40%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 6 "50%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 7 "60%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 8 "70%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 9 "80%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 10 "90%" ;
+VAL_ 976 CdcRsmMidRightSeatLegSupDowPer 11 "100%" ;
+VAL_ 988 PsmZeroSaveSts 0 " " ;
+VAL_ 988 PsmZeroSaveSts 1 " " ;
+VAL_ 988 PsmZeroSaveSts 2 " " ;
+VAL_ 988 PsmZeroResetFb 0 " " ;
+VAL_ 988 PsmZeroResetFb 1 " " ;
+VAL_ 988 PsmZeroResetFb 2 " " ;
+VAL_ 988 PsmZeroResetFb 3 " " ;
+VAL_ 988 PsZeroGSwitchSts 0 " " ;
+VAL_ 988 PsZeroGSwitchSts 1 " " ;
+VAL_ 988 PsmZeroGSts 0 " " ;
+VAL_ 988 PsmZeroGSts 1 " " ;
+VAL_ 988 PsmRespiteModSeatStorgSts 0 "Notused" ;
+VAL_ 988 PsmRespiteModSeatStorgSts 1 " " ;
+VAL_ 988 PsmRespiteModSeatStorgSts 2 " " ;
+VAL_ 988 PsmParkMassageModSts 0 " 1 " ;
+VAL_ 988 PsmParkMassageModSts 1 " 2 " ;
+VAL_ 988 PsmParkMassageModSts 2 " 3 " ;
+VAL_ 988 PsmParkMassageModSts 3 " 4 " ;
+VAL_ 988 PsmParkMassageModSts 4 " 5 " ;
+VAL_ 988 PsmParkMassageModSts 5 " 6 " ;
+VAL_ 988 PsmParkMassageModSts 6 " 7 " ;
+VAL_ 988 PsmParkMassageModSts 7 " 8 " ;
+VAL_ 988 PsmParkMassageStrSts 0 "OFF" ;
+VAL_ 988 PsmParkMassageStrSts 1 " " ;
+VAL_ 988 PsmParkMassageStrSts 2 " " ;
+VAL_ 988 PsmParkMassageStrSts 3 " " ;
+VAL_ 988 DsmPassHeatSts 0 "Notused" ;
+VAL_ 988 DsmPassHeatSts 1 "Level1" ;
+VAL_ 988 DsmPassHeatSts 2 "Level2" ;
+VAL_ 988 DsmPassHeatSts 3 "Level3" ;
+VAL_ 988 DsmPassHeatSts 4 "Reserved" ;
+VAL_ 988 DsmPassHeatSts 5 "Reserved" ;
+VAL_ 988 DsmPassHeatSts 6 "off" ;
+VAL_ 988 DsmPassHeatSts 7 "Reserved" ;
+VAL_ 988 PsmBackFwdAdjstSts 0 "Nopress" ;
+VAL_ 988 PsmBackFwdAdjstSts 1 "press" ;
+VAL_ 988 PSM_PSMBackrestPositionSts 0 "Inactive" ;
+VAL_ 988 PSM_PSMBackrestPositionSts 255 "Invalid" ;
+VAL_ 988 CdcPsmCmtySetFb 0 "off" ;
+VAL_ 988 CdcPsmCmtySetFb 1 "on" ;
+VAL_ 988 PSM_PSMFrontEndPositionSts 0 "Inactive" ;
+VAL_ 988 PSM_PSMFrontEndPositionSts 255 "Invalid" ;
+VAL_ 988 PsmHrzntlAdjstSts 0 "Nopress" ;
+VAL_ 988 PsmHrzntlAdjstSts 1 "press" ;
+VAL_ 988 PSM_PSMHorizontalPositionSts 0 "Inactive" ;
+VAL_ 988 PSM_PSMHorizontalPositionSts 255 "Invalid" ;
+VAL_ 988 DsmPassVentnSts 0 "Notused" ;
+VAL_ 988 DsmPassVentnSts 1 "Level1" ;
+VAL_ 988 DsmPassVentnSts 2 "Level2" ;
+VAL_ 988 DsmPassVentnSts 3 "Level3" ;
+VAL_ 988 DsmPassVentnSts 4 "Reserved" ;
+VAL_ 988 DsmPassVentnSts 5 "Reserved" ;
+VAL_ 988 DsmPassVentnSts 6 "off" ;
+VAL_ 988 DsmPassVentnSts 7 "Reserved" ;
+VAL_ 988 PsmPassLegAdjSts 0 "Nopress" ;
+VAL_ 988 PsmPassLegAdjSts 1 "press" ;
+VAL_ 988 PsmTextDispReq 0 " " ;
+VAL_ 988 PsmTextDispReq 1 " " ;
+VAL_ 988 PsmTextDispReq 2 " " ;
+VAL_ 988 PsmTextDispReq 3 " " ;
+VAL_ 988 DsmRemPassHeatSts 0 " " ;
+VAL_ 988 DsmRemPassHeatSts 1 " " ;
+VAL_ 988 DsmRemPassHeatSts 2 " " ;
+VAL_ 988 DsmRemPassHeatSts 3 " " ;
+VAL_ 988 DsmRemPassHeatSts 4 " " ;
+VAL_ 988 DsmRemPassHeatSts 5 "OFF" ;
+VAL_ 988 DsmRemPassHeatSts 6 " " ;
+VAL_ 988 DsmRemPassVentilatieSts 0 " " ;
+VAL_ 988 DsmRemPassVentilatieSts 1 " " ;
+VAL_ 988 DsmRemPassVentilatieSts 2 " " ;
+VAL_ 988 DsmRemPassVentilatieSts 3 " " ;
+VAL_ 988 DsmRemPassVentilatieSts 4 " " ;
+VAL_ 988 DsmRemPassVentilatieSts 5 "OFF" ;
+VAL_ 988 DsmRemPassVentilatieSts 6 " " ;
+VAL_ 990 DsmSasAdjStsFb 0 " " ;
+VAL_ 990 DsmSasAdjStsFb 1 " " ;
+VAL_ 990 DsmSasAdjStsFb 2 " " ;
+VAL_ 990 DsmSasAdjStsFb 3 " " ;
+VAL_ 990 DsmSasSaveSetFb 0 "No request" ;
+VAL_ 990 DsmSasSaveSetFb 1 " " ;
+VAL_ 990 DsmSasSaveSetFb 2 " " ;
+VAL_ 990 DSM_DSMVerticalPositionSts 0 "Inactive" ;
+VAL_ 990 DSM_DSMVerticalPositionSts 255 "Invalid" ;
+VAL_ 990 DSM_DSMBackrestPositionSts 0 "Inactive" ;
+VAL_ 990 DSM_DSMBackrestPositionSts 255 "Invalid" ;
+VAL_ 990 DSM_DSMFrontEndPositionSts 0 "Inactive" ;
+VAL_ 990 DSM_DSMFrontEndPositionSts 255 "Invalid" ;
+VAL_ 990 DSM_DSMHorizontalPositionSts 0 "Inactive" ;
+VAL_ 990 DSM_DSMHorizontalPositionSts 255 "Invalid" ;
+VAL_ 990 DsmSeatSpinSetSts 0 " " ;
+VAL_ 990 DsmSeatSpinSetSts 1 " " ;
+VAL_ 990 DSMRotarySwitchPositionSts 0 "Inactive" ;
+VAL_ 990 DSMRotarySwitchPositionSts 255 "Invalid" ;
+VAL_ 990 DsmRestoreFactrySetFb 0 " " ;
+VAL_ 990 DsmRestoreFactrySetFb 1 " " ;
+VAL_ 990 DsmRestoreFactrySetFb 2 " " ;
+VAL_ 990 DsmRestoreFactrySetFb 3 " " ;
+VAL_ 991 MmiOperationSts 0 " " ;
+VAL_ 991 MmiOperationSts 1 " " ;
+VAL_ 991 MmiOperationSts 2 " " ;
+VAL_ 991 MmiOperationSts 3 " " ;
+VAL_ 991 MmiOperationSts 4 " " ;
+VAL_ 991 MmiSpaceCubePosCallSigFb 0 " " ;
+VAL_ 991 MmiSpaceCubePosCallSigFb 1 " " ;
+VAL_ 991 MmiSpaceCubePosCallSigFb 2 " " ;
+VAL_ 991 MmiBedFuncPosCallStsFb 0 " " ;
+VAL_ 991 MmiBedFuncPosCallStsFb 1 " " ;
+VAL_ 991 MmiBedFuncPosCallStsFb 2 " " ;
+VAL_ 991 MmiBedFuncPosCallStsFb 3 " " ;
+VAL_ 1002 DsmRemDrHeatSts 0 " " ;
+VAL_ 1002 DsmRemDrHeatSts 1 " " ;
+VAL_ 1002 DsmRemDrHeatSts 2 " " ;
+VAL_ 1002 DsmRemDrHeatSts 3 " " ;
+VAL_ 1002 DsmRemDrHeatSts 4 " " ;
+VAL_ 1002 DsmRemDrHeatSts 5 "OFF" ;
+VAL_ 1002 DsmRemDrHeatSts 6 " " ;
+VAL_ 1002 DsmRemDrVentilatieSts 0 " " ;
+VAL_ 1002 DsmRemDrVentilatieSts 1 " " ;
+VAL_ 1002 DsmRemDrVentilatieSts 2 " " ;
+VAL_ 1002 DsmRemDrVentilatieSts 3 " " ;
+VAL_ 1002 DsmRemDrVentilatieSts 4 " " ;
+VAL_ 1002 DsmRemDrVentilatieSts 5 "OFF" ;
+VAL_ 1002 DsmRemDrVentilatieSts 6 " " ;
+VAL_ 1002 DsmComfPosMemReq 0 " " ;
+VAL_ 1002 DsmComfPosMemReq 1 " " ;
+VAL_ 1002 DsmDrvrHeatSts 0 "Notused" ;
+VAL_ 1002 DsmDrvrHeatSts 1 "Level1" ;
+VAL_ 1002 DsmDrvrHeatSts 2 "Level2" ;
+VAL_ 1002 DsmDrvrHeatSts 3 "Level3" ;
+VAL_ 1002 DsmDrvrHeatSts 4 "Reserved" ;
+VAL_ 1002 DsmDrvrHeatSts 5 "Reserved" ;
+VAL_ 1002 DsmDrvrHeatSts 6 "off" ;
+VAL_ 1002 DsmDrvrHeatSts 7 "Reserved" ;
+VAL_ 1002 DsmDrvrVentnSts 0 "Notused" ;
+VAL_ 1002 DsmDrvrVentnSts 1 "Level1" ;
+VAL_ 1002 DsmDrvrVentnSts 2 "Level2" ;
+VAL_ 1002 DsmDrvrVentnSts 3 "Level3" ;
+VAL_ 1002 DsmDrvrVentnSts 4 "Reserved" ;
+VAL_ 1002 DsmDrvrVentnSts 5 "Reserved" ;
+VAL_ 1002 DsmDrvrVentnSts 6 "off" ;
+VAL_ 1002 DsmDrvrVentnSts 7 "Reserved" ;
+VAL_ 1002 DSM_DSMLegPositionSts 0 "Inactive" ;
+VAL_ 1002 DSM_DSMLegPositionSts 255 "Invalid" ;
+VAL_ 1002 DsmCampBedAdtStsFb 1 " " ;
+VAL_ 1002 DsmCampBedAdtStsFb 2 " " ;
+VAL_ 1002 DsmCampBedAdtStsFb 3 " " ;
+VAL_ 1002 DsmCampBedAdtStsFb 4 " " ;
+VAL_ 1002 DsmCampBedAdtStsFb 5 " " ;
+VAL_ 1002 DsmCampBedAdtStsFb 6 " " ;
+VAL_ 1002 DsmCampBedAdtStsFb 7 " " ;
+VAL_ 1002 DsmCampBedFrontSeatCallStsFb 0 " " ;
+VAL_ 1002 DsmCampBedFrontSeatCallStsFb 1 " " ;
+VAL_ 1002 DsmCampBedFrontSeatCallStsFb 2 " " ;
+VAL_ 1002 DsmCampBedFrontSeatCallStsFb 3 " " ;
+VAL_ 1002 DsmCampBedFrontSeatCallStsFb 4 " " ;
+VAL_ 1002 DsmCampBedFrontSeatCallStsFb 5 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 0 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 1 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 2 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 3 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 4 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 5 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 6 " " ;
+VAL_ 1002 DsmCampBedFrontSeatAdtStsFb 7 " " ;
+VAL_ 1002 PsmZeroGOperationSts 0 " " ;
+VAL_ 1002 PsmZeroGOperationSts 1 " " ;
+VAL_ 1002 PsmZeroGOperationSts 2 " " ;
+VAL_ 1007 BdcPassOccpnSts 0 "notoccupied" ;
+VAL_ 1007 BdcPassOccpnSts 1 "occupied" ;
+VAL_ 1173 LSCMNetworkActiveWakeupBit 0 "inactive" ;
+VAL_ 1173 LSCMNetworkActiveWakeupBit 1 "active" ;
+VAL_ 1173 LSCMNetworkRepeatBit 0 "inactive" ;
+VAL_ 1173 LSCMNetworkRepeatBit 1 "active" ;
+VAL_ 1285 CdcCampBedSetReq 0 " " ;
+VAL_ 1285 CdcCampBedSetReq 1 " " ;
+VAL_ 1285 CdcCampBedSetReq 2 " " ;
+VAL_ 1285 CdcCampBedSetReq 3 " " ;
+VAL_ 1285 CdcCampBedSetReq 4 " " ;
+VAL_ 1285 CdcRsmChildLockSetReq 0 " " ;
+VAL_ 1285 CdcRsmChildLockSetReq 1 " " ;
+VAL_ 1285 CdcRsmChildLockSetReq 2 " " ;
+VAL_ 1328 CdcPassLegSupUpwSt 0 " " ;
+VAL_ 1328 CdcPassLegSupUpwSt 1 " " ;
+VAL_ 1328 CdcPassLegSupDowSt 0 " " ;
+VAL_ 1328 CdcPassLegSupDowSt 1 " " ;
+VAL_ 1328 CdcDrvrLegSupUpwSt 0 " " ;
+VAL_ 1328 CdcDrvrLegSupUpwSt 1 " " ;
+VAL_ 1328 CdcDrvrLegSupDowSt 0 " " ;
+VAL_ 1328 CdcDrvrLegSupDowSt 1 " " ;
+VAL_ 1328 CdcPsmZeroSeatReset 0 " " ;
+VAL_ 1328 CdcPsmZeroSeatReset 1 " " ;
+VAL_ 1328 CdcPsmMssgModSet 0 " " ;
+VAL_ 1328 CdcPsmMssgModSet 1 " 1 " ;
+VAL_ 1328 CdcPsmMssgModSet 2 " 2 " ;
+VAL_ 1328 CdcPsmMssgModSet 3 " 3 " ;
+VAL_ 1328 CdcPsmMssgModSet 4 " 4 " ;
+VAL_ 1328 CdcPsmMssgModSet 5 " 5 " ;
+VAL_ 1328 CdcPsmMssgModSet 6 " 6 " ;
+VAL_ 1328 CdcPsmMssgModSet 7 " 7 " ;
+VAL_ 1328 CdcPsmMssgModSet 8 " 8 " ;
+VAL_ 1328 CdcPsmCmtySet 0 "Norequest" ;
+VAL_ 1328 CdcPsmCmtySet 1 "off" ;
+VAL_ 1328 CdcPsmCmtySet 2 "on" ;
+VAL_ 1328 CdcDsmZeroSave 0 " " ;
+VAL_ 1328 CdcDsmZeroSave 1 " " ;
+VAL_ 1328 CdcDsmZeroSeatReset 0 " " ;
+VAL_ 1328 CdcDsmZeroSeatReset 1 " " ;
+VAL_ 1328 CdcDsmMssgModSet 0 " " ;
+VAL_ 1328 CdcDsmMssgModSet 1 " 1 " ;
+VAL_ 1328 CdcDsmMssgModSet 2 " 2 " ;
+VAL_ 1328 CdcDsmMssgModSet 3 " 3 " ;
+VAL_ 1328 CdcDsmMssgModSet 4 " 4 " ;
+VAL_ 1328 CdcDsmMssgModSet 5 " 5 " ;
+VAL_ 1328 CdcDsmMssgModSet 6 " 6 " ;
+VAL_ 1328 CdcDsmMssgModSet 7 " 7 " ;
+VAL_ 1328 CdcDsmMssgModSet 8 " 8 " ;
+VAL_ 1521 BcmDimmerLvl 0 "Inactive" ;
+VAL_ 1521 BcmDimmerLvl 1 "Level1" ;
+VAL_ 1521 BcmDimmerLvl 2 "Level2" ;
+VAL_ 1521 BcmDimmerLvl 3 "Level3" ;
+VAL_ 1521 BcmDimmerLvl 4 "Level4" ;
+VAL_ 1521 BcmDimmerLvl 5 "Level5" ;
+VAL_ 1521 BcmDimmerLvl 6 "Level6" ;
+VAL_ 1521 BcmDimmerLvl 7 "invalid" ;
+VAL_ 1536 CdcDimmerLvlSet 0 "Inactive" ;
+VAL_ 1536 CdcDimmerLvlSet 1 "Level1" ;
+VAL_ 1536 CdcDimmerLvlSet 2 "Level2" ;
+VAL_ 1536 CdcDimmerLvlSet 3 "Level3" ;
+VAL_ 1536 CdcDimmerLvlSet 4 "Level4" ;
+VAL_ 1536 CdcDimmerLvlSet 5 "Level5" ;
+VAL_ 1536 CdcDimmerLvlSet 6 "Level6" ;
+VAL_ 1536 CdcDimmerLvlSet 7 "invalid" ;
+VAL_ 1536 CdcPassSeatBackBackSt 0 "Nopress" ;
+VAL_ 1536 CdcPassSeatBackBackSt 1 "press" ;
+VAL_ 1536 CdcPassSeatBackFwdSt 0 "Nopress" ;
+VAL_ 1536 CdcPassSeatBackFwdSt 1 "press" ;
+VAL_ 1536 CdcPassSeatSldBackwSt 0 "Nopress" ;
+VAL_ 1536 CdcPassSeatSldBackwSt 1 "press" ;
+VAL_ 1536 CdcPassSeatSldFwdSt 0 "Nopress" ;
+VAL_ 1536 CdcPassSeatSldFwdSt 1 "press" ;
+VAL_ 1536 CdcDrvrReUpwdSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrReUpwdSt 1 "press" ;
+VAL_ 1536 CdcDrvrReDwnwdSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrReDwnwdSt 1 "press" ;
+VAL_ 1536 CdcDrvrBackBackSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrBackBackSt 1 "press" ;
+VAL_ 1536 CdcDrvrBackFwdSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrBackFwdSt 1 "press" ;
+VAL_ 1536 CdcDrvrFrntUpwSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrFrntUpwSt 1 "press" ;
+VAL_ 1536 CdcDrvrFrntDwnwdSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrFrntDwnwdSt 1 "press" ;
+VAL_ 1536 CdcDrvrSldBackwSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrSldBackwSt 1 "press" ;
+VAL_ 1536 CdcDrvrSldFwdSt 0 "Nopress" ;
+VAL_ 1536 CdcDrvrSldFwdSt 1 "press" ;
+VAL_ 1536 CdcMainDrvrSeatInfoSaveSet 0 "No request" ;
+VAL_ 1536 CdcMainDrvrSeatInfoSaveSet 1 " " ;
+VAL_ 1536 CdcMainDrvrSeatInfoSaveSet 2 " " ;
+VAL_ 1536 CdcMainDrvrSeatInfoSaveSet 3 " " ;
+VAL_ 1537 CdcThCockpitFctSetSts 0 "OFF" ;
+VAL_ 1537 CdcThCockpitFctSetSts 1 " " ;
+VAL_ 1537 CdcThCockpitFctSetSts 2 " " ;
+VAL_ 1537 CdcThCockpitFctSetSts 3 " " ;
+VAL_ 1537 CDCRestoreFactrySet 0 "NoRequest" ;
+VAL_ 1537 CDCRestoreFactrySet 1 "Request" ;
+VAL_ 1537 CdcAccountSetSts 0 " " ;
+VAL_ 1537 CdcAccountSetSts 1 " 1 " ;
+VAL_ 1537 CdcAccountSetSts 2 " 2" ;
+VAL_ 1537 CdcAccountSetSts 3 " 3" ;
+VAL_ 1537 CdcAccountSetSts 4 " 4" ;
+VAL_ 1537 CdcPassSeatHeatSet 0 "NoReq" ;
+VAL_ 1537 CdcPassSeatHeatSet 1 "Level1" ;
+VAL_ 1537 CdcPassSeatHeatSet 2 "Level2" ;
+VAL_ 1537 CdcPassSeatHeatSet 3 "Level3" ;
+VAL_ 1537 CdcPassSeatHeatSet 4 "Reserved" ;
+VAL_ 1537 CdcPassSeatHeatSet 5 "Reserved" ;
+VAL_ 1537 CdcPassSeatHeatSet 6 "Off" ;
+VAL_ 1537 CdcPassSeatHeatSet 7 "Reserved" ;
+VAL_ 1537 CdcDrvrSeatInfoSaveSet 0 "Not used" ;
+VAL_ 1537 CdcDrvrSeatInfoSaveSet 1 " " ;
+VAL_ 1537 CdcDrvrSeatInfoCallSig 0 "Not used" ;
+VAL_ 1537 CdcDrvrSeatInfoCallSig 1 " " ;
+VAL_ 1537 CdcDrvrSeatHeatSet 0 "NoReq" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 1 "Level1" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 2 "Level2" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 3 "Level3" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 4 "Reserved" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 5 "Reserved" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 6 "Off" ;
+VAL_ 1537 CdcDrvrSeatHeatSet 7 "Reserved" ;
+VAL_ 1537 CdcPsmMssgStrngthSet 0 " " ;
+VAL_ 1537 CdcPsmMssgStrngthSet 1 " " ;
+VAL_ 1537 CdcPsmMssgStrngthSet 2 " " ;
+VAL_ 1537 CdcPsmMssgStrngthSet 3 " " ;
+VAL_ 1537 CdcPsmMssgStrngthSet 4 " " ;
+VAL_ 1537 CdcDsmCmtySet 0 "Norequest" ;
+VAL_ 1537 CdcDsmCmtySet 1 "off" ;
+VAL_ 1537 CdcDsmCmtySet 2 "on" ;
+VAL_ 1538 CdcRespiteModSts 0 " " ;
+VAL_ 1538 CdcRespiteModSts 1 " " ;
+VAL_ 1538 CdcRespiteModSts 2 " " ;
+VAL_ 1538 CdcRespiteModSts 3 " " ;
+VAL_ 1538 CdcDsmZeroGSwt 0 " " ;
+VAL_ 1538 CdcDsmZeroGSwt 1 " " ;
+VAL_ 1538 CdcDsmZeroGSwt 2 " " ;
+VAL_ 1538 CdcScArDsmAdjustReq 0 " " ;
+VAL_ 1538 CdcScArDsmAdjustReq 1 " " ;
+VAL_ 1538 CdcScArDsmAdjustReq 2 " " ;
+VAL_ 1538 CdcScArDsmAdjustReq 3 " " ;
+VAL_ 1538 CdcScArDsmAdjustReq 4 " " ;
+VAL_ 1538 CdcPassSeatWindReq 0 "No Req" ;
+VAL_ 1538 CdcPassSeatWindReq 1 "Level1" ;
+VAL_ 1538 CdcPassSeatWindReq 2 "Level2" ;
+VAL_ 1538 CdcPassSeatWindReq 3 "Level3" ;
+VAL_ 1538 CdcPassSeatWindReq 4 "Reserved" ;
+VAL_ 1538 CdcPassSeatWindReq 5 "Reserved" ;
+VAL_ 1538 CdcPassSeatWindReq 6 "Off" ;
+VAL_ 1538 CdcPassSeatWindReq 7 "Reserved" ;
+VAL_ 1538 CdcParkSpaceStorg 0 "No Request" ;
+VAL_ 1538 CdcParkSpaceStorg 1 " " ;
+VAL_ 1538 CdcMainDrvrSeatInfoCallSig 0 "No request" ;
+VAL_ 1538 CdcMainDrvrSeatInfoCallSig 1 " " ;
+VAL_ 1538 CdcMainDrvrSeatInfoCallSig 2 " " ;
+VAL_ 1538 CdcMainDrvrSeatInfoCallSig 3 " " ;
+VAL_ 1538 CdcDrvrSeatWindReq 0 "No Req" ;
+VAL_ 1538 CdcDrvrSeatWindReq 1 "Level1" ;
+VAL_ 1538 CdcDrvrSeatWindReq 2 "Level2" ;
+VAL_ 1538 CdcDrvrSeatWindReq 3 "Level3" ;
+VAL_ 1538 CdcDrvrSeatWindReq 4 "Reserved" ;
+VAL_ 1538 CdcDrvrSeatWindReq 5 "Reserved" ;
+VAL_ 1538 CdcDrvrSeatWindReq 6 "Off" ;
+VAL_ 1538 CdcDrvrSeatWindReq 7 "Reserved" ;
+VAL_ 1538 CdcScArPsmAdjustReq 0 " " ;
+VAL_ 1538 CdcScArPsmAdjustReq 1 " " ;
+VAL_ 1538 CdcScArPsmAdjustReq 2 " " ;
+VAL_ 1538 CdcScArPsmAdjustReq 3 " " ;
+VAL_ 1538 CdcPsmZeroSave 0 " " ;
+VAL_ 1538 CdcPsmZeroSave 1 " " ;
+VAL_ 1538 CdcRespiteModDsmReq 0 " " ;
+VAL_ 1538 CdcRespiteModDsmReq 1 " " ;
+VAL_ 1538 CdcDsmMssgStrngthSet 0 " " ;
+VAL_ 1538 CdcDsmMssgStrngthSet 1 " " ;
+VAL_ 1538 CdcDsmMssgStrngthSet 2 " " ;
+VAL_ 1538 CdcDsmMssgStrngthSet 3 " " ;
+VAL_ 1538 CdcDsmMssgStrngthSet 4 " " ;
+VAL_ 1616 LSCM_WakeUp1 0 " " ;
+VAL_ 1616 LSCM_WakeUp1 1 "PN8 " ;
+VAL_ 1616 LSCM_WakeUp2 0 " " ;
+VAL_ 1616 LSCM_WakeUp2 1 " " ;
+VAL_ 1616 LSCM_WakeUp3 0 " " ;
+VAL_ 1616 LSCM_WakeUp3 1 " " ;
+VAL_ 1616 LSCM_WakeUp4 0 " " ;
+VAL_ 1616 LSCM_WakeUp4 1 "LIN " ;
+VAL_ 1616 LSCM_WakeUp5 0 " " ;
+VAL_ 1616 LSCM_WakeUp5 1 " " ;
+VAL_ 1616 LSCM_WakeUp6 0 " " ;
+VAL_ 1616 LSCM_WakeUp6 1 " " ;
+VAL_ 1616 LSCM_WakeUp7 0 " " ;
+VAL_ 1616 LSCM_WakeUp7 1 " " ;
+VAL_ 1616 LSCM_WakeUp8 0 " " ;
+VAL_ 1616 LSCM_WakeUp8 1 " " ;
+VAL_ 1616 LSCM_WakeUp9 0 " " ;
+VAL_ 1616 LSCM_WakeUp9 1 " " ;
+VAL_ 1616 LSCM_WakeUp10 0 " " ;
+VAL_ 1616 LSCM_WakeUp10 1 " " ;
+VAL_ 1616 LSCM_NotSleep1 0 " " ;
+VAL_ 1616 LSCM_NotSleep1 1 "PN8 " ;
+VAL_ 1616 LSCM_NotSleep2 0 " " ;
+VAL_ 1616 LSCM_NotSleep2 1 " " ;
+VAL_ 1616 LSCM_NotSleep3 0 " " ;
+VAL_ 1616 LSCM_NotSleep3 1 " " ;
+VAL_ 1616 LSCM_NotSleep4 0 " " ;
+VAL_ 1616 LSCM_NotSleep4 1 " " ;
+VAL_ 1616 LSCM_NotSleep5 0 " " ;
+VAL_ 1616 LSCM_NotSleep5 1 " " ;
+VAL_ 1616 LSCM_NotSleep6 0 " " ;
+VAL_ 1616 LSCM_NotSleep6 1 " " ;
+VAL_ 1616 LSCM_NotSleep7 0 " " ;
+VAL_ 1616 LSCM_NotSleep7 1 " " ;
+VAL_ 1616 LSCM_NotSleep8 0 " " ;
+VAL_ 1616 LSCM_NotSleep8 1 " " ;
+VAL_ 1616 LSCM_NotSleep9 0 " " ;
+VAL_ 1616 LSCM_NotSleep9 1 " " ;
+VAL_ 1616 LSCM_NotSleep10 0 " " ;
+VAL_ 1616 LSCM_NotSleep10 1 " " ;
+VAL_ 1616 LSCM_NotSleep11 0 " " ;
+VAL_ 1616 LSCM_NotSleep11 1 " " ;
+VAL_ 1616 LSCM_NotSleep12 0 " " ;
+VAL_ 1616 LSCM_NotSleep12 1 " " ;
+VAL_ 1616 LSCM_NotSleep13 0 " " ;
+VAL_ 1616 LSCM_NotSleep13 1 " " ;
+VAL_ 1616 LSCM_NotSleep14 0 " " ;
+VAL_ 1616 LSCM_NotSleep14 1 " " ;
+VAL_ 1616 LSCM_NotSleep15 0 " " ;
+VAL_ 1616 LSCM_NotSleep15 1 " " ;
+VAL_ 1616 LSCM_NotSleep16 0 " " ;
+VAL_ 1616 LSCM_NotSleep16 1 " " ;
+VAL_ 1616 LSCM_NotSleep17 0 " " ;
+VAL_ 1616 LSCM_NotSleep17 1 "eeprom " ;
+VAL_ 1616 LSCM_NotSleep18 0 " " ;
+VAL_ 1616 LSCM_NotSleep18 1 " " ;
+VAL_ 1616 LSCM_NotSleep19 0 " " ;
+VAL_ 1616 LSCM_NotSleep19 1 " " ;
+VAL_ 1616 LSCM_NotSleep20 0 " " ;
+VAL_ 1616 LSCM_NotSleep20 1 " OFF" ;
+VAL_ 1616 LSCM_NotSleep21 0 " " ;
+VAL_ 1616 LSCM_NotSleep21 1 " " ;
+VAL_ 1616 LSCM_NotSleep22 0 " " ;
+VAL_ 1616 LSCM_NotSleep22 1 " " ;
+VAL_ 1616 LSCM_NotSleep23 0 " " ;
+VAL_ 1616 LSCM_NotSleep23 1 " " ;
+VAL_ 1616 LSCM_NotSleep24 0 " " ;
+VAL_ 1616 LSCM_NotSleep24 1 " " ;
+VAL_ 1616 LSCM_NotSleep25 0 " " ;
+VAL_ 1616 LSCM_NotSleep25 1 " " ;
+VAL_ 1616 LSCM_NotSleep26 0 " " ;
+VAL_ 1616 LSCM_NotSleep26 1 " " ;
+VAL_ 1616 LSCM_NotSleep27 0 " " ;
+VAL_ 1616 LSCM_NotSleep27 1 " " ;
+VAL_ 1616 LSCM_NotSleep28 0 " " ;
+VAL_ 1616 LSCM_NotSleep28 1 " " ;
+VAL_ 1616 LSCM_NotSleep29 0 " " ;
+VAL_ 1616 LSCM_NotSleep29 1 " " ;
+VAL_ 1616 LSCM_NotSleep30 0 " " ;
+VAL_ 1616 LSCM_NotSleep30 1 " " ;
+VAL_ 1908 DiagnoseMessage0x774 1 "Active" 0 "Inactive" ;
+VAL_ 1916 DiagnoseMessage0x77C 1 "Active" 0 "Inactive" ;
+VAL_ 1941 DiagnoseMessage0x795 1 "Active" 0 "Inactive" ;
+VAL_ 1949 DiagnoseMessage0x79D 1 "Active" 0 "Inactive" ;

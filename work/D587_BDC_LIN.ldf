@@ -1,0 +1,572 @@
+
+
+LIN_description_file;
+LIN_protocol_version = "2.0";
+LIN_language_version = "2.0";
+LIN_speed = 19.2 kbps;
+
+Nodes {
+  Master: LSCM, 10 ms, 0.1 ms ;
+  Slaves: LRM_D, LRM_ML ;
+}
+
+Signals {
+  CdcMssgModSet: 4, 0, LSCM, LRM_D, LRM_ML ;
+  CdcMssgStrngthSet: 3, 0, LSCM, LRM_D, LRM_ML ;
+  CdcSuperSavesModeSts: 1, 0, LSCM, LRM_D, LRM_ML ;
+  CdcComfortModeSeatSet: 3, 0, LSCM, LRM_D, LRM_ML ;
+  CdcComfortModeFuncSet: 3, 0, LSCM, LRM_D, LRM_ML ;
+  BcmPwrStsFb: 2, 0, LSCM, LRM_D, LRM_ML ;
+  RestoreFactorySetting: 2, 0, LSCM, LRM_D, LRM_ML ;
+  BigBedMode: 3, 0, LSCM, LRM_D, LRM_ML ;
+  WatchingMovies: 4, 0, LSCM, LRM_D, LRM_ML ;
+  CdcSpaceCubePosCallSig: 4, 0, LSCM, LRM_D, LRM_ML ;
+  VcuDisCarPresStsResetReq: 1, 0, LSCM, LRM_D, LRM_ML ;
+  factory_pattern: 1, 0, LSCM, LRM_D, LRM_ML ;
+  CdcFrontCockpitBedSetReq: 3, 0, LSCM, LRM_D, LRM_ML ;
+  CdcBackCockpitBedSetReq: 3, 0, LSCM, LRM_D, LRM_ML ;
+  Reserved: 8, 0, LSCM, LRM_D, LRM_ML ;
+  Reserved_1: 8, 0, LSCM, LRM_D, LRM_ML ;
+  DrMassgModeSt: 4, 0, LRM_D, LSCM ;
+  DrMassgLvlSt: 3, 0, LRM_D, LSCM ;
+  Reserved_LRM_D: 8, 0, LRM_D, LSCM ;
+  DrSystemVoltageSt: 2, 0, LRM_D, LSCM ;
+  DrPumpCurrentSt: 2, 0, LRM_D, LSCM ;
+  DrSoftwareVersion: 8, 0, LRM_D, LSCM ;
+  DrHardwareVersion: 8, 0, LRM_D, LSCM ;
+  TextDispReq: 3, 0, LRM_D, LSCM ;
+  LinSignalLose: 1, 0, LRM_D, LSCM ;
+  ButtonFault: 3, 0, LRM_D, LSCM ;
+  Reserved_1_LRM_D: 8, 0, LRM_D, LSCM ;
+  DrRespErr: 1, 0, LRM_D, LSCM ;
+  MMD_GroupNum: 14, 0, LRM_D, LSCM ;
+  MMD_SerialNum: 10, 1, LRM_D, LSCM ;
+  MMD_StructureNum_Letter1: 5, 0, LRM_D, LSCM ;
+  MMD_StructureNum_Letter2: 5, 0, LRM_D, LSCM ;
+  MMD_StructureNum_numeral: 10, 0, LRM_D, LSCM ;
+  MMD_ChangeLogNum1: 5, 0, LRM_D, LSCM ;
+  MMD_ChangeLogNum2: 5, 0, LRM_D, LSCM ;
+  MMD_ModuleNum: 7, 0, LRM_D, LSCM ;
+  MMD_SoftWareNum__Num3to5: 10, 0, LRM_D, LSCM ;
+  MMD_SoftWareNum__SeqNum: 7, 1, LRM_D, LSCM ;
+  MMD_SoftWareNum_Letter1: 5, 0, LRM_D, LSCM ;
+  MMD_SoftWareNum_Letter2: 5, 0, LRM_D, LSCM ;
+  MMD_SoftWareNum_Last3Num: 10, 0, LRM_D, LSCM ;
+  MMD_x_HW: 2, 0, LRM_D, LSCM ;
+  MMD_y_HW: 4, 0, LRM_D, LSCM ;
+  MMD_beta_HW: 4, 0, LRM_D, LSCM ;
+  MMD_x_SW: 2, 0, LRM_D, LSCM ;
+  MMD_y_SW: 4, 0, LRM_D, LSCM ;
+  MMD_beta_SW: 4, 0, LRM_D, LSCM ;
+  ZeroGravitySeatReqSet: 2, 0, LSCM, LRM_ML ;
+  DrMassgModeSt_LRM_ML: 4, 0, LRM_ML, LSCM ;
+  DrMassgLvlSt_LRM_ML: 3, 0, LRM_ML, LSCM ;
+  Reserved_LRM_ML: 8, 0, LRM_ML, LSCM ;
+  DrSystemVoltageSt_LRM_ML: 2, 0, LRM_ML, LSCM ;
+  DrPumpCurrentSt_LRM_ML: 2, 0, LRM_ML, LSCM ;
+  DrSoftwareVersion_LRM_ML: 8, 0, LRM_ML, LSCM ;
+  DrHardwareVersion_LRM_ML: 8, 0, LRM_ML, LSCM ;
+  TextDispReq_LRM_ML: 3, 0, LRM_ML, LSCM ;
+  LinSignalLose_LRM_ML: 1, 0, LRM_ML, LSCM ;
+  ButtonFault_LRM_ML: 3, 0, LRM_ML, LSCM ;
+  Reserved_1_LRM_ML: 8, 0, LRM_ML, LSCM ;
+  DrRespErr_LRM_ML: 1, 0, LRM_ML, LSCM ;
+  MMD_GroupNum_LRM_ML: 14, 0, LRM_ML, LSCM ;
+  MMD_SerialNum_LRM_ML: 10, 1, LRM_ML, LSCM ;
+  MMD_StructureNum_Letter1_LRM_ML: 5, 0, LRM_ML, LSCM ;
+  MMD_StructureNum_Letter2_LRM_ML: 5, 0, LRM_ML, LSCM ;
+  MMD_StructureNum_numeral_LRM_ML: 10, 0, LRM_ML, LSCM ;
+  MMD_ChangeLogNum1_LRM_ML: 5, 0, LRM_ML, LSCM ;
+  MMD_ChangeLogNum2_LRM_ML: 5, 0, LRM_ML, LSCM ;
+  MMD_ModuleNum_LRM_ML: 7, 0, LRM_ML, LSCM ;
+  MMD_SoftWareNum__Num3to5_LRM_ML: 10, 0, LRM_ML, LSCM ;
+  MMD_SoftWareNum__SeqNum_LRM_ML: 7, 1, LRM_ML, LSCM ;
+  MMD_SoftWareNum_Letter1_LRM_ML: 5, 0, LRM_ML, LSCM ;
+  MMD_SoftWareNum_Letter2_LRM_ML: 5, 0, LRM_ML, LSCM ;
+  MMD_SoftWareNum_Last3Num_LRM_ML: 10, 0, LRM_ML, LSCM ;
+  MMD_x_HW_LRM_ML: 2, 0, LRM_ML, LSCM ;
+  MMD_y_HW_LRM_ML: 4, 0, LRM_ML, LSCM ;
+  MMD_beta_HW_LRM_ML: 4, 0, LRM_ML, LSCM ;
+  MMD_x_SW_LRM_ML: 2, 0, LRM_ML, LSCM ;
+  MMD_y_SW_LRM_ML: 4, 0, LRM_ML, LSCM ;
+  MMD_beta_SW_LRM_ML: 4, 0, LRM_ML, LSCM ;
+}
+
+Diagnostic_signals {
+  MasterReqB0: 8, 0 ;
+  MasterReqB1: 8, 0 ;
+  MasterReqB2: 8, 0 ;
+  MasterReqB3: 8, 0 ;
+  MasterReqB4: 8, 0 ;
+  MasterReqB5: 8, 0 ;
+  MasterReqB6: 8, 0 ;
+  MasterReqB7: 8, 0 ;
+  SlaveRespB0: 8, 0 ;
+  SlaveRespB1: 8, 0 ;
+  SlaveRespB2: 8, 0 ;
+  SlaveRespB3: 8, 0 ;
+  SlaveRespB4: 8, 0 ;
+  SlaveRespB5: 8, 0 ;
+  SlaveRespB6: 8, 0 ;
+  SlaveRespB7: 8, 0 ;
+}
+
+Frames {
+  DR_LIN_1: 1, LSCM, 8 {
+    CdcMssgModSet, 0 ;
+    CdcMssgStrngthSet, 4 ;
+    CdcSuperSavesModeSts, 7 ;
+    CdcComfortModeSeatSet, 8 ;
+    CdcComfortModeFuncSet, 11 ;
+    BcmPwrStsFb, 14 ;
+    RestoreFactorySetting, 16 ;
+    BigBedMode, 18 ;
+    WatchingMovies, 24 ;
+    CdcSpaceCubePosCallSig, 28 ;
+    VcuDisCarPresStsResetReq, 32 ;
+    factory_pattern, 33 ;
+    CdcFrontCockpitBedSetReq, 34 ;
+    CdcBackCockpitBedSetReq, 37 ;
+    Reserved, 40 ;
+    Reserved_1, 48 ;
+  }
+  MMA_LIN_1: 6, LRM_D, 8 {
+    DrMassgModeSt, 0 ;
+    DrMassgLvlSt, 4 ;
+    Reserved_LRM_D, 8 ;
+    DrSystemVoltageSt, 16 ;
+    DrPumpCurrentSt, 18 ;
+    DrSoftwareVersion, 24 ;
+    DrHardwareVersion, 32 ;
+    TextDispReq, 40 ;
+    LinSignalLose, 43 ;
+    ButtonFault, 44 ;
+    Reserved_1_LRM_D, 48 ;
+    DrRespErr, 63 ;
+  }
+  MMAV_LIN_1: 16, LRM_D, 8 {
+    MMD_GroupNum, 0 ;
+    MMD_SerialNum, 14 ;
+    MMD_StructureNum_Letter1, 24 ;
+    MMD_StructureNum_Letter2, 29 ;
+    MMD_StructureNum_numeral, 34 ;
+    MMD_ChangeLogNum1, 44 ;
+    MMD_ChangeLogNum2, 49 ;
+    MMD_ModuleNum, 54 ;
+  }
+  MMAV2_LIN_1: 17, LRM_D, 8 {
+    MMD_SoftWareNum__Num3to5, 0 ;
+    MMD_SoftWareNum__SeqNum, 10 ;
+    MMD_SoftWareNum_Letter1, 17 ;
+    MMD_SoftWareNum_Letter2, 22 ;
+    MMD_SoftWareNum_Last3Num, 27 ;
+    MMD_x_HW, 37 ;
+    MMD_y_HW, 39 ;
+    MMD_beta_HW, 43 ;
+    MMD_x_SW, 47 ;
+    MMD_y_SW, 49 ;
+    MMD_beta_SW, 53 ;
+  }
+  RRL_LIN_1: 5, LSCM, 8 {
+    CdcMssgModSet, 0 ;
+    CdcMssgStrngthSet, 4 ;
+    CdcSuperSavesModeSts, 7 ;
+    CdcComfortModeSeatSet, 8 ;
+    CdcComfortModeFuncSet, 11 ;
+    BcmPwrStsFb, 14 ;
+    ZeroGravitySeatReqSet, 16 ;
+    RestoreFactorySetting, 18 ;
+    BigBedMode, 20 ;
+    WatchingMovies, 24 ;
+    CdcSpaceCubePosCallSig, 28 ;
+    VcuDisCarPresStsResetReq, 32 ;
+    factory_pattern, 33 ;
+    CdcFrontCockpitBedSetReq, 34 ;
+    CdcBackCockpitBedSetReq, 37 ;
+    Reserved, 40 ;
+    Reserved_1, 48 ;
+  }
+  MRL_LIN_1: 10, LRM_ML, 8 {
+    DrMassgModeSt_LRM_ML, 0 ;
+    DrMassgLvlSt_LRM_ML, 4 ;
+    Reserved_LRM_ML, 8 ;
+    DrSystemVoltageSt_LRM_ML, 16 ;
+    DrPumpCurrentSt_LRM_ML, 18 ;
+    DrSoftwareVersion_LRM_ML, 24 ;
+    DrHardwareVersion_LRM_ML, 32 ;
+    TextDispReq_LRM_ML, 40 ;
+    LinSignalLose_LRM_ML, 43 ;
+    ButtonFault_LRM_ML, 44 ;
+    Reserved_1_LRM_ML, 48 ;
+    DrRespErr_LRM_ML, 63 ;
+  }
+  MRLV1_LIN_1: 48, LRM_ML, 8 {
+    MMD_GroupNum_LRM_ML, 0 ;
+    MMD_SerialNum_LRM_ML, 14 ;
+    MMD_StructureNum_Letter1_LRM_ML, 24 ;
+    MMD_StructureNum_Letter2_LRM_ML, 29 ;
+    MMD_StructureNum_numeral_LRM_ML, 34 ;
+    MMD_ChangeLogNum1_LRM_ML, 44 ;
+    MMD_ChangeLogNum2_LRM_ML, 49 ;
+    MMD_ModuleNum_LRM_ML, 54 ;
+  }
+  MRLV2_LIN_1: 49, LRM_ML, 8 {
+    MMD_SoftWareNum__Num3to5_LRM_ML, 0 ;
+    MMD_SoftWareNum__SeqNum_LRM_ML, 10 ;
+    MMD_SoftWareNum_Letter1_LRM_ML, 17 ;
+    MMD_SoftWareNum_Letter2_LRM_ML, 22 ;
+    MMD_SoftWareNum_Last3Num_LRM_ML, 27 ;
+    MMD_x_HW_LRM_ML, 37 ;
+    MMD_y_HW_LRM_ML, 39 ;
+    MMD_beta_HW_LRM_ML, 43 ;
+    MMD_x_SW_LRM_ML, 47 ;
+    MMD_y_SW_LRM_ML, 49 ;
+    MMD_beta_SW_LRM_ML, 53 ;
+  }
+}
+
+Diagnostic_frames {
+  MasterReq: 0x3c {
+    MasterReqB0, 0 ;
+    MasterReqB1, 8 ;
+    MasterReqB2, 16 ;
+    MasterReqB3, 24 ;
+    MasterReqB4, 32 ;
+    MasterReqB5, 40 ;
+    MasterReqB6, 48 ;
+    MasterReqB7, 56 ;
+  }
+  SlaveResp: 0x3d {
+    SlaveRespB0, 0 ;
+    SlaveRespB1, 8 ;
+    SlaveRespB2, 16 ;
+    SlaveRespB3, 24 ;
+    SlaveRespB4, 32 ;
+    SlaveRespB5, 40 ;
+    SlaveRespB6, 48 ;
+    SlaveRespB7, 56 ;
+  }
+}
+
+Node_attributes {
+  LRM_D{
+    LIN_protocol = "2.0" ;
+    configured_NAD = 0x01 ;
+    product_id = 0x0, 0x0, 255 ;
+    P2_min = 0 ms ;
+    ST_min = 0 ms ;
+    configurable_frames {
+      DR_LIN_1 = 0x0 ;
+      MMA_LIN_1 = 0x0 ;
+      MMAV_LIN_1 = 0x0 ;
+      MMAV2_LIN_1 = 0x0 ;
+    }
+  }
+  LRM_ML{
+    LIN_protocol = "2.0" ;
+    configured_NAD = 0x02 ;
+    product_id = 0x0, 0x0, 255 ;
+    P2_min = 0 ms ;
+    ST_min = 0 ms ;
+    configurable_frames {
+      RRL_LIN_1 = 0x0 ;
+      MRL_LIN_1 = 0x0 ;
+      MRLV1_LIN_1 = 0x0 ;
+      MRLV2_LIN_1 = 0x0 ;
+    }
+  }
+}
+
+Schedule_tables {
+ LSCM_Schedule {
+    DR_LIN_1 delay 10 ms ;
+    MMA_LIN_1 delay 10 ms ;
+    MMAV_LIN_1 delay 10 ms ;
+    MMAV2_LIN_1 delay 10 ms ;
+    RRL_LIN_1 delay 10 ms ;
+    MRL_LIN_1 delay 10 ms ;
+    MRLV1_LIN_1 delay 10 ms ;
+    MRLV2_LIN_1 delay 10 ms ;
+  }
+}
+
+Signal_encoding_types {
+  CdcMssgModSet_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "模式1波浪" ;
+    logical_value, 2, "模式2猫步" ;
+    logical_value, 3, "模式3蛇形" ;
+    logical_value, 4, "模式4肩部" ;
+    logical_value, 5, "模式5腰部" ;
+    logical_value, 6, "模式6脉冲" ;
+    logical_value, 7, "模式7舒适" ;
+    logical_value, 8, "模式8推拿" ;
+  }
+  CdcMssgStrngthSet_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "关闭" ;
+    logical_value, 2, "低" ;
+    logical_value, 3, "中" ;
+    logical_value, 4, "高" ;
+  }
+  CdcSuperSavesModeSts_Encoding {
+    logical_value, 0, "OFF" ;
+    logical_value, 1, "ON" ;
+  }
+  CdcComfortModeSeatSet_Encoding {
+    logical_value, 0, "关闭" ;
+    logical_value, 1, "主驾舒享" ;
+    logical_value, 2, "副驾舒享" ;
+    logical_value, 3, "前排舒享" ;
+  }
+  CdcComfortModeFuncSet_Encoding {
+    logical_value, 0, "关闭" ;
+    logical_value, 1, "海洋漂浮" ;
+    logical_value, 2, "时空探索" ;
+    logical_value, 3, "落日飞行" ;
+  }
+  BcmPwrStsFb_Encoding {
+    logical_value, 0, "OFF" ;
+    logical_value, 1, "FBLPower" ;
+    logical_value, 2, "ON" ;
+    logical_value, 3, "Start" ;
+  }
+  RestoreFactorySetting_Encoding {
+    logical_value, 0, "NoRequest" ;
+    logical_value, 1, "Request" ;
+  }
+  BigBedMode_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "开启前舱大床" ;
+    logical_value, 2, "前舱大床调整暂停" ;
+    logical_value, 3, "关闭前舱大床" ;
+    logical_value, 4, "立即退出大床状态" ;
+  }
+  WatchingMovies_Encoding {
+    logical_value, 0, "关闭" ;
+    logical_value, 1, "前舱观影" ;
+    logical_value, 2, "副驾观影" ;
+    logical_value, 3, "后舱观影" ;
+    logical_value, 4, "全车观影" ;
+  }
+  CdcSpaceCubePosCallSig_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "奢想休憩位置调用" ;
+    logical_value, 2, "旗舰四座位置调用" ;
+    logical_value, 3, "位置1调用" ;
+    logical_value, 4, "位置2调用" ;
+    logical_value, 5, "位置3调用" ;
+    logical_value, 6, "取消" ;
+  }
+  VcuDisCarPresStsResetReq_Encoding {
+    logical_value, 0, "展车模式关闭" ;
+    logical_value, 1, "展车模式开启" ;
+  }
+  factory_pattern_Encoding {
+    logical_value, 0, "工厂模式关" ;
+    logical_value, 1, "工厂模式开" ;
+  }
+  CdcFrontCockpitBedSetReq_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "开启前舱大床" ;
+    logical_value, 2, "前舱大床调整暂停" ;
+    logical_value, 3, "关闭前舱大床" ;
+    logical_value, 4, "立即退出大床状态" ;
+  }
+  CdcBackCockpitBedSetReq_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "开启后舱大床" ;
+    logical_value, 2, "后舱大床调整暂停" ;
+    logical_value, 3, "关闭后舱大床" ;
+    logical_value, 4, "立即退出大床状态" ;
+  }
+  DrMassgModeSt_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "模式1波浪" ;
+    logical_value, 2, "模式2猫步" ;
+    logical_value, 3, "模式3蛇形" ;
+    logical_value, 4, "模式4肩部" ;
+    logical_value, 5, "模式5腰部" ;
+    logical_value, 6, "模式6脉冲" ;
+    logical_value, 7, "模式7舒适" ;
+    logical_value, 8, "模式8推拿" ;
+  }
+  DrMassgLvlSt_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "关闭" ;
+    logical_value, 2, "低" ;
+    logical_value, 3, "中" ;
+    logical_value, 4, "高" ;
+  }
+  DrSystemVoltageSt_Encoding {
+    logical_value, 0, "Normal Voltage" ;
+    logical_value, 1, "Voltage fault" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  DrPumpCurrentSt_Encoding {
+    logical_value, 0, "Normal Current" ;
+    logical_value, 1, "Current fault" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  DrSoftwareVersion_Encoding {
+    logical_value, 0, "No Request" ;
+    logical_value, 1, "V0.1" ;
+    logical_value, 2, "V0.2" ;
+    logical_value, 3, "V0.3" ;
+    logical_value, 4, "V0.4" ;
+    logical_value, 100, "V0.4" ;
+    logical_value, 100, "Reserved" ;
+    logical_value, 254, "Reserved" ;
+  }
+  DrHardwareVersion_Encoding {
+    logical_value, 0, "No Request" ;
+    logical_value, 1, "V0.1" ;
+    logical_value, 2, "V0.2" ;
+    logical_value, 3, "V0.3" ;
+    logical_value, 4, "V0.4" ;
+    logical_value, 100, "V0.4" ;
+    logical_value, 100, "Reserved" ;
+    logical_value, 254, "Reserved" ;
+  }
+  TextDispReq_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "reserve" ;
+    logical_value, 2, "座椅按摩循环结束，如需继续，请重新开启按摩功能；" ;
+    logical_value, 3, "reserve" ;
+  }
+  LinSignalLose_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+  }
+  ButtonFault_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Key_up_Error" ;
+    logical_value, 2, "Key_down_Error" ;
+    logical_value, 3, "Key_forward_Error" ;
+    logical_value, 4, "Key_backward_Error" ;
+    logical_value, 5, "Key_massage_Error" ;
+  }
+  DrRespErr_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+  }
+  ZeroGravitySeatReqSet_Encoding {
+    logical_value, 0, "NO request" ;
+    logical_value, 1, "关闭" ;
+    logical_value, 2, "开启" ;
+    logical_value, 3, "reserve" ;
+    physical_value, 0, 2, 1, 1 ;
+  }
+  DrMassgModeSt_LRM_ML_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "模式1波浪" ;
+    logical_value, 2, "模式2猫步" ;
+    logical_value, 3, "模式3蛇形" ;
+    logical_value, 4, "模式4肩部" ;
+    logical_value, 5, "模式5腰部" ;
+    logical_value, 6, "模式6脉冲" ;
+    logical_value, 7, "模式7舒适" ;
+    logical_value, 8, "模式8推拿" ;
+  }
+  DrMassgLvlSt_LRM_ML_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "关闭" ;
+    logical_value, 2, "低" ;
+    logical_value, 3, "中" ;
+    logical_value, 4, "高" ;
+  }
+  DrSystemVoltageSt_LRM_ML_Encoding {
+    logical_value, 0, "Normal Voltage" ;
+    logical_value, 1, "Voltage fault" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  DrPumpCurrentSt_LRM_ML_Encoding {
+    logical_value, 0, "Normal Current" ;
+    logical_value, 1, "Current fault" ;
+    logical_value, 2, "Reserved" ;
+    logical_value, 3, "Reserved" ;
+  }
+  DrSoftwareVersion_LRM_ML_Encoding {
+    logical_value, 0, "No Request" ;
+    logical_value, 1, "V0.1" ;
+    logical_value, 2, "V0.2" ;
+    logical_value, 3, "V0.3" ;
+    logical_value, 4, "V0.4" ;
+    logical_value, 100, "V0.4" ;
+    logical_value, 100, "Reserved" ;
+    logical_value, 254, "Reserved" ;
+  }
+  DrHardwareVersion_LRM_ML_Encoding {
+    logical_value, 0, "No Request" ;
+    logical_value, 1, "V0.1" ;
+    logical_value, 2, "V0.2" ;
+    logical_value, 3, "V0.3" ;
+    logical_value, 4, "V0.4" ;
+    logical_value, 100, "V0.4" ;
+    logical_value, 100, "Reserved" ;
+    logical_value, 254, "Reserved" ;
+  }
+  TextDispReq_LRM_ML_Encoding {
+    logical_value, 0, "无请求" ;
+    logical_value, 1, "reserve" ;
+    logical_value, 2, "座椅按摩循环结束，如需继续，请重新开启按摩功能；" ;
+    logical_value, 3, "reserve" ;
+  }
+  LinSignalLose_LRM_ML_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+  }
+  ButtonFault_LRM_ML_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Key_up_Error" ;
+    logical_value, 2, "Key_down_Error" ;
+    logical_value, 3, "Key_forward_Error" ;
+    logical_value, 4, "Key_backward_Error" ;
+    logical_value, 5, "Key_massage_Error" ;
+  }
+  DrRespErr_LRM_ML_Encoding {
+    logical_value, 0, "No Error" ;
+    logical_value, 1, "Error" ;
+  }
+}
+
+Signal_representation {
+  CdcMssgModSet_Encoding: CdcMssgModSet ;
+  CdcMssgStrngthSet_Encoding: CdcMssgStrngthSet ;
+  CdcSuperSavesModeSts_Encoding: CdcSuperSavesModeSts ;
+  CdcComfortModeSeatSet_Encoding: CdcComfortModeSeatSet ;
+  CdcComfortModeFuncSet_Encoding: CdcComfortModeFuncSet ;
+  BcmPwrStsFb_Encoding: BcmPwrStsFb ;
+  RestoreFactorySetting_Encoding: RestoreFactorySetting ;
+  BigBedMode_Encoding: BigBedMode ;
+  WatchingMovies_Encoding: WatchingMovies ;
+  CdcSpaceCubePosCallSig_Encoding: CdcSpaceCubePosCallSig ;
+  VcuDisCarPresStsResetReq_Encoding: VcuDisCarPresStsResetReq ;
+  factory_pattern_Encoding: factory_pattern ;
+  CdcFrontCockpitBedSetReq_Encoding: CdcFrontCockpitBedSetReq ;
+  CdcBackCockpitBedSetReq_Encoding: CdcBackCockpitBedSetReq ;
+  DrMassgModeSt_Encoding: DrMassgModeSt ;
+  DrMassgLvlSt_Encoding: DrMassgLvlSt ;
+  DrSystemVoltageSt_Encoding: DrSystemVoltageSt ;
+  DrPumpCurrentSt_Encoding: DrPumpCurrentSt ;
+  DrSoftwareVersion_Encoding: DrSoftwareVersion ;
+  DrHardwareVersion_Encoding: DrHardwareVersion ;
+  TextDispReq_Encoding: TextDispReq ;
+  LinSignalLose_Encoding: LinSignalLose ;
+  ButtonFault_Encoding: ButtonFault ;
+  DrRespErr_Encoding: DrRespErr ;
+  ZeroGravitySeatReqSet_Encoding: ZeroGravitySeatReqSet ;
+  DrMassgModeSt_LRM_ML_Encoding: DrMassgModeSt_LRM_ML ;
+  DrMassgLvlSt_LRM_ML_Encoding: DrMassgLvlSt_LRM_ML ;
+  DrSystemVoltageSt_LRM_ML_Encoding: DrSystemVoltageSt_LRM_ML ;
+  DrPumpCurrentSt_LRM_ML_Encoding: DrPumpCurrentSt_LRM_ML ;
+  DrSoftwareVersion_LRM_ML_Encoding: DrSoftwareVersion_LRM_ML ;
+  DrHardwareVersion_LRM_ML_Encoding: DrHardwareVersion_LRM_ML ;
+  TextDispReq_LRM_ML_Encoding: TextDispReq_LRM_ML ;
+  LinSignalLose_LRM_ML_Encoding: LinSignalLose_LRM_ML ;
+  ButtonFault_LRM_ML_Encoding: ButtonFault_LRM_ML ;
+  DrRespErr_LRM_ML_Encoding: DrRespErr_LRM_ML ;
+}
