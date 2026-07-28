@@ -131,14 +131,6 @@ def get_signal_widget_type(sig: Signal) -> str:
     return 'analog'
 
 
-def _display_width(s) -> int:
-    """Estimate display char-width: CJK chars count as ~2, ASCII as 1."""
-    w = 0
-    for ch in str(s):
-        w += 2 if ord(ch) > 0x2E80 else 1
-    return w
-
-
 # ── Scrollable Frame ───────────────────────────────────────────────────
 
 class ScrollableFrame(ttk.Frame):
