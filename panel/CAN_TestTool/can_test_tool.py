@@ -205,15 +205,15 @@ class AnalogSignalWidget(ttk.Frame):
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
-        # Value label
-        self.val_lbl = ttk.Label(self, text='0', width=4, anchor='e',
+        # Value label (auto-sized)
+        self.val_lbl = ttk.Label(self, text='0', anchor='e',
                                  font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.val_lbl.grid(row=0, column=2, padx=(0, 0))
 
-        # Unit / precision hint
+        # Unit / precision hint (auto-sized, hidden if no unit)
         unit_text = sig.unit if sig.unit else ''
         hint = f'{unit_text} x{sig.factor}' if unit_text else f'x{sig.factor}'
-        self.hint_lbl = ttk.Label(self, text=hint, width=5, anchor='w',
+        self.hint_lbl = ttk.Label(self, text=hint, anchor='w',
                                   font=(FONT_FAMILY, '7'), foreground='#888')
         self.hint_lbl.grid(row=0, column=3, padx=(1, 0))
 
@@ -282,8 +282,9 @@ class EnumSignalWidget(ttk.Frame):
                 self._text_to_val[f'r{v}'] = v
 
         values_text = [self._val_to_text[i] for i in sorted(self._val_to_text.keys())]
+        combo_width = max(len(str(v)) for v in values_text) + 1
 
-        self.combo = ttk.Combobox(self, values=values_text, width=16,
+        self.combo = ttk.Combobox(self, values=values_text, width=combo_width,
                                   state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.combo.grid(row=0, column=1, padx=(0, 0), sticky='ew')
@@ -330,15 +331,17 @@ class BinarySignalWidget(ttk.Frame):
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
         self.var = tk.StringVar(value='0')
+        combo_values = ['0', '1']
+        combo_width = max(len(v) for v in combo_values) + 1
         self.combo = ttk.Combobox(self, textvariable=self.var,
-                                  values=['0', '1'], width=4, state='readonly',
+                                  values=combo_values, width=combo_width, state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.combo.grid(row=0, column=1, padx=(0, 0), sticky='w')
         self.combo.bind('<<ComboboxSelected>>', self._changed)
 
-        # Unit
+        # Unit (auto-sized)
         unit_text = sig.unit if sig.unit else ''
-        self.unit_lbl = ttk.Label(self, text=unit_text, width=3, anchor='w',
+        self.unit_lbl = ttk.Label(self, text=unit_text, anchor='w',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.unit_lbl.grid(row=0, column=2, padx=(0, 0), sticky='w')
 
@@ -735,15 +738,15 @@ class RecvSignalDisplay(ttk.Frame):
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
-        # Value display
-        self.val_lbl = ttk.Label(self, text='--', width=15, anchor='w',
+        # Value display (auto-sized)
+        self.val_lbl = ttk.Label(self, text='--', anchor='w',
                                  font=(FONT_FAMILY, FONT_SIZE_SMALL, 'bold'),
                                  foreground='#333333')
         self.val_lbl.grid(row=0, column=1, padx=(0, 0), sticky='w')
 
-        # Unit
+        # Unit (auto-sized)
         unit_text = sig.unit if sig.unit else ''
-        self.unit_lbl = ttk.Label(self, text=unit_text, width=3, anchor='w',
+        self.unit_lbl = ttk.Label(self, text=unit_text, anchor='w',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
         self.unit_lbl.grid(row=0, column=2, padx=(0, 0), sticky='w')
 
