@@ -474,11 +474,11 @@ class SendMessagePanel(ttk.LabelFrame):
         btn_frame.grid(row=row, column=0, columnspan=2, sticky='ew', padx=1, pady=(0, 0))
 
         self.btn_send = ttk.Button(btn_frame, text='Send Once',
-                                   command=self._send_once, width=9)
+                                   command=self._send_once)
         self.btn_send.pack(side='left', padx=(0, 1))
 
         self.btn_cyclic = ttk.Button(btn_frame, text='Cyclic OFF',
-                                     command=self._toggle_cyclic, width=9)
+                                     command=self._toggle_cyclic)
         self.btn_cyclic.pack(side='left')
 
     def _group_signals_by_seat(self, signals):
