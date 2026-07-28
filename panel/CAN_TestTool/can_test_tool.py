@@ -172,17 +172,17 @@ class AnalogSignalWidget(ttk.Frame):
         label_text = sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.lbl.grid(row=0, column=0, padx=(0, 1), sticky='w')
+        self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
         # Value label
-        self.val_lbl = ttk.Label(self, text='0', width=5, anchor='e',
+        self.val_lbl = ttk.Label(self, text='0', width=4, anchor='e',
                                  font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.val_lbl.grid(row=0, column=2, padx=(1, 0))
+        self.val_lbl.grid(row=0, column=2, padx=(0, 0))
 
         # Unit / precision hint
         unit_text = sig.unit if sig.unit else ''
         hint = f'{unit_text} x{sig.factor}' if unit_text else f'x{sig.factor}'
-        self.hint_lbl = ttk.Label(self, text=hint, width=7, anchor='w',
+        self.hint_lbl = ttk.Label(self, text=hint, width=5, anchor='w',
                                   font=(FONT_FAMILY, '7'), foreground='#888')
         self.hint_lbl.grid(row=0, column=3, padx=(1, 0))
 
@@ -195,8 +195,8 @@ class AnalogSignalWidget(ttk.Frame):
         self.slider = ttk.Scale(self, from_=from_val, to=to_val,
                                 orient='horizontal',
                                 command=self._slider_changed,
-                                length=90)
-        self.slider.grid(row=0, column=1, padx=(1, 1), sticky='ew')
+                                length=70)
+        self.slider.grid(row=0, column=1, padx=(0, 0), sticky='ew')
         self.slider.set(0)
 
     def _slider_changed(self, val):
@@ -236,7 +236,7 @@ class EnumSignalWidget(ttk.Frame):
         label_text = sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.lbl.grid(row=0, column=0, padx=(0, 1), sticky='w')
+        self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
         # Build value descriptions sorted by value
         sorted_vals = sorted(sig.value_descriptions.items())
@@ -252,10 +252,10 @@ class EnumSignalWidget(ttk.Frame):
 
         values_text = [self._val_to_text[i] for i in sorted(self._val_to_text.keys())]
 
-        self.combo = ttk.Combobox(self, values=values_text, width=18,
+        self.combo = ttk.Combobox(self, values=values_text, width=16,
                                   state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.combo.grid(row=0, column=1, padx=(1, 1), sticky='ew')
+        self.combo.grid(row=0, column=1, padx=(0, 0), sticky='ew')
         self.combo.set(values_text[0] if values_text else '')
         self.combo.bind('<<ComboboxSelected>>', self._combo_changed)
 
@@ -296,20 +296,20 @@ class BinarySignalWidget(ttk.Frame):
         label_text = sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.lbl.grid(row=0, column=0, padx=(0, 1), sticky='w')
+        self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
         self.var = tk.StringVar(value='0')
         self.combo = ttk.Combobox(self, textvariable=self.var,
                                   values=['0', '1'], width=4, state='readonly',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.combo.grid(row=0, column=1, padx=(1, 1), sticky='w')
+        self.combo.grid(row=0, column=1, padx=(0, 0), sticky='w')
         self.combo.bind('<<ComboboxSelected>>', self._changed)
 
         # Unit
         unit_text = sig.unit if sig.unit else ''
         self.unit_lbl = ttk.Label(self, text=unit_text, width=3, anchor='w',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.unit_lbl.grid(row=0, column=2, padx=(1, 0), sticky='w')
+        self.unit_lbl.grid(row=0, column=2, padx=(0, 0), sticky='w')
 
     def _changed(self, event=None):
         if self._updating:
@@ -363,7 +363,7 @@ class SendMessagePanel(ttk.LabelFrame):
     def _build_header_row(self):
         """Row 0: Enable checkbox + message info (span 2 cols)."""
         hdr = ttk.Frame(self)
-        hdr.grid(row=0, column=0, columnspan=2, sticky='ew', padx=2, pady=(0, 0))
+        hdr.grid(row=0, column=0, columnspan=2, sticky='ew', padx=1, pady=(0, 0))
         hdr.columnconfigure(2, weight=1)
 
         self.chk_enable = ttk.Checkbutton(hdr, text='Enable',
@@ -390,7 +390,7 @@ class SendMessagePanel(ttk.LabelFrame):
                                 font=(FONT_FAMILY, FONT_SIZE_SMALL, 'bold'),
                                 foreground='#555')
                 lbl.grid(row=row, column=0, columnspan=2, sticky='w',
-                         padx=(4, 0), pady=(0, 0))
+                         padx=(2, 0), pady=(0, 0))
                 row += 1
             col = 0
             for sig in group_sigs:
@@ -401,8 +401,8 @@ class SendMessagePanel(ttk.LabelFrame):
                     widget = EnumSignalWidget(self, sig, self._on_value_change)
                 else:
                     widget = BinarySignalWidget(self, sig, self._on_value_change)
-                padx_left = 4
-                widget.grid(row=row, column=col, sticky='ew', padx=(padx_left, 1), pady=0)
+                padx_left = 1
+                widget.grid(row=row, column=col, sticky='ew', padx=(padx_left, 0), pady=0)
                 self._widgets[sig.name] = widget
 
                 # Apply GenSigStartValue if available
@@ -428,11 +428,11 @@ class SendMessagePanel(ttk.LabelFrame):
         row = 1 + (len(signals_ordered) + 1) // 2 + max(0, len(subgroups) - 1)
 
         btn_frame = ttk.Frame(self)
-        btn_frame.grid(row=row, column=0, columnspan=2, sticky='ew', padx=2, pady=(1, 1))
+        btn_frame.grid(row=row, column=0, columnspan=2, sticky='ew', padx=1, pady=(0, 0))
 
         self.btn_send = ttk.Button(btn_frame, text='Send Once',
                                    command=self._send_once, width=9)
-        self.btn_send.pack(side='left', padx=(0, 2))
+        self.btn_send.pack(side='left', padx=(0, 1))
 
         self.btn_cyclic = ttk.Button(btn_frame, text='Cyclic OFF',
                                      command=self._toggle_cyclic, width=9)
@@ -601,7 +601,7 @@ class SendPanel(ttk.Frame):
 
     def _build_header(self):
         header_frame = ttk.Frame(self)
-        header_frame.grid(row=0, column=0, sticky='ew', padx=1, pady=1)
+        header_frame.grid(row=0, column=0, sticky='ew', padx=0, pady=0)
         self.grid_columnconfigure(0, weight=1)
 
         ttk.Label(header_frame, text='▶ TRANSMIT (to FSCM/RSCM)',
@@ -621,7 +621,7 @@ class SendPanel(ttk.Frame):
 
             # Category header
             cat_frame = ttk.Frame(self.inner)
-            cat_frame.grid(row=row, column=0, sticky='ew', padx=3, pady=(3, 0))
+            cat_frame.grid(row=row, column=0, sticky='ew', padx=1, pady=(1, 0))
             cat_lbl = tk.Label(cat_frame,
                                text=f'── {cat_name} ──',
                                font=(FONT_FAMILY, FONT_SIZE_NORMAL, 'bold'),
@@ -637,7 +637,7 @@ class SendPanel(ttk.Frame):
                 panel = SendMessagePanel(self.inner, msg,
                                          can_mgr=self.can_mgr,
                                          app_ref=self.app_ref)
-                panel.grid(row=row, column=0, sticky='ew', padx=3, pady=1)
+                panel.grid(row=row, column=0, sticky='ew', padx=1, pady=0)
                 self._msg_panels[msg_id] = panel
                 processed.add(msg_id)
                 row += 1
@@ -647,7 +647,7 @@ class SendPanel(ttk.Frame):
                      if mid not in processed]
         if remaining:
             cat_frame = ttk.Frame(self.inner)
-            cat_frame.grid(row=row, column=0, sticky='ew', padx=3, pady=(3, 0))
+            cat_frame.grid(row=row, column=0, sticky='ew', padx=1, pady=(1, 0))
             tk.Label(cat_frame,
                      text='── Other Signals ──',
                      font=(FONT_FAMILY, FONT_SIZE_NORMAL, 'bold'),
@@ -659,7 +659,7 @@ class SendPanel(ttk.Frame):
                 panel = SendMessagePanel(self.inner, msg,
                                          can_mgr=self.can_mgr,
                                          app_ref=self.app_ref)
-                panel.grid(row=row, column=0, sticky='ew', padx=3, pady=1)
+                panel.grid(row=row, column=0, sticky='ew', padx=1, pady=0)
                 self._msg_panels[msg_id] = panel
                 row += 1
 
@@ -696,19 +696,19 @@ class RecvSignalDisplay(ttk.Frame):
         label_text = sig.name
         self.lbl = ttk.Label(self, text=label_text, anchor='w',
                              font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.lbl.grid(row=0, column=0, padx=(0, 1), sticky='w')
+        self.lbl.grid(row=0, column=0, padx=(0, 0), sticky='w')
 
         # Value display
-        self.val_lbl = ttk.Label(self, text='--', width=20, anchor='w',
+        self.val_lbl = ttk.Label(self, text='--', width=15, anchor='w',
                                  font=(FONT_FAMILY, FONT_SIZE_SMALL, 'bold'),
                                  foreground='#333333')
-        self.val_lbl.grid(row=0, column=1, padx=(1, 1), sticky='w')
+        self.val_lbl.grid(row=0, column=1, padx=(0, 0), sticky='w')
 
         # Unit
         unit_text = sig.unit if sig.unit else ''
         self.unit_lbl = ttk.Label(self, text=unit_text, width=3, anchor='w',
                                   font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.unit_lbl.grid(row=0, column=2, padx=(1, 0), sticky='w')
+        self.unit_lbl.grid(row=0, column=2, padx=(0, 0), sticky='w')
 
     def update_value(self, phys_val: float, raw: int):
         """Update the displayed value and flash briefly."""
@@ -752,7 +752,7 @@ class RecvMessagePanel(ttk.LabelFrame):
         col = 0
         for sig in signals_ordered:
             disp = RecvSignalDisplay(self, sig)
-            disp.grid(row=row, column=col, sticky='ew', padx=2, pady=0)
+            disp.grid(row=row, column=col, sticky='ew', padx=1, pady=0)
             self._displays[sig.name] = disp
             col += 1
             if col >= 2:
@@ -821,7 +821,7 @@ class RecvPanel(ttk.Frame):
                            font=(FONT_FAMILY, FONT_SIZE_TITLE, 'bold'),
                            foreground='#E65100',
                            background=COLOR_RECV_BG)
-        header.grid(row=0, column=0, sticky='ew', padx=1, pady=1)
+        header.grid(row=0, column=0, sticky='ew', padx=0, pady=0)
         self.grid_columnconfigure(0, weight=1)
 
     def _add_panel(self, msg: Message):
@@ -830,7 +830,7 @@ class RecvPanel(ttk.Frame):
             return
         panel = RecvMessagePanel(self.inner, msg)
         panel.grid(row=self._panel_row_counter, column=0, sticky='ew',
-                   padx=3, pady=1)
+                   padx=1, pady=0)
         self._msg_displays[msg.id] = panel
         self._panel_row_counter += 1
 
@@ -940,8 +940,8 @@ class CanTestTool(tk.Tk):
     # ── Toolbar ────────────────────────────────────────────────────
 
     def _build_toolbar(self):
-        toolbar = ttk.Frame(self, padding=(2, 1))
-        toolbar.grid(row=0, column=0, sticky='ew', padx=1, pady=(1, 0))
+        toolbar = ttk.Frame(self, padding=(1, 0))
+        toolbar.grid(row=0, column=0, sticky='ew', padx=0, pady=(0, 0))
         self.grid_columnconfigure(0, weight=1)
 
         # ── Row 0: CAN Configuration ──
@@ -949,7 +949,7 @@ class CanTestTool(tk.Tk):
         # CAN channel selection
         ttk.Label(toolbar, text='Ch:',
                   font=(FONT_FAMILY, FONT_SIZE_NORMAL)).grid(
-                      row=0, column=0, padx=(0, 2))
+                      row=0, column=0, padx=(0, 1))
         self.channel_var = tk.StringVar(value='PCAN_USBBUS1')
         self.channel_combo = ttk.Combobox(toolbar, textvariable=self.channel_var,
                                      values=[
@@ -959,13 +959,13 @@ class CanTestTool(tk.Tk):
                                      ],
                                      state='normal', width=14,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
-        self.channel_combo.grid(row=0, column=1, padx=(0, 2))
+        self.channel_combo.grid(row=0, column=1, padx=(0, 1))
 
         # Refresh devices button
         self.btn_refresh = ttk.Button(toolbar, text='⟳',
                                       command=self._refresh_devices,
                                       width=3)
-        self.btn_refresh.grid(row=0, column=2, padx=(0, 5))
+        self.btn_refresh.grid(row=0, column=2, padx=(0, 2))
 
         # Mode: CAN / CAN FD
         ttk.Label(toolbar, text='Mode:',
@@ -976,7 +976,7 @@ class CanTestTool(tk.Tk):
                                      values=['CAN', 'CAN FD'],
                                      state='readonly', width=6,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
-        self.mode_combo.grid(row=0, column=4, padx=(0, 5))
+        self.mode_combo.grid(row=0, column=4, padx=(0, 2))
         self.mode_combo.bind('<<ComboboxSelected>>', self._on_mode_changed)
 
         # Baud rate (arbitration, kbaud)
@@ -988,7 +988,7 @@ class CanTestTool(tk.Tk):
                                      values=['125', '250', '500', '1000'],
                                      state='normal', width=7,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
-        self.baud_combo.grid(row=0, column=6, padx=(0, 5))
+        self.baud_combo.grid(row=0, column=6, padx=(0, 2))
 
         # Data rate (data phase, kbaud, only for CAN FD)
         ttk.Label(toolbar, text='Data:',
@@ -999,7 +999,7 @@ class CanTestTool(tk.Tk):
                                      values=['500', '1000', '2000', '4000', '5000', '8000'],
                                      state='disabled', width=7,
                                      font=(FONT_FAMILY, FONT_SIZE_NORMAL))
-        self.data_combo.grid(row=0, column=8, padx=(0, 5))
+        self.data_combo.grid(row=0, column=8, padx=(0, 2))
 
         # ── Row 1: Action buttons ──
 
@@ -1007,16 +1007,16 @@ class CanTestTool(tk.Tk):
         self.btn_connect = ttk.Button(toolbar, text='Connect',
                                       command=self._connect,
                                       width=10)
-        self.btn_connect.grid(row=1, column=0, padx=(0, 5), pady=(2, 0))
+        self.btn_connect.grid(row=1, column=0, padx=(0, 2), pady=(1, 0))
 
         self.btn_disconnect = ttk.Button(toolbar, text='Disconnect',
                                          command=self._disconnect,
                                          width=10, state='disabled')
-        self.btn_disconnect.grid(row=1, column=1, padx=(0, 10), pady=(2, 0))
+        self.btn_disconnect.grid(row=1, column=1, padx=(0, 5), pady=(1, 0))
 
         # Separator
         sep = ttk.Separator(toolbar, orient='vertical')
-        sep.grid(row=1, column=2, sticky='ns', padx=5, pady=2)
+        sep.grid(row=1, column=2, sticky='ns', padx=2, pady=1)
 
         # Cyclic send control
         self.cyclic_var = tk.BooleanVar(value=False)
@@ -1025,14 +1025,14 @@ class CanTestTool(tk.Tk):
             variable=self.cyclic_var,
             command=self._toggle_cyclic_all,
             state='disabled')
-        self.chk_cyclic.grid(row=1, column=3, padx=(0, 10), pady=(2, 0))
+        self.chk_cyclic.grid(row=1, column=3, padx=(0, 5), pady=(1, 0))
 
         # Send Once button
         self.btn_send_once = ttk.Button(
             toolbar, text='Send All Once',
             command=self._send_all_once,
             width=14, state='disabled')
-        self.btn_send_once.grid(row=1, column=4, padx=(0, 5), pady=(2, 0))
+        self.btn_send_once.grid(row=1, column=4, padx=(0, 2), pady=(1, 0))
 
     def _on_mode_changed(self, event=None):
         """Enable/disable data rate combo based on mode selection."""
@@ -1046,7 +1046,7 @@ class CanTestTool(tk.Tk):
     def _build_main_area(self):
         """Build a single PanedWindow with send (left) and recv (right) panels."""
         self.paned = ttk.PanedWindow(self, orient='horizontal')
-        self.paned.grid(row=1, column=0, sticky='nsew', padx=1, pady=1)
+        self.paned.grid(row=1, column=0, sticky='nsew', padx=0, pady=0)
         self.grid_rowconfigure(1, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
@@ -1068,22 +1068,22 @@ class CanTestTool(tk.Tk):
 
     def _build_statusbar(self):
         self.statusbar = ttk.Frame(self, relief='sunken', padding=(1, 0))
-        self.statusbar.grid(row=2, column=0, sticky='ew', padx=1, pady=(0, 1))
+        self.statusbar.grid(row=2, column=0, sticky='ew', padx=0, pady=(0, 0))
 
         self.status_label = ttk.Label(
             self.statusbar, text='Status: Disconnected',
             font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.status_label.pack(side='left', padx=5)
+        self.status_label.pack(side='left', padx=2)
 
         self.rx_count_label = ttk.Label(
             self.statusbar, text='RX: 0',
             font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.rx_count_label.pack(side='right', padx=10)
+        self.rx_count_label.pack(side='right', padx=5)
 
         self.tx_count_label = ttk.Label(
             self.statusbar, text='TX: 0',
             font=(FONT_FAMILY, FONT_SIZE_SMALL))
-        self.tx_count_label.pack(side='right', padx=10)
+        self.tx_count_label.pack(side='right', padx=5)
 
         self._rx_count = 0
         self._tx_count = 0
